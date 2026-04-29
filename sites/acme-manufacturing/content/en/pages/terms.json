@@ -1,0 +1,16 @@
+{
+  "slug": "/terms",
+  "template": "legal",
+  "seo": {
+    "title": "Terms of Use",
+    "description": "Terms of use placeholder for the Acme Manufacturing website."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "eyebrow": "Terms",
+      "title": "Terms of Use",
+      "description": "These placeholder terms describe general website use for Acme Manufacturing and should be reviewed before production launch."
+    }
+  ]
+}

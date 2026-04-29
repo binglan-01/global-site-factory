@@ -1,0 +1,78 @@
+{
+  "slug": "/products/container-houses",
+  "template": "standard",
+  "seo": {
+    "title": "Container Houses — Site Lodging, Modular Yards & Commercial Support | EFH House",
+    "description": "EFH House container houses for construction lodging, interim offices, workforce dorms, modular yards, and commercial frontage—emphasizing modular combinations, logistics discipline, and global project fit."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "eyebrow": "Camp & yard backbone",
+      "title": "Container Houses",
+      "description": "Container houses rely on standardized modules and scalable combinations—proven for global construction lodging, interim offices, workforce dormitories, modular yards, and commercial frontage. Units ship factory-ready and site-ready, aligning with haul routes and lifting plans so general contractors and camp operators maintain dependable logistics and office throughput even under aggressive schedules.",
+      "primaryCta": {
+        "label": "Discuss Your Housing Project",
+        "href": "/contact"
+      },
+      "image": "/assets/products/container-house.jpg",
+      "imageAlt": "EFH House container modular housing"
+    },
+    {
+      "type": "gallery",
+      "title": "Products & applications",
+      "layout": "product-grid",
+      "columns": 4,
+      "imageAspect": "landscape",
+      "assetDir": "/assets/products/container-houses",
+      "lightbox": true,
+      "zoom": true
+    },
+    {
+      "type": "feature-list",
+      "title": "Strengths & primary audiences",
+      "description": "Repeatable assembly logic turns camp construction into a manageable industrial process.",
+      "items": [
+        {
+          "title": "Site lodging & logistics support",
+          "description": "Near-field dormitories, wash, and catering support for civil, power, or transportation megaprojects—shortening commutes and strengthening safety culture."
+        },
+        {
+          "title": "Interim offices & command posts",
+          "description": "Rapidly deployed meeting, training, and planning space synchronized with construction tempo."
+        },
+        {
+          "title": "Modular yards & multi-use clusters",
+          "description": "Linear or grid arrangements combining sleep, office, and storage with phased growth paths."
+        },
+        {
+          "title": "Commercial frontage & brand hubs",
+          "description": "Reusable sales, hosting, or service modules that reinforce corporate identity on remote jobs or short-term programs."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "FAQ",
+      "items": [
+        {
+          "question": "Is there one universal commercial pack for every region online?",
+          "answer": "We prepare materials per project. Regulations, transport, and site realities shift market by market, so documentation flows through project channels."
+        },
+        {
+          "question": "What accelerates the first technical reply?",
+          "answer": "Site and foundation status, lifting or road limits, occupancy targets, climate or insulation expectations, plus façade or acoustic priorities."
+        },
+        {
+          "question": "Is this similar to consumer e-commerce workflows?",
+          "answer": "EFH House serves engineered B2B programs through human review and documented exchanges—each supply aligns with contract exhibits and technical attachments."
+        }
+      ]
+    },
+    {
+      "type": "contact-form",
+      "title": "Contact Our Project Team — Container Houses",
+      "formId": "efh-house-inquiry-container-houses"
+    }
+  ]
+}

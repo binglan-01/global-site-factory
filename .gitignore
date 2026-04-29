@@ -1,0 +1,104 @@
+# ============================================================
+# global-site-factory .gitignore
+#
+# 原则：
+#   - 任何由脚本 / 构建工具 / 包管理器自动生成的产物都不应该进 git。
+#   - 任何含有秘钥、令牌、本地环境变量的文件都不应该进 git。
+#   - 任何特定开发者机器 / IDE / 操作系统 才会产生的元数据都不应该进 git。
+# ============================================================
+
+# --- Dependencies ----------------------------------------------------
+node_modules/
+.pnpm-store/
+
+# --- Build output ----------------------------------------------------
+# `pnpm build-site <slug>` 产物和 Astro 的中间产物。
+# 保留原有规则：dist 全局忽略 + apps/site-builder/dist 显式忽略。
+dist/
+build/
+apps/site-builder/dist/
+
+# --- Site-builder generated artefacts --------------------------------
+# `apps/site-builder/.generated/` 由 `pnpm build-site <slug>` 从
+# sites/<slug>/ 重新生成。**不要**手工编辑，**也不要**提交其中任何
+# 文件，但保留 .gitkeep 让目录在 git 里依然存在，方便 IDE 解析路径。
+apps/site-builder/.generated/*
+!apps/site-builder/.generated/.gitkeep
+
+# `apps/site-builder/public/assets/` 在每次 build 时被
+# scripts/build-site.ts 整个 rm 掉再从 sites/<slug>/assets/ 复制回来，
+# 它是构建产物，不是源文件，绝对不要提交。
+apps/site-builder/public/assets/
+
+# --- Framework / tooling caches --------------------------------------
+.astro/
+.turbo/
+.cache/
+.parcel-cache/
+.eslintcache
+.stylelintcache
+
+# --- TypeScript intermediates ----------------------------------------
+*.tsbuildinfo
+
+# --- Cloudflare / Wrangler local state -------------------------------
+# `.wrangler/` 是 Wrangler CLI 缓存；`.dev.vars` 含本地开发用的密钥。
+# 规则 80 已经规定 functions 的密钥必须走 Cloudflare 环境变量，
+# 这里再加一道防线，避免误把本地 vars 文件提交。
+.wrangler/
+.dev.vars
+.dev.vars.*
+
+# --- Environment / secrets -------------------------------------------
+# 任何 .env / .env.local / .env.<name> 都不进 git。
+# 如果以后需要给团队一个可提交的「环境样例」，请使用 .env.example
+# 这种显式带 .example 后缀的文件名，并在那里只放占位值，绝不放真实秘钥。
+.env
+.env.*
+!.env.example
+
+# --- Logs ------------------------------------------------------------
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+lerna-debug.log*
+
+# --- Test / coverage output ------------------------------------------
+coverage/
+.nyc_output/
+*.lcov
+
+# --- IDE / editor metadata -------------------------------------------
+# .vscode/ 默认整目录忽略，但允许显式登记两个团队共享的配置文件，
+# 这是 VS Code 官方推荐的做法。如果团队不需要共享，把下面两行注释掉。
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+
+.idea/
+*.iml
+
+# Vim / Emacs / Sublime 临时文件
+*.swp
+*.swo
+*~
+\#*\#
+.\#*
+
+# --- OS-specific metadata --------------------------------------------
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+.directory
+.Trash-*

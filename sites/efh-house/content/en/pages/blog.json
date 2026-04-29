@@ -1,0 +1,68 @@
+{
+  "slug": "/blog",
+  "template": "standard",
+  "seo": {
+    "title": "Insights — Prefab Modular Housing & Project Readiness | EFH House",
+    "description": "B2B briefing topics from EFH House: where prefab housing fits, how to choose modular lines, what to prepare before a project talk, and why proposals stay tied to site requirements."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "eyebrow": "Featured insights",
+      "title": "Understand prefab modular housing—make sharper project calls",
+      "description": "These concise topics capture what international engineering and hospitality clients ask first. Use them for internal alignment, partner updates, or campaign landing support. EFH House evolves the depth of each theme as the market shifts—and we welcome deeper dives tied to your specific opportunity.",
+      "primaryCta": {
+        "label": "Submit Project Requirements",
+        "href": "/contact"
+      },
+      "image": "/assets/gallery/gallery-1.jpg",
+      "imageAlt": "Prefab modular planning and project context"
+    },
+    {
+      "type": "feature-list",
+      "title": "Featured topics",
+      "description": "Build a working knowledge of modular housing and arrive prepared for supplier conversations.",
+      "items": [
+        {
+          "title": "Which overseas projects benefit most from prefab housing?",
+          "description": "When compressing field duration, raising hygiene and safety expectations, or standing up usable space in remote corridors matters, modular execution is often the leading option. Factory and site work can progress in parallel—with far better predictability when documentation keeps pace."
+        },
+        {
+          "title": "Choosing between capsule houses, container houses, and expandable units",
+          "description": "Capsule lines emphasize brand presence and premium guest experience; container houses excel at repeatable camps and offices; double-wing expandables help when transport width is tight but interior volume must grow on site—often mixed within one master plan."
+        },
+        {
+          "title": "Information to gather before a project discussion",
+          "description": "Country or region, climate behavior, occupancy cadence, utilities, crane or road limits, and a provisional logistics corridor all strengthen the first reply you receive from EFH House."
+        },
+        {
+          "title": "Why EFH House does not publish one-size comparison tables on the web",
+          "description": "Modular outcomes hinge on location, quantity, configuration, logistics, and on-site support. We deliver configuration suggestions and briefing packs through dedicated communication so guidance stays faithful to your scenario—not a misleading universal grid."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "About this section",
+      "items": [
+        {
+          "question": "Will dated blog articles appear here?",
+          "answer": "This release presents curated topics so B2B visitors capture essentials in one pass. For the latest sector notes, mention your focus area when you contact us."
+        },
+        {
+          "question": "Can I receive updates by email?",
+          "answer": "Note your interest in the contact form; where compliance allows, we can add you to periodic briefing outreach."
+        },
+        {
+          "question": "Are brochures or drawing excerpts posted for open download?",
+          "answer": "Collateral and drawing excerpts are shared directionally once baseline cooperation intent is clear, keeping materials aligned with project stage."
+        }
+      ]
+    },
+    {
+      "type": "contact-form",
+      "title": "Contact Our Project Team",
+      "formId": "efh-house-contact-inquiry"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "ignoreDeprecations": "6.0",
+    "baseUrl": ".",
+    "paths": {
+      "@factory/validators": ["packages/validators/src/index.ts"],
+      "@factory/site-core": ["packages/site-core/src/index.ts"],
+      "@factory/seo": ["packages/seo/src/index.ts"],
+      "@factory/theme-enterprise": ["packages/theme-enterprise/src/index.ts"],
+      "@factory/theme-technical-product-showcase": [
+        "packages/theme-technical-product-showcase/src/index.ts"
+      ],
+      "@factory/ui": ["packages/ui/src/index.ts"]
+    }
+  }
+}

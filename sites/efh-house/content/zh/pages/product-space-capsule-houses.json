@@ -1,0 +1,78 @@
+{
+  "slug": "/products/space-capsule-houses",
+  "template": "standard",
+  "seo": {
+    "title": "太空舱房屋 — 文旅营地与高端模块化住宿｜EFH House",
+    "description": "EFH House 太空舱房屋适用于文旅营地、景区住宿、度假综合体、庭院工作室及轻量化商业展示，强调现代美学、场景表现力与灵活布置，欢迎海外 B2B 客户垂询。"
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "eyebrow": "明星产品",
+      "title": "太空舱房屋",
+      "description": "太空舱房屋将现代造型与模块化建造结合，是文旅营地、景区度假酒店、城市微度假、庭院工作室及品牌快闪空间的理想选择。我们以高辨识度的外立面、通透的室内体验与灵活的总图布局，助力客户打造社交媒体传播力强、入住体验佳的旗舰项目。无论是单点试点还是成区开发，EFH House 项目团队都将与您深入沟通饰面体系、平面意向与机电策略，为全球营地开发商与文旅投资客户提供端到端支持。",
+      "primaryCta": {
+        "label": "获取项目资料",
+        "href": "/zh/contact"
+      },
+      "image": "/assets/hero/main-hero.jpg",
+      "imageAlt": "EFH House 太空舱房屋应用场景"
+    },
+    {
+      "type": "gallery",
+      "title": "产品与应用展示",
+      "layout": "product-grid",
+      "columns": 4,
+      "imageAspect": "landscape",
+      "assetDir": "/assets/products/space-capsule-houses",
+      "lightbox": true,
+      "zoom": true
+    },
+    {
+      "type": "feature-list",
+      "title": "核心价值与应用人群",
+      "description": "太空舱房屋兼顾品牌形象与入住品质，是面向高端文旅与生活方式市场的差异化产品线。",
+      "items": [
+        {
+          "title": "文旅度假与营地旗舰项目",
+          "description": "适用于需要强化视觉记忆点的滨海、山地或湖畔营地，模块可沿观景轴线组合，突出沉浸式体验。"
+        },
+        {
+          "title": "精品民宿与城市微度假",
+          "description": "以小体量、高完成度的特征服务城市近郊与景区民宿升级需求，提升客房溢价能力。"
+        },
+        {
+          "title": "庭院工作室与展示空间",
+          "description": "满足创意办公、品牌展示或VIP 接待等对形象与私密性均有要求的轻商业场景。"
+        },
+        {
+          "title": "开发商与文旅投资合作伙伴",
+          "description": "我们理解投测、建设与运营的多重目标，愿在方案阶段即参与故事线塑造，让建筑语言与商业模型彼此呼应。"
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "常见问题",
+      "items": [
+        {
+          "question": "能否在网页上直接查看标准项目方案表？",
+          "answer": "模块化方案与项目所在地、数量、内装取向、物流路径及现场服务密切相关。EFH House 采用专属沟通方式提供配置建议与项目资料，确保信息与您的实际场景匹配。"
+        },
+        {
+          "question": "首次沟通适合准备哪些要点？",
+          "answer": "建议说明目标区域、入住峰值、公用设施条件、期望的室内完成度以及项目推进计划，便于团队给出有针对性的第一步反馈。"
+        },
+        {
+          "question": "项目时间表如何确定？",
+          "answer": "排期需在制造输入、合规路径与物流安排澄清后共同制定。我们乐于在前期提供节点框架，具体执行以双方确认的书面计划为准。"
+        }
+      ]
+    },
+    {
+      "type": "contact-form",
+      "title": "联系项目团队 — 太空舱房屋",
+      "formId": "efh-house-inquiry-space-capsule-houses"
+    }
+  ]
+}

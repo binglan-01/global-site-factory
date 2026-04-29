@@ -1,0 +1,92 @@
+{
+  "slug": "/about",
+  "template": "standard",
+  "seo": {
+    "title": "About EFH House — Prefab & Modular Building for Global B2B",
+    "description": "EFH House delivers prefab housing and modular building solutions—space capsule houses, container houses, double-wing expandables, and flat pack containers—with product storytelling, project intake, and modular program alignment for international buyers."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "eyebrow": "About EFH House",
+      "title": "Your partner for prefab and modular building worldwide",
+      "description": "EFH House serves overseas buyers, contractors, camp developers, and hospitality investors. Through space capsule houses, container houses, double-wing expandable containers, and flat pack containers, we support resort camps, construction lodging, interim housing, mobile offices, and commercial modular programs. We communicate honestly and professionally—avoiding inflated capacity claims, decorative certification marks, or unverified overseas representation on this website.",
+      "primaryCta": {
+        "label": "Request Project Information",
+        "href": "/contact"
+      },
+      "image": "/assets/hero/main-hero.jpg",
+      "imageAlt": "EFH House prefab modular building solutions"
+    },
+    {
+      "type": "image-text",
+      "title": "Advancing every housing project beside you",
+      "description": "From the first inquiry we seek your country or region, primary use, preferred product family, approximate scale, timing expectations, and finish or performance goals. Project managers translate that brief into clear modular direction, documentation milestones, and demarcation among manufacturing, freight, and field partners—so visibility into progress and outcomes stays high.",
+      "image": "/assets/gallery/gallery-1.jpg",
+      "imageAlt": "Modular building and project planning",
+      "reverse": true
+    },
+    {
+      "type": "stats",
+      "items": [
+        {
+          "value": "Four families",
+          "label": "Coverage across sectors",
+          "description": "Capsule, container, expandable, and flat pack combinations stretch from premium hospitality to large construction villages."
+        },
+        {
+          "value": "Global teamwork",
+          "label": "Cross-border project habits",
+          "description": "We are accustomed to varying voltage practice, foundation culture, and customs vocabulary—surfacing assumptions early to limit late-stage drift."
+        },
+        {
+          "value": "Dedicated service",
+          "label": "Project-team follow-up",
+          "description": "Forms, email, and messaging channels route to human specialists who support enterprise programs and engineered scopes—never anonymous consumer flows."
+        }
+      ]
+    },
+    {
+      "type": "process-steps",
+      "title": "Principles that guide our collaboration",
+      "steps": [
+        {
+          "title": "Transparent information",
+          "description": "Registration and operating facts track official records; we describe capability squarely—without inventing distant branch networks or overstating on-the-ground coverage."
+        },
+        {
+          "title": "Integrity in compliance claims",
+          "description": "Certificates or test references appear only when they genuinely apply to the products discussed—never as ornamental graphics."
+        },
+        {
+          "title": "Practical delivery posture",
+          "description": "We refrain from publishing unverified throughput figures or campus scale claims; schedules and milestones answer client questions on provable terms."
+        },
+        {
+          "title": "Engineering accountability",
+          "description": "Structural and MEP questions land with named engineering counterparts so technical dialogue stays serious and traceable."
+        }
+      ]
+    },
+    {
+      "type": "contact-block",
+      "title": "Start a conversation",
+      "description": "Share project briefs, visualization sets, or owner requirement summaries. EFH House responds through agreed commercial channels. This website omits embedded live chat so correspondence stays clear and auditable.",
+      "channels": [
+        {
+          "label": "Registered address",
+          "value": "CHANGE_ME Registered Address (update before publishing)"
+        },
+        {
+          "label": "WhatsApp",
+          "value": "+86 18355248224",
+          "href": "https://wa.me/8618355248224"
+        }
+      ],
+      "cta": {
+        "label": "Discuss Your Housing Project",
+        "href": "/contact"
+      }
+    }
+  ]
+}

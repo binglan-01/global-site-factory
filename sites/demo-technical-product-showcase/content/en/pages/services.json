@@ -1,0 +1,162 @@
+{
+  "slug": "/services",
+  "template": "standard",
+  "seo": {
+    "title": "Services and Capabilities",
+    "description": "Engineering, integration, and support services that surround the technical-product-showcase demo product lines."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "eyebrow": "Services",
+      "title": "Engineering and integration services for serious technical buyers.",
+      "description": "Pre-sales engineering, integration, factory acceptance, deployment, and warranty support — wrapped around the same modular product platform.",
+      "primaryCta": {
+        "label": "Talk to engineering",
+        "href": "/contact"
+      },
+      "image": "/assets/hero/services.jpg",
+      "imageAlt": "Engineering team reviewing schematics next to staged hardware"
+    },
+    {
+      "type": "feature-list",
+      "title": "Capability map",
+      "description": "Each capability is delivered against a written scope document with named owners and clear acceptance criteria.",
+      "items": [
+        {
+          "title": "Application engineering",
+          "description": "Translate process and load requirements into a hardware specification with traceable design choices.",
+          "icon": "01"
+        },
+        {
+          "title": "Mechanical integration",
+          "description": "Cabinet design, mounting hardware, thermal management, and on-site fitment review.",
+          "icon": "02"
+        },
+        {
+          "title": "Control software",
+          "description": "PLC and HMI logic against IEC 61131-3, with a clean interface to the customer's SCADA or MES layer.",
+          "icon": "03"
+        },
+        {
+          "title": "Machine vision",
+          "description": "Lighting, optics, camera, and inference module selection sized to the customer's defect taxonomy and cycle time.",
+          "icon": "04"
+        },
+        {
+          "title": "Energy and power conversion",
+          "description": "Battery sizing, inverter and transformer selection, and grid-tie commissioning under local interconnection rules.",
+          "icon": "05"
+        },
+        {
+          "title": "Factory acceptance",
+          "description": "Documented acceptance test runs at the factory with the customer team present before equipment ships.",
+          "icon": "06"
+        },
+        {
+          "title": "Site deployment",
+          "description": "Logistics, installation supervision, on-site commissioning, and operator training within a fixed deployment window.",
+          "icon": "07"
+        },
+        {
+          "title": "Diagnostics and warranty",
+          "description": "Remote diagnostics access for the warranty term, with a written escalation path and target response times.",
+          "icon": "08"
+        },
+        {
+          "title": "Spare parts program",
+          "description": "Recommended spares list shipped with every system, with restocking lead times and serial-level traceability.",
+          "icon": "09"
+        }
+      ]
+    },
+    {
+      "type": "image-text",
+      "title": "Smart equipment integration",
+      "description": "Sensorise existing production lines without ripping out working hardware. The smart equipment program adds telemetry, condition monitoring, and remote diagnostics on top of installed assets, with clean ingestion into the customer's existing data layer.",
+      "image": "/assets/hero/smart-equipment.jpg",
+      "imageAlt": "Engineer connecting a sensor module to an existing production line",
+      "cta": {
+        "label": "See an example",
+        "href": "/about"
+      }
+    },
+    {
+      "type": "image-text",
+      "title": "Energy systems engineering",
+      "description": "Battery storage and power conversion sized to the customer's tariff, load profile, and reliability targets. Each project ships with a written commissioning plan and a one-line diagram that interconnection authorities will recognise.",
+      "image": "/assets/hero/energy-bay.jpg",
+      "imageAlt": "Battery cabinets staged in a commercial equipment bay with conduit runs",
+      "reverse": true,
+      "cta": {
+        "label": "Discuss a deployment",
+        "href": "/contact"
+      }
+    },
+    {
+      "type": "process-steps",
+      "title": "Engagement steps",
+      "steps": [
+        {
+          "title": "Discovery",
+          "description": "Walk the line, log constraints, agree the success metric, write it down."
+        },
+        {
+          "title": "Specification",
+          "description": "Translate discovery output into a hardware and integration spec with acceptance criteria."
+        },
+        {
+          "title": "Build and integrate",
+          "description": "Manufacture, integrate firmware, and bench-test against the spec at the factory."
+        },
+        {
+          "title": "Deploy and operate",
+          "description": "Install, commission, train operators, and stay engaged through the warranty period."
+        }
+      ]
+    },
+    {
+      "type": "case-studies",
+      "title": "Service-led references",
+      "items": [
+        {
+          "title": "Vision retrofit on a high-mix electronics line",
+          "industry": "Smart equipment",
+          "location": "Mexico",
+          "description": "Added an inline vision module and rework triage logic to an existing SMT line, lifting first-pass yield by four points without taking the line down for more than one shift.",
+          "image": "/assets/cases/vision-retrofit.jpg"
+        },
+        {
+          "title": "Behind-the-meter storage for a regional distribution centre",
+          "industry": "Energy systems",
+          "location": "Spain",
+          "description": "Sized and commissioned a one-megawatt-hour storage system that smooths peak demand and provides four hours of cold-chain backup against grid events.",
+          "image": "/assets/cases/distribution-centre.jpg"
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Service FAQ",
+      "items": [
+        {
+          "question": "Do you take on integration work without selling hardware?",
+          "answer": "Yes, when the existing equipment is in good condition and accessible. Integration-only engagements still ship with a written scope and acceptance criteria."
+        },
+        {
+          "question": "What is the warranty term?",
+          "answer": "Twelve months from factory acceptance is standard. Extended terms are available on documented spare parts coverage and remote diagnostics access."
+        },
+        {
+          "question": "Can you work with our existing PLC vendor?",
+          "answer": "In most cases, yes. The control software practice routinely interoperates with mainstream PLC and HMI vendors; less common stacks are reviewed case by case."
+        }
+      ]
+    },
+    {
+      "type": "contact-form",
+      "title": "Ask about a service",
+      "formId": "demo-tps-services-lead"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "/contact",
+  "template": "standard",
+  "seo": {
+    "title": "Contact Beta SaaS",
+    "description": "Contact Beta SaaS to discuss workflow automation, product analytics, and SaaS implementation needs."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "eyebrow": "Contact",
+      "title": "Talk with us about your operating workflow",
+      "description": "Tell us where your team is losing time, and we will suggest a practical path for automation, visibility, and rollout.",
+      "image": "/assets/placeholder.jpg",
+      "imageAlt": "Beta SaaS implementation lead on a video call walking through a workflow plan"
+    },
+    {
+      "type": "contact-block",
+      "title": "Direct lines into the team",
+      "description": "Use these channels for fast scoping conversations or to follow up on an active implementation.",
+      "channels": [
+        {
+          "label": "Sales",
+          "value": "hello@beta-saas.com",
+          "href": "mailto:hello@beta-saas.com"
+        },
+        {
+          "label": "Implementation desk",
+          "value": "+1 415 555 0142",
+          "href": "tel:+14155550142"
+        },
+        {
+          "label": "Status & uptime",
+          "value": "status.beta-saas.com",
+          "href": "https://status.beta-saas.com"
+        }
+      ],
+      "cta": {
+        "label": "Send a product inquiry",
+        "href": "#beta-contact-lead"
+      }
+    },
+    {
+      "type": "contact-form",
+      "title": "Send a product inquiry",
+      "formId": "beta-contact-lead"
+    }
+  ]
+}

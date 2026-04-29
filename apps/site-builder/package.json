@@ -1,0 +1,27 @@
+{
+  "name": "@factory/site-builder",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "astro build",
+    "typecheck": "astro check",
+    "lint": "astro check"
+  },
+  "dependencies": {
+    "@astrojs/react": "^4.4.2",
+    "@factory/seo": "workspace:*",
+    "@factory/theme-enterprise": "workspace:*",
+    "@factory/theme-technical-product-showcase": "workspace:*",
+    "@factory/validators": "workspace:*",
+    "astro": "^5.16.6",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.8",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "typescript": "^6.0.3"
+  }
+}

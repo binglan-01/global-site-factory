@@ -1,0 +1,33 @@
+{
+  "name": "global-site-factory",
+  "version": "1.0.0",
+  "description": "Multi-entity company website generation platform.",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@10.24.0",
+  "scripts": {
+    "create-site": "tsx scripts/create-site.ts",
+    "validate-site": "tsx scripts/validate-site.ts",
+    "build-site": "tsx scripts/build-site.ts",
+    "build-all-sites": "tsx scripts/build-all-sites.ts",
+    "build": "tsx scripts/build-all-sites.ts",
+    "clean": "tsx scripts/clean.ts",
+    "typecheck": "tsc -p . --noEmit && turbo run typecheck",
+    "lint": "turbo run lint"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "@types/react": "^19.2.14",
+    "execa": "^9.6.1",
+    "tsx": "^4.21.0",
+    "turbo": "^2.9.6",
+    "typescript": "^6.0.3",
+    "zod": "^4.3.6"
+  },
+  "dependencies": {
+    "react": "^19.2.5"
+  }
+}

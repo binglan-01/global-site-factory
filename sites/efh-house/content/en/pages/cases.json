@@ -1,0 +1,85 @@
+{
+  "slug": "/cases",
+  "template": "standard",
+  "seo": {
+    "title": "Application Reference — Camps, Sites, Offices & Housing | EFH House",
+    "description": "Illustrative modular housing scenarios—resort camps, site yards, mobile offices, and interim housing—to help international B2B teams build selection references."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "eyebrow": "Application reference",
+      "title": "Inspiring patterns for your next deployment",
+      "description": "This page highlights modular arrangements EFH House discusses frequently in export markets—hospitality reception, site logistics housing, field offices, and transitional lodging. The narratives are generic application sketches meant to help developers, general contractors, and camp operators visualize possibilities. They are not endorsements of named clients or proprietary case studies.",
+      "primaryCta": {
+        "label": "Request Project Information",
+        "href": "/contact"
+      },
+      "image": "/assets/gallery/gallery-1.jpg",
+      "imageAlt": "EFH House modular layout reference"
+    },
+    {
+      "type": "case-studies",
+      "title": "Generic application examples",
+      "items": [
+        {
+          "title": "Resort camp application",
+          "location": "Hospitality & coastal resort",
+          "industry": "Camp & hotel development",
+          "description": "Guest modules arrayed along a view corridor with dining, leisure, and support services supporting a cohesive brand story. Useful for planning discussions—final design always follows project-specific study.",
+          "image": "/assets/solutions/resort-cabin.jpg"
+        },
+        {
+          "title": "Site village application",
+          "location": "Major civil & infrastructure sites",
+          "industry": "Engineering & construction",
+          "description": "Worker lodging and ancillaries following terrain and haul routes, sometimes stacking vertically to protect land budget during manpower peaks. Reference pattern for early logistics planning.",
+          "image": "/assets/solutions/site-accommodation.jpg"
+        },
+        {
+          "title": "Mobile office application",
+          "location": "Staging yards or short-term work faces",
+          "industry": "Construction & logistics coordination",
+          "description": "Standard or expandable modules hosting planning, dispatch, and safety forums next to personnel or material movement. Reference pattern for site command concepts.",
+          "image": "/assets/solutions/mobile-office.jpg"
+        },
+        {
+          "title": "Temporary housing application",
+          "location": "Transitional or rotational housing",
+          "industry": "Project support",
+          "description": "Flat pack or panelized kits fabricated off-site and installed quickly for staging camps or swing-space housing. Reference pattern for phased mobilization.",
+          "image": "/assets/products/flat-pack-container.jpg"
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "title": "Product & scene highlights",
+      "images": [
+        "/assets/gallery/gallery-1.jpg",
+        "/assets/hero/main-hero.jpg",
+        "/assets/hero/hero-1.jpg"
+      ]
+    },
+    {
+      "type": "contact-block",
+      "title": "From inspiration to a concrete plan",
+      "description": "When you have defined geography, product scale, and target timing, reach the project team through the channels below. We will line up the right technical materials and support, and—after mutually confirming scope—advance the next project steps together.",
+      "channels": [
+        {
+          "label": "Registered address",
+          "value": "CHANGE_ME Registered Address (update before publishing)"
+        },
+        {
+          "label": "WhatsApp",
+          "value": "+86 18355248224",
+          "href": "https://wa.me/8618355248224"
+        }
+      ],
+      "cta": {
+        "label": "Discuss Your Housing Project",
+        "href": "/contact"
+      }
+    }
+  ]
+}

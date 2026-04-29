@@ -1,0 +1,45 @@
+---
+import {
+  Gallery,
+  Hero,
+  type GallerySection,
+  type HeroSection,
+} from "@factory/theme-technical-product-showcase";
+import type { Section, SiteConfig } from "@factory/validators";
+import { SectionRenderer } from "./SectionRenderer";
+
+type Props = {
+  section: Section;
+  siteConfig: SiteConfig;
+  siteSlug: string;
+  pageUrl: string;
+};
+
+const { section, siteConfig, siteSlug, pageUrl } = Astro.props;
+
+const isSplitCarouselHero =
+  siteConfig.theme === "technical-product-showcase" &&
+  section.type === "hero" &&
+  section.variant === "split-carousel" &&
+  Boolean(section.carousel?.images?.length);
+
+const splitHero: HeroSection | null = isSplitCarouselHero ? (section as HeroSection) : null;
+
+const isHydratedTpsGallery =
+  siteConfig.theme === "technical-product-showcase" &&
+  section.type === "gallery" &&
+  section.lightbox === true &&
+  Boolean(section.images?.length);
+
+const hydratedGallery: GallerySection | null = isHydratedTpsGallery ? (section as GallerySection) : null;
+---
+
+{
+  splitHero ? (
+    <Hero client:visible section={splitHero} />
+  ) : hydratedGallery ? (
+    <Gallery client:visible section={hydratedGallery} />
+  ) : (
+    <SectionRenderer section={section} siteConfig={siteConfig} siteSlug={siteSlug} pageUrl={pageUrl} />
+  )
+}

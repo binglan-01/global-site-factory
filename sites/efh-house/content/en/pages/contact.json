@@ -1,0 +1,65 @@
+{
+  "slug": "/contact",
+  "template": "standard",
+  "seo": {
+    "title": "Contact — Submit Your Project Requirements | EFH House",
+    "description": "Reach the EFH House project and market team. Share country or region, use case, product category, estimated quantity, desired timeline, and customization needs so we can align prefab modular solutions with your program."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "eyebrow": "Contact EFH House",
+      "title": "We are ready to hear your project plan",
+      "description": "This is a test contact page. Please do not use the displayed contact information for production inquiries. Whether you are framing the concept, building budgets, or preparing tender packages, EFH House welcomes the conversation. Please note project country or region, principal use, desired line (space capsule houses, container houses, double-wing expandable containers, or flat pack containers), estimated quantity, expected timing, and any customization or attachment requirements. Formal project proposals depend on location, purpose, quantity, configuration, logistics, and on-site support—we respond through human-led review with structured next steps.",
+      "image": "/assets/contact/contact-image.jpg",
+      "imageAlt": "EFH House client and project discussion"
+    },
+    {
+      "type": "contact-block",
+      "title": "How to reach us",
+      "description": "This is a test contact page. Please do not use the displayed contact information for production inquiries. EFH House Test Site — placeholders only. Use the channels below for layout testing; email and phone on the live page come from site configuration and are not for real business use.",
+      "channels": [
+        {
+          "label": "Registered address",
+          "value": "CHANGE_ME Registered Address (update before publishing)"
+        },
+        {
+          "label": "WhatsApp",
+          "value": "+000000000000",
+          "href": "https://wa.me/000000000000"
+        }
+      ]
+    },
+    {
+      "type": "image-text",
+      "title": "Helpful details for your first message",
+      "description": "Beyond the essentials above, add climate and terrain cues, foundation readiness, utility availability, peak occupancy, phased mobilization ideas, and any drawings or permits already reviewed locally. Richer context helps market and engineering colleagues align faster. Detailed schedules and milestones are confirmed in writing once both sides share the same scope snapshot.",
+      "image": "/assets/contact/contact-image.jpg",
+      "imageAlt": "Modular project information checklist",
+      "reverse": false
+    },
+    {
+      "type": "contact-form",
+      "title": "Contact Our Project Team",
+      "formId": "efh-house-contact-inquiry"
+    },
+    {
+      "type": "faq",
+      "title": "Common questions",
+      "items": [
+        {
+          "question": "Do you offer embedded website chat?",
+          "answer": "To preserve a complete record of each request, this site does not host live chat widgets. Submissions route securely to EFH House operators for personal follow-up."
+        },
+        {
+          "question": "Should we disclose overall project scale?",
+          "answer": "If you can share approximate program scale privately, we can prioritize product depth and documentation effort. The public site carries no open fields for financial figures."
+        },
+        {
+          "question": "Can we book a call or video conference?",
+          "answer": "Yes—include your time zone and availability windows in the form; after a short scope review we will propose meeting times."
+        }
+      ]
+    }
+  ]
+}

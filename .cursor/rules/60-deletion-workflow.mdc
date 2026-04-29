@@ -1,0 +1,30 @@
+---
+description: Workflow for deleting a site or a theme from global-site-factory
+alwaysApply: true
+---
+
+# Deletion Workflow
+
+Deletions are destructive and easy to forget steps for. Follow these checklists exactly.
+
+## Site deletion
+
+1. Delete the site source: `sites/<siteSlug>/`.
+2. Delete the build output if it exists: `dist/sites/<siteSlug>/`.
+3. Remove or archive the row in `docs/registries/site-registry.md` (mark `status: archived` instead of deleting if business history matters).
+4. Delete `docs/sites/<siteSlug>.md` if such a file exists, or mark it archived.
+5. If a Cloudflare Pages Project exists for this site, **remind the user** to delete or disconnect that project in the Cloudflare dashboard. Cursor MUST NOT silently leave it running.
+6. If a custom domain was attached, **remind the user** to remove the custom domain binding and any DNS records pointing at it.
+7. Run `pnpm build-all-sites` to confirm the remaining sites still build.
+
+## Theme deletion
+
+1. Search every `sites/*/site.config.ts` for the theme ID. **DO NOT delete a theme that is still in use.**
+2. Migrate every site that uses the theme to another active theme first; commit and verify those migrations independently.
+3. Delete `packages/theme-<theme-id>/`.
+4. Remove the theme ID from the `theme` enum in `packages/validators/src/site-config.schema.ts`.
+5. Remove the theme module entry and root-class entry from the `apps/site-builder` theme registry.
+6. Remove the theme's CSS import / class handling in `apps/site-builder/src/layouts/SiteLayout.astro` (or the equivalent loader).
+7. Delete `docs/themes/<theme-id>.md`, or mark it archived.
+8. Remove or archive the row in `docs/registries/theme-registry.md`.
+9. Run `pnpm build-all-sites` to confirm every remaining site still builds with no missing-theme errors.

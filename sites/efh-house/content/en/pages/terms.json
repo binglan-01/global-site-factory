@@ -1,0 +1,49 @@
+{
+  "slug": "/terms",
+  "template": "legal",
+  "seo": {
+    "title": "Terms of Use — EFH House",
+    "description": "Website terms of use (placeholder) covering acceptable use, IP notice, and liability framing. Have counsel localize before publication."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "eyebrow": "Legal",
+      "title": "Website Terms of Use (placeholder)",
+      "description": "These terms are placeholders for test deployment. Production terms must be reviewed before official launch. Welcome to EFH House online. Using this site means you accept these site-level rules. They do not replace a formal supply or construction contract for any specific product or project. Any CHANGE_ME placeholder elsewhere signals information you should confirm with us before treating it as final.",
+      "image": "/assets/gallery/gallery-1.jpg",
+      "imageAlt": "Legal terms and compliance"
+    },
+    {
+      "type": "feature-list",
+      "title": "Summary of expectations",
+      "description": "This summary aids quick reading—definitive rights and obligations belong in counsel-reviewed text.",
+      "items": [
+        {
+          "title": "Lawful, respectful use",
+          "description": "Do not disrupt the site or related infrastructure, scrape unpublished data at scale, or upload malicious content through forms."
+        },
+        {
+          "title": "About the content",
+          "description": "Imagery and descriptions illustrate modular strategies; confirmed technical parameters and delivery scope appear only in authorized project documents."
+        },
+        {
+          "title": "Intellectual property",
+          "description": "Unless otherwise noted, copy, layout, photography, and branding on this site belong to EFH House or its licensors and may not be copied for commercial use without permission."
+        },
+        {
+          "title": "External links",
+          "description": "Links to third-party sites are provided as a convenience; EFH House does not control their policies or content."
+        },
+        {
+          "title": "Disclaimer",
+          "description": "We aim for reliable uptime but cannot guarantee uninterrupted access. Liability for indirect damages is limited to the fullest extent permitted by applicable law."
+        },
+        {
+          "title": "Disputes",
+          "description": "Disputes arising from specific supply or construction engagements follow the agreements you execute with EFH House—not these placeholder terms alone."
+        }
+      ]
+    }
+  ]
+}

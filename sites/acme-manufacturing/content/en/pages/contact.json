@@ -1,0 +1,49 @@
+{
+  "slug": "/contact",
+  "template": "standard",
+  "seo": {
+    "title": "Contact Acme Manufacturing",
+    "description": "Contact Acme Manufacturing to discuss production requirements, timelines, and industrial manufacturing support."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "eyebrow": "Contact",
+      "title": "Tell us what you need to manufacture",
+      "description": "Share your requirements and our team will review the scope, timeline, and next practical steps.",
+      "image": "/assets/placeholder.jpg",
+      "imageAlt": "Acme Manufacturing operations office with a project planning board"
+    },
+    {
+      "type": "contact-block",
+      "title": "Reach the operations team directly",
+      "description": "For active production discussions, the fastest channels are direct phone or email with our operations desk.",
+      "channels": [
+        {
+          "label": "Operations desk",
+          "value": "+1 312 555 0198",
+          "href": "tel:+13125550198"
+        },
+        {
+          "label": "Production inquiries",
+          "value": "info@acme-manufacturing.com",
+          "href": "mailto:info@acme-manufacturing.com"
+        },
+        {
+          "label": "WhatsApp",
+          "value": "+1 312 555 0198",
+          "href": "https://wa.me/13125550198"
+        }
+      ],
+      "cta": {
+        "label": "Request a production quote",
+        "href": "#acme-contact-lead"
+      }
+    },
+    {
+      "type": "contact-form",
+      "title": "Send a project inquiry",
+      "formId": "acme-contact-lead"
+    }
+  ]
+}

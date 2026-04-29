@@ -1,0 +1,78 @@
+{
+  "slug": "/products/space-capsule-houses",
+  "template": "standard",
+  "seo": {
+    "title": "Space Capsule Houses — Hospitality, Camps & Premium Modular Lodging | EFH House",
+    "description": "EFH House space capsule houses for resort parks, scenic lodging, mixed-use destinations, backyard studios, and light commercial showcase—modern aesthetics, strong scene presence, and flexible layouts for international B2B clients."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "eyebrow": "Signature line",
+      "title": "Space Capsule Houses",
+      "description": "Space capsule houses fuse sculptural design with modular delivery—ideal for resort and RV parks, scenic resort hotels, urban micro-getaways, backyard studios, and brand pop-up environments. Distinctive façades, generous daylight, and adaptable master planning help you launch flagship experiences with strong guest recall. From pilot units to district-scale rollouts, EFH House project teams work beside camp developers and hospitality investors on finishes, planning intent, and building services strategy from day one.",
+      "primaryCta": {
+        "label": "Request Project Information",
+        "href": "/contact"
+      },
+      "image": "/assets/hero/main-hero.jpg",
+      "imageAlt": "EFH House space capsule house applications"
+    },
+    {
+      "type": "gallery",
+      "title": "Products & applications",
+      "layout": "product-grid",
+      "columns": 4,
+      "imageAspect": "landscape",
+      "assetDir": "/assets/products/space-capsule-houses",
+      "lightbox": true,
+      "zoom": true
+    },
+    {
+      "type": "feature-list",
+      "title": "Value proposition & ideal partners",
+      "description": "Capsule lines marry brand presence with guest comfort—differentiators for aspirational hospitality and lifestyle programs.",
+      "items": [
+        {
+          "title": "Flagship resort & camp destinations",
+          "description": "Coastal, mountain, or lakefront sites where modules hug a view corridor and deliver immersive stays."
+        },
+        {
+          "title": "Boutique lodging & micro-resort upgrades",
+          "description": "Compact, high-finish units that help reposition suburban or scenic guest inventory with premium appeal."
+        },
+        {
+          "title": "Backyard studios & showcase environments",
+          "description": "Creative offices, brand showcases, or VIP lounges demanding both image and privacy."
+        },
+        {
+          "title": "Developers & hospitality investors",
+          "description": "We understand feasibility, delivery, and operations together—shaping architectural language that matches the business model."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "FAQ",
+      "items": [
+        {
+          "question": "Can I browse a universal project matrix on this page?",
+          "answer": "Project proposals depend on location, quantity, interior scope, logistics, and on-site support. EFH House provides configuration guidance and briefing materials through dedicated dialogue so recommendations stay tied to your site."
+        },
+        {
+          "question": "What should the first note include?",
+          "answer": "Target region, peak occupancy, utility posture, desired interior level, and your planning horizon help us return a tailored opening response."
+        },
+        {
+          "question": "How are schedules established?",
+          "answer": "Meaningful timing follows clarified manufacturing inputs, regulatory pathways, and freight assumptions. We are glad to outline milestone thinking early; execution rests on mutually agreed written plans."
+        }
+      ]
+    },
+    {
+      "type": "contact-form",
+      "title": "Contact Our Project Team — Space Capsule Houses",
+      "formId": "efh-house-inquiry-space-capsule-houses"
+    }
+  ]
+}

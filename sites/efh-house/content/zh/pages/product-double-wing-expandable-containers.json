@@ -1,0 +1,78 @@
+{
+  "slug": "/products/double-wing-expandable-containers",
+  "template": "standard",
+  "seo": {
+    "title": "双翼拓展箱 — 宽敞空间 · 灵活运输｜EFH House",
+    "description": "双翼拓展箱兼顾运输便利与现场使用面积，适用于现场办公、营地住宿、度假接待与临时住房等海外 B2B 项目。"
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "eyebrow": "高灵活空间方案",
+      "title": "双翼拓展箱",
+      "description": "双翼拓展箱在运输阶段保持紧凑体量，到场后可向两侧展开，显著放大室内可用面积，非常适合道路或桥梁限宽明确、同时又需要宽敞办公或住宿环境的项目。典型场景包括现场指挥部、营地住宿翼、度假体验单元以及过渡期住房。EFH House 将结合道路条件、场地平整度与使用人数，与您共同细化平面布置与机电配置，确保方案兼顾展示效果与运营效率。",
+      "primaryCta": {
+        "label": "获取项目资料",
+        "href": "/zh/contact"
+      },
+      "image": "/assets/solutions/mobile-office.jpg",
+      "imageAlt": "EFH House 双翼拓展箱应用场景"
+    },
+    {
+      "type": "gallery",
+      "title": "产品与应用展示",
+      "layout": "product-grid",
+      "columns": 4,
+      "imageAspect": "landscape",
+      "assetDir": "/assets/products/double-wing-expandable-containers",
+      "lightbox": true,
+      "zoom": true
+    },
+    {
+      "type": "feature-list",
+      "title": "核心卖点与服务对象",
+      "description": "拓展结构让“路上省空间、到场要宽度”成为现实，满足复杂项目环境。",
+      "items": [
+        {
+          "title": "现场办公与调度指挥",
+          "description": "展开后可布置会议、展示与协同工位，服务施工高峰期的高频沟通需求。"
+        },
+        {
+          "title": "营地住宿与宾客接待",
+          "description": "提供更宽敞的床铺与起居分区，提升长周期驻扎或度假客人的舒适度。"
+        },
+        {
+          "title": "度假体验与品牌活动",
+          "description": "宽阔室内净深支持定制化软装与互动体验，为文旅客户营造记忆点。"
+        },
+        {
+          "title": "国际承包商与营地运营商",
+          "description": "我们理解跨国调遣与多工种协作的复杂度，协助制定展开、回迁与重复利用策略。"
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "常见问题",
+      "items": [
+        {
+          "question": "是否会公开分档项目资料清单？",
+          "answer": "我们按单一项目整理资料。目的地、数量、内装取向、运输方式与现场协助范围都会影响到最终呈现，因此需个案沟通。"
+        },
+        {
+          "question": "项目范围通常如何界定？",
+          "answer": "优先明确国家或地区、数量级、技术规格带、运输路径及现场支持方式，这些要素共同决定后续工作步骤。"
+        },
+        {
+          "question": "离网或特殊机电需求如何处理？",
+          "answer": "需在提供负荷与运行策略后进行工程评估。我们坚持先数据、后结论，以专业的技术沟通服务客户。"
+        }
+      ]
+    },
+    {
+      "type": "contact-form",
+      "title": "联系项目团队 — 双翼拓展箱",
+      "formId": "efh-house-inquiry-double-wing-expandable-containers"
+    }
+  ]
+}

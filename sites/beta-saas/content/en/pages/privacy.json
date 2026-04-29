@@ -1,0 +1,16 @@
+{
+  "slug": "/privacy",
+  "template": "legal",
+  "seo": {
+    "title": "Privacy Policy",
+    "description": "Privacy policy placeholder for Beta SaaS, covering website inquiries and business contact information."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "eyebrow": "Privacy",
+      "title": "Privacy Policy",
+      "description": "This placeholder privacy policy describes how Beta SaaS may handle business inquiry details submitted through this website."
+    }
+  ]
+}

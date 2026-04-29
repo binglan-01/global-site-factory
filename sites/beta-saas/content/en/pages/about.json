@@ -1,0 +1,63 @@
+{
+  "slug": "/about",
+  "template": "standard",
+  "seo": {
+    "title": "About Beta SaaS",
+    "description": "Learn how Beta SaaS builds practical software for technology companies that need clearer workflows and better operating visibility."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "eyebrow": "About the company",
+      "title": "Software designed for teams that outgrow spreadsheets",
+      "description": "Beta SaaS was created for companies that need structure around recurring work, customer signals, and decision-ready reporting.",
+      "image": "/assets/placeholder.jpg",
+      "imageAlt": "Beta SaaS team reviewing a workflow board on a wall display"
+    },
+    {
+      "type": "services-grid",
+      "title": "What guides our product",
+      "items": [
+        {
+          "title": "Operational clarity",
+          "description": "We focus on making ownership, status, and next actions easy to understand across teams."
+        },
+        {
+          "title": "Composable workflows",
+          "description": "Teams can adapt processes without rebuilding their entire software stack."
+        },
+        {
+          "title": "Useful analytics",
+          "description": "Reports are shaped around business questions, not vanity metrics or disconnected charts."
+        }
+      ]
+    },
+    {
+      "type": "case-studies",
+      "title": "How customer teams use Beta SaaS",
+      "items": [
+        {
+          "title": "Onboarding workflow consolidation",
+          "industry": "B2B SaaS",
+          "location": "San Francisco, CA",
+          "description": "Replaced four scattered onboarding spreadsheets with a single workflow that exposes status to AE, CSM, and support owners.",
+          "image": "/assets/placeholder.jpg"
+        },
+        {
+          "title": "Renewal pipeline visibility",
+          "industry": "DevTools",
+          "location": "Austin, TX",
+          "description": "Centralized renewal signals from product analytics and support tickets so revenue ops could intervene earlier and more selectively.",
+          "image": "/assets/placeholder.jpg"
+        },
+        {
+          "title": "Support ops automation",
+          "industry": "Fintech",
+          "location": "New York, NY",
+          "description": "Automated routing for high-priority tickets and exposed real-time queue health to support leadership without custom dashboards.",
+          "image": "/assets/placeholder.jpg"
+        }
+      ]
+    }
+  ]
+}

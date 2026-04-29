@@ -1,0 +1,72 @@
+{
+  "slug": "/services",
+  "template": "standard",
+  "seo": {
+    "title": "Manufacturing Services",
+    "description": "Explore Acme Manufacturing services for production, assembly, inspection, packaging, and supply chain coordination."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "eyebrow": "Services",
+      "title": "Production services for industrial operations",
+      "description": "From component runs to packaged assemblies, Acme Manufacturing supports teams that need dependable manufacturing capacity.",
+      "primaryCta": {
+        "label": "Discuss your project",
+        "href": "/contact"
+      },
+      "image": "/assets/placeholder.jpg",
+      "imageAlt": "Acme Manufacturing technicians inspecting an industrial assembly line"
+    },
+    {
+      "type": "services-grid",
+      "title": "What we provide",
+      "items": [
+        {
+          "title": "Contract manufacturing",
+          "description": "Flexible production support for companies that need reliable output without expanding internal capacity."
+        },
+        {
+          "title": "Assembly operations",
+          "description": "Manual and semi-automated assembly workflows for industrial products and subassemblies."
+        },
+        {
+          "title": "Inspection and packaging",
+          "description": "Practical inspection, labeling, packaging, and shipment preparation for finished goods."
+        }
+      ]
+    },
+    {
+      "type": "feature-list",
+      "title": "What you get when you partner with us",
+      "description": "Operational discipline that translates directly into more predictable production outcomes.",
+      "items": [
+        {
+          "icon": "🛠",
+          "title": "Production planning support",
+          "description": "We align scope, capacity, and timeline before work begins so the schedule reflects reality."
+        },
+        {
+          "icon": "📋",
+          "title": "Documented quality checks",
+          "description": "Inspection points are written down, repeatable, and traceable on every batch we ship."
+        },
+        {
+          "icon": "📦",
+          "title": "Consolidated logistics",
+          "description": "Inspection, labeling, packaging, and dispatch run as a single coordinated workflow."
+        },
+        {
+          "icon": "📞",
+          "title": "Direct production contact",
+          "description": "Clients always have a named operations contact, not a shared support inbox."
+        }
+      ]
+    },
+    {
+      "type": "contact-form",
+      "title": "Start a services conversation",
+      "formId": "acme-services-lead"
+    }
+  ]
+}

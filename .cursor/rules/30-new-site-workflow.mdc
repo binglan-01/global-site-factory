@@ -1,0 +1,53 @@
+---
+description: Workflow for adding a new company site to global-site-factory
+alwaysApply: true
+---
+
+# New Site Workflow
+
+## Required first step
+
+Always start a new company site with:
+
+```powershell
+pnpm create-site <siteSlug>
+```
+
+This is the only sanctioned way to scaffold a new site. Do NOT copy-paste an existing `sites/<other-slug>/` folder.
+
+## Slug rules
+
+- Lowercase ASCII letters, digits, and hyphens only.
+- Pattern: `^[a-z0-9]+(?:-[a-z0-9]+)*$` (e.g. `acme-manufacturing`, `gamma-energy`).
+- Technical `siteSlug` MUST NEVER contain Chinese characters. Chinese names belong only in docs and registries.
+- Must equal the directory name `sites/<siteSlug>/` and the `slug` field in `site.config.ts`.
+
+## Site registry
+
+- Every new site MUST be registered in `docs/registries/site-registry.md` before or during creation.
+- Site registry row MUST include: `siteSlug`, Chinese display name, English display name, legal entity, industry, theme, domain, Cloudflare Pages Project name, status, purpose.
+
+## What you edit per site
+
+- `sites/<siteSlug>/site.config.ts` — company info, domain, navigation, theme, SEO, legal, deploy.
+- `sites/<siteSlug>/content/<locale>/pages/*.json` — page sections (hero, services-grid, etc.).
+- `sites/<siteSlug>/assets/` — site-specific images, logos, photos.
+
+## Asset path rules
+
+- Site-specific assets MUST live under `sites/<siteSlug>/assets/`.
+- Page JSON references assets using **public-style paths only**: `"/assets/<filename>"`. The build copies `sites/<siteSlug>/assets/` into the output's `/assets/` so the same path works at runtime.
+- Page JSON MUST NEVER reference `sites/<siteSlug>/assets/...`, repo-relative paths, or local absolute paths.
+
+## Required validation & build per change
+
+```powershell
+pnpm validate-site <siteSlug>   # Zod validates site.config.ts and all page JSON
+pnpm build-site <siteSlug>      # produces dist/sites/<siteSlug>/
+```
+
+Run validate before build. Run both after every meaningful edit to a site.
+
+## Hard line
+
+Creating or modifying a company site MUST NOT modify `apps/`, `packages/`, `scripts/`, or `functions/` unless the user explicitly asks for a framework change. If a site needs something the framework cannot express, escalate it as a framework change FIRST (see `70-framework-change-workflow.mdc`) — extend the schema or theme generically, then come back and use it from the site.

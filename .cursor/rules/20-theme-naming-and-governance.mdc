@@ -1,0 +1,37 @@
+---
+description: Theme package naming and governance for global-site-factory
+alwaysApply: true
+---
+
+# Theme Naming & Governance
+
+## Required name layers (must all match)
+
+| Layer | Example |
+| --- | --- |
+| Theme package directory | `packages/theme-immersive-showcase` |
+| Theme ID (in `site.config.ts`) | `immersive-showcase` |
+| CSS root class on `<body>` | `.theme-immersive-showcase` |
+| CSS class prefix | `.ims-*` (alias of `immersive-showcase`, must be documented inline) |
+| Theme documentation | `docs/themes/immersive-showcase.md` |
+
+## Theme ID rules
+
+- Lowercase kebab-case ASCII only. **Technical theme IDs MUST NEVER contain Chinese characters.** Chinese names belong only in docs and registries.
+- Use industry-neutral or visual-pattern names: `immersive-showcase`, `industrial-grid`, `luxury-residence`, `catalog-trade`, `technical-b2b`, `minimal-corporate`.
+- Forbidden: `theme1`, `new-theme`, `beautiful-theme`, version-numbered or self-praising names.
+- The theme ID and the `packages/theme-<id>` directory name must be byte-for-byte identical.
+
+## Governance
+
+- A theme package owns ONLY its own `.<prefix>-*` CSS classes and scopes every rule under `.theme-<theme-id>` so multiple themes can coexist without collisions.
+- All theme packages MUST export the same section component contract required by `apps/site-builder/src/components/SectionRenderer.tsx`. The set of exported component names and their prop shapes is the cross-theme contract.
+- If a theme does not visually support a given section type, it MUST still ship a safe fallback component (e.g. minimal stacked layout) for that section instead of breaking the build.
+- A new theme MAY import `@factory/ui` and shared types/utilities from `@factory/validators`. A new theme MUST NOT import from any other theme package; themes are siblings, not derivatives.
+- Every new theme MUST ship with `docs/themes/<theme-id>.md`.
+- Every new theme MUST be registered in BOTH places:
+  - `apps/site-builder` theme registry source code, and
+  - `docs/registries/theme-registry.md`.
+- A new theme MUST also be added to the `theme` enum in `packages/validators/src/site-config.schema.ts`.
+- Themes MUST NOT hardcode any company name, navigation list, image path, email, phone number, or copy text. All such data flows from `site.config.ts` props or page section JSON.
+- Per-site visual differentiation goes through `site.config.ts` data only (e.g. `themeTokens`, `brand.logo`). NEVER write per-site CSS inside a theme package.

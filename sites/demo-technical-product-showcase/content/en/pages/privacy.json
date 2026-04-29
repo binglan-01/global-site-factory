@@ -1,0 +1,43 @@
+{
+  "slug": "/privacy",
+  "template": "legal",
+  "seo": {
+    "title": "Privacy",
+    "description": "Privacy notice placeholder for the technical-product-showcase demo site. Replace with reviewed legal copy before launch."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "eyebrow": "Privacy",
+      "title": "Privacy Notice",
+      "description": "This page is a structural placeholder. It exercises how the technical-product-showcase theme renders a legal page without a hero image."
+    },
+    {
+      "type": "image-text",
+      "title": "What this notice covers",
+      "description": "A real privacy notice would describe what personal data is collected through the contact form and the /api/lead endpoint, the lawful basis for processing, retention windows, transfers, and how a data subject can exercise rights such as access, rectification, and erasure. Replace this paragraph with reviewed legal copy that matches the operator's actual practice."
+    },
+    {
+      "type": "faq",
+      "title": "Common privacy questions",
+      "items": [
+        {
+          "question": "What data does the contact form collect?",
+          "answer": "Name, email, optional phone, and the message body submitted by the visitor. Hidden fields capture the originating site slug, form ID, and page URL for routing only."
+        },
+        {
+          "question": "Where is the data processed?",
+          "answer": "Demo placeholder. A real operator would specify processing regions, sub-processors, and any cross-border transfer mechanism here."
+        },
+        {
+          "question": "How long is data retained?",
+          "answer": "Demo placeholder. A real operator would state retention windows and the deletion path for each category of data."
+        },
+        {
+          "question": "How do I contact the data controller?",
+          "answer": "Reach the data controller listed in the footer at the privacy mailbox; the address flows in from site.config.ts."
+        }
+      ]
+    }
+  ]
+}

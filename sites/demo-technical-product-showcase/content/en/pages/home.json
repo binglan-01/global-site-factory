@@ -1,0 +1,190 @@
+{
+  "slug": "/",
+  "template": "standard",
+  "seo": {
+    "title": "Smart Equipment, Energy Systems, and Modular Hardware Showcase",
+    "description": "Demo site exercising the technical-product-showcase theme. Walks through smart equipment, industrial automation, energy storage, and modular product systems for B2B audiences."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "eyebrow": "Technical product showcase",
+      "title": "Engineered hardware, integrated systems, and modular platforms.",
+      "description": "A demonstration of how the technical-product-showcase theme renders B2B equipment, industrial technology, and energy systems for serious technical buyers.",
+      "primaryCta": {
+        "label": "Request product brief",
+        "href": "/contact"
+      },
+      "image": "/assets/hero/control-room.jpg",
+      "imageAlt": "Operator console overlooking an integrated production line with status panels"
+    },
+    {
+      "type": "services-grid",
+      "title": "Core product categories",
+      "items": [
+        {
+          "title": "Smart equipment",
+          "description": "Sensorised, network-aware machines designed for repeatable performance on the production floor and remote diagnostics."
+        },
+        {
+          "title": "Industrial technology",
+          "description": "Automation cells, machine vision modules, and control cabinets that integrate cleanly with existing PLC and SCADA layers."
+        },
+        {
+          "title": "Energy systems",
+          "description": "Battery storage, power conversion, and grid-tied inverters specified for commercial and light industrial deployments."
+        }
+      ]
+    },
+    {
+      "type": "image-text",
+      "title": "Modular hardware platform",
+      "description": "Standard mechanical interfaces, common power and data connectors, and a shared firmware base let teams reconfigure equipment lines in days, not quarters. Modules ship pre-tested and traceable from the factory.",
+      "image": "/assets/hero/modular-platform.jpg",
+      "imageAlt": "Three modular hardware units staged on an assembly bench with cabling exposed",
+      "cta": {
+        "label": "Explore the platform",
+        "href": "/services"
+      }
+    },
+    {
+      "type": "stats",
+      "items": [
+        {
+          "value": "18+",
+          "label": "Years in technical manufacturing",
+          "description": "Two decades of producing repeatable hardware for industrial, energy, and B2B technology customers."
+        },
+        {
+          "value": "32",
+          "label": "Export destinations",
+          "description": "Equipment shipped to certified integrators across North America, EMEA, Southeast Asia, and Oceania."
+        },
+        {
+          "value": "12",
+          "label": "Active product lines",
+          "description": "Modular platforms covering automation, machine vision, energy storage, power conversion, and test."
+        },
+        {
+          "value": "99.4%",
+          "label": "On-time shipment rate",
+          "description": "Tracked across the trailing twelve months of confirmed B2B purchase orders."
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "title": "Production environment and finished hardware",
+      "images": [
+        "/assets/gallery/floor-overview.jpg",
+        "/assets/gallery/automation-cell.jpg",
+        "/assets/gallery/cabinet-detail.jpg",
+        "/assets/gallery/test-bench.jpg",
+        "/assets/gallery/modular-rack.jpg",
+        "/assets/gallery/cable-management.jpg"
+      ]
+    },
+    {
+      "type": "case-studies",
+      "title": "Reference deployments",
+      "items": [
+        {
+          "title": "Automation retrofit for a precision parts line",
+          "industry": "Industrial automation",
+          "location": "Germany",
+          "description": "Replaced legacy PLC cabinets and added inline machine vision, cutting cycle time by twenty-three percent on the existing footprint.",
+          "image": "/assets/cases/automation-retrofit.jpg"
+        },
+        {
+          "title": "Behind-the-meter energy storage for a logistics depot",
+          "industry": "Energy systems",
+          "location": "United States",
+          "description": "Two-megawatt-hour storage paired with smart inverters trimmed peak demand charges and added overnight backup for cold storage.",
+          "image": "/assets/cases/energy-storage.jpg"
+        },
+        {
+          "title": "Modular test stations for a contract electronics manufacturer",
+          "industry": "B2B technical product",
+          "location": "Vietnam",
+          "description": "Eight reconfigurable test cells deployed against a shared mechanical and software template, letting the customer onboard new SKUs in under a week.",
+          "image": "/assets/cases/modular-test.jpg"
+        }
+      ]
+    },
+    {
+      "type": "process-steps",
+      "title": "How a typical engagement runs",
+      "steps": [
+        {
+          "title": "Specification",
+          "description": "Map the customer's process and constraints into a written equipment specification with traceable acceptance criteria."
+        },
+        {
+          "title": "Build and integrate",
+          "description": "Manufacture modules against the spec, integrate firmware and control logic, and stage the system for factory acceptance."
+        },
+        {
+          "title": "Factory acceptance",
+          "description": "Run end-to-end acceptance against the agreed criteria with the customer's engineering team present, documented and signed off."
+        },
+        {
+          "title": "Deploy and support",
+          "description": "Ship, install, commission on site, and stay engaged with diagnostics access and a clear escalation path for the warranty term."
+        }
+      ]
+    },
+    {
+      "type": "certificates",
+      "title": "Compliance and certifications",
+      "items": [
+        {
+          "title": "ISO 9001",
+          "description": "Quality management system, recertified annually.",
+          "image": "/assets/certificates/iso-9001.png"
+        },
+        {
+          "title": "ISO 14001",
+          "description": "Environmental management system, scoped across all production sites.",
+          "image": "/assets/certificates/iso-14001.png"
+        },
+        {
+          "title": "CE Marking",
+          "description": "Product conformity for the European Economic Area on covered equipment lines.",
+          "image": "/assets/certificates/ce.png"
+        },
+        {
+          "title": "UL Listed",
+          "description": "Component-level UL listing on energy and power conversion products sold in North America.",
+          "image": "/assets/certificates/ul.png"
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Frequently asked questions",
+      "items": [
+        {
+          "question": "Do you support OEM and ODM relationships?",
+          "answer": "Yes. The standard engagement covers OEM relabeling on existing modules; full ODM development against a customer specification is available with a defined NRE budget."
+        },
+        {
+          "question": "How are samples and pilot units handled?",
+          "answer": "Pilot units ship from the same line as production hardware, against the same acceptance criteria, so customers can validate process fit before committing volume."
+        },
+        {
+          "question": "What is the typical lead time?",
+          "answer": "Catalog modules ship in two to four weeks. Configured systems vary by complexity; a written timeline ships with every quotation."
+        },
+        {
+          "question": "Can you ship under Incoterms other than EXW?",
+          "answer": "Yes. FCA, FOB, CIF, and DAP are available on most lanes; the export team will confirm what is supported for the specific destination at quote time."
+        }
+      ]
+    },
+    {
+      "type": "contact-form",
+      "title": "Request a product brief",
+      "formId": "demo-tps-home-lead"
+    }
+  ]
+}

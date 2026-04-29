@@ -1,0 +1,50 @@
+{
+  "slug": "/",
+  "template": "standard",
+  "seo": {
+    "title": "Cloud Software for Faster Operating Teams",
+    "description": "Beta SaaS provides workflow automation, analytics, and implementation support for growing technology teams."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "eyebrow": "SaaS operations platform",
+      "title": "Launch cleaner workflows without adding operational drag",
+      "description": "Beta SaaS gives teams a practical way to connect customer data, internal tasks, and reporting into one reliable operating layer.",
+      "primaryCta": {
+        "label": "Book a product walkthrough",
+        "href": "/contact"
+      },
+      "image": "/assets/placeholder.jpg",
+      "imageAlt": "Beta SaaS dashboard showing workflow status across customer-facing teams"
+    },
+    {
+      "type": "services-grid",
+      "title": "Platform capabilities",
+      "items": [
+        {
+          "title": "Workflow automation",
+          "description": "Automate recurring handoffs, approvals, and notifications across customer-facing teams."
+        },
+        {
+          "title": "Product analytics",
+          "description": "Track adoption, account health, and feature usage with dashboards built for operators."
+        },
+        {
+          "title": "Implementation support",
+          "description": "Get structured onboarding guidance so teams can move from setup to measurable usage faster."
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "title": "Product workspace preview",
+      "images": ["/assets/placeholder.jpg"]
+    },
+    {
+      "type": "contact-form",
+      "title": "Start your SaaS workflow review",
+      "formId": "beta-home-lead"
+    }
+  ]
+}

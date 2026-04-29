@@ -1,0 +1,84 @@
+{
+  "slug": "/about",
+  "template": "standard",
+  "seo": {
+    "title": "About Acme Manufacturing",
+    "description": "Learn about Acme Manufacturing, an industrial production partner focused on practical processes and dependable delivery."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "eyebrow": "About us",
+      "title": "A manufacturing partner focused on consistency",
+      "description": "Acme Manufacturing is structured to help companies plan, produce, inspect, and deliver industrial products with fewer surprises.",
+      "image": "/assets/placeholder.jpg",
+      "imageAlt": "Acme Manufacturing operations team reviewing a production schedule"
+    },
+    {
+      "type": "services-grid",
+      "title": "How we work",
+      "items": [
+        {
+          "title": "Clear production planning",
+          "description": "We align production requirements, timelines, and quality expectations before work begins."
+        },
+        {
+          "title": "Process discipline",
+          "description": "Our workflows are designed around repeatability, documentation, and practical quality control."
+        },
+        {
+          "title": "Responsive communication",
+          "description": "Clients receive clear updates so decisions can be made before delays become costly."
+        }
+      ]
+    },
+    {
+      "type": "case-studies",
+      "title": "Selected production engagements",
+      "items": [
+        {
+          "title": "Industrial enclosure short run",
+          "industry": "Industrial automation",
+          "location": "Chicago, IL",
+          "description": "Stabilized a 2,000-unit production run after the previous supplier missed three consecutive delivery windows.",
+          "image": "/assets/placeholder.jpg"
+        },
+        {
+          "title": "Subassembly transfer program",
+          "industry": "Energy equipment",
+          "location": "Cleveland, OH",
+          "description": "Took over assembly and inspection for a regulated subcomponent and brought defect rates under contractual targets within one quarter.",
+          "image": "/assets/placeholder.jpg"
+        },
+        {
+          "title": "Packaging consolidation",
+          "industry": "Heavy equipment OEM",
+          "location": "Detroit, MI",
+          "description": "Consolidated final inspection, labeling, and packaging into a single workflow, reducing handoffs and shipment errors.",
+          "image": "/assets/placeholder.jpg"
+        }
+      ]
+    },
+    {
+      "type": "certificates",
+      "title": "Quality and compliance",
+      "items": [
+        {
+          "title": "ISO 9001:2015",
+          "description": "Quality management system covering production, inspection, and delivery workflows.",
+          "image": "/assets/placeholder.jpg"
+        },
+        {
+          "title": "IATF 16949 readiness",
+          "description": "Documented process discipline aligned with automotive supply chain expectations.",
+          "image": "/assets/placeholder.jpg"
+        },
+        {
+          "title": "OSHA compliant operations",
+          "description": "Plant safety procedures reviewed and audited on a regular cadence.",
+          "image": "/assets/placeholder.jpg"
+        }
+      ]
+    }
+  ]
+}

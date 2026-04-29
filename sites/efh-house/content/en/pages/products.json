@@ -1,0 +1,105 @@
+{
+  "slug": "/products",
+  "template": "standard",
+  "seo": {
+    "title": "Products — Space Capsule · Container · Expandable · Flat Pack | EFH House",
+    "description": "Four modular families for international B2B: space capsule houses, container houses, double-wing expandable containers, and flat pack containers—covering resort camps, site housing, mobile offices, and volume modular programs."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "eyebrow": "Product hub",
+      "title": "Four modular lines for projects worldwide",
+      "description": "This overview introduces EFH House’s four flagship lines—Space Capsule Houses, Container Houses, Double-Wing Expandable Containers, and Flat Pack Containers. Each is shaped around real application patterns so camp developers, contractors, procurement teams, and hospitality investors can orient quickly. Technical packs and configuration guidance are prepared after you share destination, use case, scale, and timing. This site is built for B2B project dialogue; every engagement moves forward through professional communication and contract workflow—not self-service retail flows.",
+      "primaryCta": {
+        "label": "Request Project Information",
+        "href": "/contact"
+      },
+      "image": "/assets/hero/main-hero.jpg",
+      "imageAlt": "EFH House modular housing product families"
+    },
+    {
+      "type": "services-grid",
+      "title": "Products & where they shine",
+      "items": [
+        {
+          "title": "Space Capsule Houses",
+          "description": "Designed for resort parks, scenic lodging, mixed-use destinations, backyard studios, and lightweight commercial showcases. Bold modern form and strong scene presence suit brand-led hospitality. Open the category page to explore façade direction, layout intent, and program goals with our team.",
+          "href": "/products/space-capsule-houses"
+        },
+        {
+          "title": "Container Houses",
+          "description": "Workhorse modules for site lodging, interim offices, workforce dorms, modular yards, and commercial support space. The emphasis is on repeatable units, flexible combinations, and site adaptability—ideal for EPC teams and camp operators. Visit the product page for application guidance tuned to your job.",
+          "href": "/products/container-houses"
+        },
+        {
+          "title": "Double-Wing Expandable Containers",
+          "description": "When you need more usable floor area on site but must respect transport width, expandable wings strike the balance—field offices, lodging wings, resort guest pods, or interim housing. Implementation details are refined with your terrain and program in mind; start on the dedicated page.",
+          "href": "/products/double-wing-expandable-containers"
+        },
+        {
+          "title": "Flat Pack Containers",
+          "description": "Panelized or kit-style shipment and field assembly suit remote ports, tight haul roads, or phased mobilization—site offices, clustered lodging, land-constrained lots, and batch programs alike. Share your brief and we help align configuration with mobilization rhythm.",
+          "href": "/products/flat-pack-containers"
+        }
+      ]
+    },
+    {
+      "type": "image-text",
+      "title": "Solutions tailored to each project",
+      "description": "Insulation, openings, MEP interfaces, and exterior character vary by market and code context. Tell us where the project sits, how it will be used, which product family you prefer, approximate quantities, timing, and customization priorities. EFH House responds with configuration guidance and follow-on documentation so international clients can advance camps, yards, or capital works efficiently.",
+      "image": "/assets/products/container-house.jpg",
+      "imageAlt": "Container modular unit in application",
+      "cta": {
+        "label": "Discuss Your Housing Project",
+        "href": "/contact"
+      }
+    },
+    {
+      "type": "feature-list",
+      "title": "Why teams choose EFH House",
+      "description": "Grounded, project-first dialogue—so modular benefits show up in plans you can execute, not in generic slogans.",
+      "items": [
+        {
+          "title": "Scenario-first recommendations",
+          "description": "We weigh headcount, shared services, anchoring, and circulation to recommend the line—or mix—that fits your current master plan."
+        },
+        {
+          "title": "Multi-stakeholder fluency",
+          "description": "Developers, EPC contractors, procurement, and camp operators each get language aligned with their stage and decision points."
+        },
+        {
+          "title": "Clear documentation rhythm",
+          "description": "After scope alignment, we release drawing checkpoints and review lists in sequence—reducing surprises late in the game."
+        },
+        {
+          "title": "Room to customize responsibly",
+          "description": "Layouts and features evolve inside the structural envelope with manufacturing and compliance inputs kept visible throughout."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Product FAQs",
+      "items": [
+        {
+          "question": "Is this a consumer shopping catalog?",
+          "answer": "No. EFH House serves corporate and project procurement. These pages introduce product families and applications; partnerships advance through structured project discussion."
+        },
+        {
+          "question": "Should I pick a capsule line or a container line?",
+          "answer": "Prioritize space capsule directions when guest experience, brand storytelling, and premium lodging matter most. Lean toward container houses for repeatable site logistics, demobilization, and camp economics. Teams often blend both—we help plan the split."
+        },
+        {
+          "question": "Why do you ask for a detailed project brief?",
+          "answer": "Project proposals depend on location, quantity, configuration, logistics, and installation requirements. Richer inputs allow us to recommend the right modular path and technical follow-up from day one."
+        }
+      ]
+    },
+    {
+      "type": "contact-form",
+      "title": "Contact Our Project Team",
+      "formId": "efh-house-contact-inquiry"
+    }
+  ]
+}

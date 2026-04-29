@@ -1,0 +1,43 @@
+---
+import { buildCanonical } from "@factory/seo";
+import type { PageContent } from "@factory/validators";
+import SectionBlock from "../../components/SectionBlock.astro";
+import { pagesByLocale, siteConfig } from "../../generated";
+import SiteLayout from "../../layouts/SiteLayout.astro";
+import { slugToRouteParam } from "../../utils/route";
+
+export function getStaticPaths() {
+  return siteConfig.locales
+    .filter((locale) => locale !== siteConfig.defaultLocale)
+    .flatMap((locale) => {
+      const pages = pagesByLocale[locale] ?? [];
+
+      return pages
+        .filter((page) => page.slug !== "/")
+        .map((page) => ({
+          params: {
+            locale,
+            slug: slugToRouteParam(page.slug),
+          },
+          props: {
+            locale,
+            page,
+          },
+        }));
+    });
+}
+
+type Props = {
+  locale: string;
+  page: PageContent;
+};
+
+const { locale, page } = Astro.props;
+const pageUrl = buildCanonical(siteConfig.domain, locale, page.slug, siteConfig.defaultLocale);
+---
+
+<SiteLayout siteConfig={siteConfig} page={page} locale={locale}>
+  {page.sections.map((section) => (
+    <SectionBlock section={section} siteConfig={siteConfig} siteSlug={siteConfig.slug} pageUrl={pageUrl} />
+  ))}
+</SiteLayout>

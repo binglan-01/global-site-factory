@@ -1,0 +1,77 @@
+{
+  "slug": "/projects",
+  "template": "standard",
+  "seo": {
+    "title": "Projects",
+    "description": "Reference-style project notes for modular product systems across smart equipment, automation, and energy integrations. Demo content."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "eyebrow": "Project references",
+      "title": "B2B product showcase narratives with engineering substance.",
+      "description": "Each card below echoes the kinds of proof artefacts buyers collect in industrial technology and smart equipment tenders.",
+      "primaryCta": {
+        "label": "Discuss a programme",
+        "href": "/contact"
+      },
+      "image": "/assets/hero/factory-overview.jpg",
+      "imageAlt": "Industrial facility floor photographed from elevated walkway"
+    },
+    {
+      "type": "case-studies",
+      "title": "Selected programmes",
+      "items": [
+        {
+          "title": "Industrial technology line rebuild",
+          "industry": "Industrial technology",
+          "location": "North America",
+          "description": "Replaced brittle legacy automation loops with repeatable cells configured from the same modular family, improving changeover time materially.",
+          "image": "/assets/cases/automation-retrofit.jpg"
+        },
+        {
+          "title": "Energy equipment distribution hub",
+          "industry": "Energy equipment",
+          "location": "Europe",
+          "description": "Stacked inverter and conversion assets behind the meter while protecting cold-chain refrigeration during outages.",
+          "image": "/assets/cases/distribution-centre.jpg"
+        },
+        {
+          "title": "Modular test station expansion",
+          "industry": "Modular product systems",
+          "location": "Asia",
+          "description": "Scalable test rigs that accept new SKU fixtures without ripping out foundational wiring backbone.",
+          "image": "/assets/cases/modular-test.jpg"
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "title": "Field photography (demo)",
+      "images": [
+        "/assets/gallery/automation-cell.jpg",
+        "/assets/gallery/cabinet-detail.jpg",
+        "/assets/gallery/test-bench.jpg"
+      ]
+    },
+    {
+      "type": "certificates",
+      "title": "Compliance artefacts referenced in tenders",
+      "items": [
+        {
+          "title": "Environmental management posture",
+          "description": "Placeholder — add real certificate artwork into /assets/certificates/ when images exist."
+        },
+        {
+          "title": "Quality management artefact bundle",
+          "description": "Placeholder — aligns with auditors who insist on repeatable evidence packages."
+        }
+      ]
+    },
+    {
+      "type": "contact-form",
+      "title": "Request a briefing deck",
+      "formId": "demo-tps-projects-lead"
+    }
+  ]
+}

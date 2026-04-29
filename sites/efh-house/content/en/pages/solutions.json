@@ -1,0 +1,118 @@
+{
+  "slug": "/solutions",
+  "template": "standard",
+  "seo": {
+    "title": "Solutions — Hospitality, Sites, Offices & Modular Space | EFH House",
+    "description": "Prefab modular housing applications: resort and hospitality, construction camps, temporary worker housing, mobile offices, interim shelter, and backyard or lifestyle modules for international B2B programs."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "eyebrow": "Solutions",
+      "title": "Modular space that spans your project lifecycle",
+      "description": "Whether you operate a hospitality or camp business, deliver major civil work, or need rapidly deployable office and lodging capacity, EFH House combines space capsule, container, expandable, and flat pack thinking into coherent modular strategies. We help tune product selection and mobilization rhythm to each location, scale, use case, and schedule—so modular execution becomes a lever for efficiency and quality on international work.",
+      "primaryCta": {
+        "label": "Discuss Your Housing Project",
+        "href": "/contact"
+      },
+      "image": "/assets/solutions/resort-cabin.jpg",
+      "imageAlt": "Coastal hospitality and modular resort space"
+    },
+    {
+      "type": "feature-list",
+      "title": "Six focus areas we address often",
+      "description": "These are the lanes B2B teams ask about most—detailed mixes and combinations are refined during project dialogue.",
+      "items": [
+        {
+          "title": "Resort & hospitality lodging",
+          "description": "Guest modules for hotels, clustered camps, and tourism compounds—with attention to façade impact, daylighting, and coordinated batch supply."
+        },
+        {
+          "title": "Construction site accommodation & yards",
+          "description": "Lodging, catering support, and site offices knitted to the construction spine—balancing circulation efficiency, safety culture, and logistics."
+        },
+        {
+          "title": "Temporary worker housing",
+          "description": "Medium-density clusters for peak manpower, with sanitation, egress, and shared services planned around real occupancy swings."
+        },
+        {
+          "title": "Mobile offices & commercial fronts",
+          "description": "Expandable or container modules for site command centers, meeting suites, or short-term commercial frontage—serving build and early operations alike."
+        },
+        {
+          "title": "Emergency & interim shelter",
+          "description": "When usable area must appear quickly, modular envelopes can stage in with dependable structure and phased delivery discipline."
+        },
+        {
+          "title": "Backyard studios & lifestyle space",
+          "description": "Low-impact accessory modules that help owners extend use cases while staying within practical planning constraints."
+        }
+      ]
+    },
+    {
+      "type": "case-studies",
+      "title": "Representative application sketches",
+      "items": [
+        {
+          "title": "Resort camp application pattern",
+          "location": "Coastal or suburban hospitality",
+          "industry": "Camp & hotel development",
+          "description": "Clustered guest modules with shared amenities along a landscape spine support a unified brand experience for developers and investors during early planning. Generic scenario only—not a named client endorsement.",
+          "image": "/assets/solutions/resort-cabin.jpg"
+        },
+        {
+          "title": "Site village application pattern",
+          "location": "Medium-to-large construction sites",
+          "industry": "Engineering & construction",
+          "description": "Worker lodging and services aligned with site haul routes; vertical stacking can lift land productivity for general contractors coordinating peak labor. Generic scenario only.",
+          "image": "/assets/solutions/site-accommodation.jpg"
+        },
+        {
+          "title": "Mobile office application pattern",
+          "location": "Industrial yards or temporary work fronts",
+          "industry": "Coordination & construction management",
+          "description": "Expandable units hosting planning, safety, and logistics meetings close to people or material flows—boosting response on hectic sites. Generic scenario only.",
+          "image": "/assets/solutions/mobile-office.jpg"
+        }
+      ]
+    },
+    {
+      "type": "image-text",
+      "title": "Success starts with a clear brief",
+      "description": "From the first conversation, share environment and climate notes, utility posture, how many people you expect, and how you picture delivery unfolding. EFH House uses that picture to steer you toward capsule, container, expandable, or flat pack paths and to outline engineering checkpoints that typically precede fabrication readiness. Every formal proposal must reflect location, quantity, configuration, logistics, and on-site support—share your project details so our team can respond with suitable configuration suggestions.",
+      "image": "/assets/gallery/gallery-1.jpg",
+      "imageAlt": "EFH House modular products and scenes",
+      "cta": {
+        "label": "Request Project Information",
+        "href": "/contact"
+      }
+    },
+    {
+      "type": "process-steps",
+      "title": "How we shape solutions together",
+      "steps": [
+        {
+          "title": "Understand the setting",
+          "description": "Country or region, seasonal climate, geology, wind exposure—inputs that anchor envelope and foundation thinking."
+        },
+        {
+          "title": "Clarify occupancy & operations",
+          "description": "Peak population, shift patterns, and turnover steer core width, hygiene cores, and amenity ratios."
+        },
+        {
+          "title": "Lock modular combinations",
+          "description": "With site limits and lifting logic understood, we crystallize capsule vs. container vs. expandable wing proportions."
+        },
+        {
+          "title": "Plan reviews & compliance touchpoints",
+          "description": "Local code paths define drawing reviews and inspection stops—we embed those requirements in a shared checklist."
+        }
+      ]
+    },
+    {
+      "type": "contact-form",
+      "title": "Contact Our Project Team",
+      "formId": "efh-house-contact-inquiry"
+    }
+  ]
+}

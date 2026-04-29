@@ -1,0 +1,50 @@
+{
+  "slug": "/",
+  "template": "standard",
+  "seo": {
+    "title": "Precision Manufacturing for Industrial Teams",
+    "description": "Acme Manufacturing supports industrial companies with reliable production, assembly, quality control, and fulfillment services."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "eyebrow": "Industrial manufacturing partner",
+      "title": "Precision manufacturing built for reliable growth",
+      "description": "Acme Manufacturing helps industrial teams move from prototype to repeatable production with dependable processes and clear communication.",
+      "primaryCta": {
+        "label": "Talk to our team",
+        "href": "/contact"
+      },
+      "image": "/assets/placeholder.jpg",
+      "imageAlt": "Acme Manufacturing production floor with assembled industrial components"
+    },
+    {
+      "type": "services-grid",
+      "title": "Manufacturing capabilities",
+      "items": [
+        {
+          "title": "Component production",
+          "description": "Repeatable production workflows for metal, plastic, and assembled industrial components."
+        },
+        {
+          "title": "Assembly and packaging",
+          "description": "Structured assembly, inspection, packaging, and preparation for distribution."
+        },
+        {
+          "title": "Quality support",
+          "description": "Documented quality checks that help teams reduce defects and improve delivery confidence."
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "title": "Production environment",
+      "images": ["/assets/placeholder.jpg"]
+    },
+    {
+      "type": "contact-form",
+      "title": "Request a manufacturing consultation",
+      "formId": "acme-home-lead"
+    }
+  ]
+}

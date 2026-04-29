@@ -1,0 +1,16 @@
+{
+  "slug": "/terms",
+  "template": "legal",
+  "seo": {
+    "title": "Terms of Use",
+    "description": "Terms of use placeholder for visitors using the Beta SaaS website."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "eyebrow": "Terms",
+      "title": "Terms of Use",
+      "description": "These placeholder terms outline general website use for Beta SaaS and should be reviewed before a production launch."
+    }
+  ]
+}

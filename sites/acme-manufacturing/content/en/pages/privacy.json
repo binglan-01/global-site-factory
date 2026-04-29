@@ -1,0 +1,16 @@
+{
+  "slug": "/privacy",
+  "template": "legal",
+  "seo": {
+    "title": "Privacy Policy",
+    "description": "Privacy policy placeholder for Acme Manufacturing, describing how website inquiries and business contact information are handled."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "eyebrow": "Privacy",
+      "title": "Privacy Policy",
+      "description": "This placeholder privacy policy explains how Acme Manufacturing handles business inquiry information submitted through this website."
+    }
+  ]
+}

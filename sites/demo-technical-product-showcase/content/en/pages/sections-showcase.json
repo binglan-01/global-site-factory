@@ -1,0 +1,223 @@
+{
+  "slug": "/sections-showcase",
+  "template": "standard",
+  "seo": {
+    "title": "Section Showcase",
+    "description": "One page that exercises each supported section renderer for the technical-product-showcase demo site — smart equipment stories, modular systems, analytics, FAQs, stats, imagery, certificates, capture forms, plus contact shortcuts."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "eyebrow": "Section coverage",
+      "title": "All supported section primitives on a single scrolling surface.",
+      "description": "This page intentionally uses tight copy blocks so testers can visually compare spacing, overlays, typography, and breakpoints without paging around the site.",
+      "primaryCta": {
+        "label": "Jump to FAQs",
+        "href": "#faq-demo"
+      },
+      "image": "/assets/hero/control-room.jpg",
+      "imageAlt": "Control room vantage point over production tooling"
+    },
+    {
+      "type": "services-grid",
+      "title": "Macro themes",
+      "items": [
+        {
+          "title": "Smart equipment",
+          "description": "Sensorised tooling, networked PLCs, and maintenance pathways that shorten mean time to recovery."
+        },
+        {
+          "title": "Industrial technology",
+          "description": "Automation cells, deterministic IO, deterministic motion choreography, repeatable documentation."
+        },
+        {
+          "title": "Modular product systems",
+          "description": "Hardware families engineered for configuration instead of perpetual one-off rework."
+        }
+      ]
+    },
+    {
+      "type": "feature-list",
+      "title": "What integration teams scrutinise first",
+      "description": "Checklist distilled from hardened B2B product showcase exercises — use it as QA copy wiring for the renderer.",
+      "items": [
+        {
+          "title": "Environmental stress envelope",
+          "description": "Does the SKU survive derated extremes without silent component drift?",
+          "icon": "1"
+        },
+        {
+          "title": "Operational observability",
+          "description": "Can maintenance teams reason about anomalies without escalating to vendor war rooms?",
+          "icon": "2"
+        },
+        {
+          "title": "Supply continuity",
+          "description": "Do multi-year BOM lifecycles exist with explicit second-source strategies?",
+          "icon": "3"
+        },
+        {
+          "title": "Cyber resilience",
+          "description": "Minimal attack surfaces, audited roles, cryptographic hygiene, safe remote access.",
+          "icon": "4"
+        }
+      ]
+    },
+    {
+      "type": "image-text",
+      "title": "Modular bays that scale cleanly",
+      "description": "Modular hardware ships as stacked bays with repeatable cable harnesses — deploy two today, replicate twenty without rewriting documentation families.",
+      "image": "/assets/hero/origin-story.jpg",
+      "imageAlt": "Engineers iterating on prototypes at a workstation",
+      "cta": {
+        "label": "View products",
+        "href": "/products"
+      },
+      "reverse": true
+    },
+    {
+      "type": "stats",
+      "items": [
+        {
+          "value": "≤ 72 h",
+          "label": "Factory acceptance scripting",
+          "description": "Demonstration metric for scripted acceptance rehearsals before outbound shipment."
+        },
+        {
+          "value": "12",
+          "label": "Modular SKU families under engineering control",
+          "description": "Each family shares mechanical interfaces despite divergent payloads."
+        },
+        {
+          "value": "7",
+          "label": "Energy topology patterns",
+          "description": "From behind-the-meter storage to inverter stacking for redundancy."
+        },
+        {
+          "value": "5",
+          "label": "Automation integration pathways",
+          "description": "OPC UA, EtherCAT, deterministic IO bridging, deterministic motion slices."
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "title": "Imagery carousel substitute (still grid)",
+      "images": [
+        "/assets/gallery/floor-overview.jpg",
+        "/assets/gallery/automation-cell.jpg",
+        "/assets/gallery/cabinet-detail.jpg",
+        "/assets/gallery/test-bench.jpg",
+        "/assets/gallery/modular-rack.jpg",
+        "/assets/gallery/cable-management.jpg"
+      ]
+    },
+    {
+      "type": "case-studies",
+      "title": "Program snapshots",
+      "items": [
+        {
+          "title": "Industrial technology retrofit",
+          "industry": "Industrial technology",
+          "location": "Global",
+          "description": "Replaced jittery analogue loops without expanding panel footprint materially.",
+          "image": "/assets/cases/vision-retrofit.jpg.png"
+        },
+        {
+          "title": "Energy storage uplift",
+          "industry": "Energy equipment",
+          "location": "Global",
+          "description": "Load shifting plus resilience with transparent telemetry for finance teams auditing savings.",
+          "image": "/assets/cases/energy-storage.jpg"
+        },
+        {
+          "title": "Foundry instrumentation upgrade",
+          "industry": "Smart equipment",
+          "location": "Europe",
+          "description": "Closed-loop observation on critical assets without disrupting batch chemistry windows.",
+          "image": "/assets/cases/foundry-program.jpg"
+        }
+      ]
+    },
+    {
+      "type": "process-steps",
+      "title": "Renderer-friendly step cadence",
+      "steps": [
+        {
+          "title": "Frame the scene",
+          "description": "What must stay deterministic, observable, repeatable?"
+        },
+        {
+          "title": "Freeze interfaces",
+          "description": "Power, thermal, signalling, cabling, interoperability."
+        },
+        {
+          "title": "Demonstrate fidelity",
+          "description": "Factory acceptance plus documentation hand-off."
+        },
+        {
+          "title": "Observe in situ",
+          "description": "Capture telemetry, anomaly shapes, escalation paths."
+        }
+      ]
+    },
+    {
+      "type": "certificates",
+      "title": "Trust markers (pending artwork)",
+      "items": [
+        {
+          "title": "Operational excellence signal",
+          "description": "Drop authentic certificate artwork paths under `/assets/certificates/` when available — until then textual placeholders keep validators happy."
+        },
+        {
+          "title": "Energy compliance placeholder",
+          "description": "Reference path reserved for interconnect authorities once artwork exists."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Section renderer FAQ sandbox",
+      "items": [
+        {
+          "question": "Why keep every section visible on one page?",
+          "answer": "It accelerates QA: spacing, breakpoints, accordion behaviour, and stacked density can be exercised without navigation hopping."
+        },
+        {
+          "question": "When should imagery be suppressed?",
+          "answer": "When assets are unfinished — textual sections still satisfy schema while designers iterate on imagery."
+        },
+        {
+          "question": "What about energy sceptics?",
+          "answer": "Pair quantitative stats with explanatory copy so sceptics recognise conservatism in claims."
+        }
+      ]
+    },
+    {
+      "type": "contact-block",
+      "title": "Escalations without drowning in chatter",
+      "description": "Use short contact channels alongside the lead form for buyers who dislike web forms.",
+      "channels": [
+        {
+          "label": "Engineering escalation",
+          "value": "+1 (555) 010-0999",
+          "href": "tel:+15550100999"
+        },
+        {
+          "label": "Integration desk inbox",
+          "value": "integration@example.com",
+          "href": "mailto:integration@example.com"
+        }
+      ],
+      "cta": {
+        "label": "Open contact form instead",
+        "href": "#lead-form-anchor"
+      }
+    },
+    {
+      "type": "contact-form",
+      "title": "Capture lead metadata",
+      "formId": "demo-tps-sections-lead"
+    }
+  ]
+}

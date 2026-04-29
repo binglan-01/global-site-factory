@@ -1,0 +1,107 @@
+{
+  "slug": "/products",
+  "template": "standard",
+  "seo": {
+    "title": "Product Catalog",
+    "description": "Industrial smart equipment, modular hardware, and energy system building blocks for B2B programs. Demo content for the technical-product-showcase theme."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "eyebrow": "Product portfolio",
+      "title": "Hardware built for integration, not one-off hero builds.",
+      "description": "Explore the product lines that ship with documentation, traceability, and a repeatable configuration path for integrators.",
+      "primaryCta": {
+        "label": "See solutions",
+        "href": "/solutions"
+      },
+      "image": "/assets/hero/modular-platform.jpg",
+      "imageAlt": "Stacked modular enclosures on a factory pallet"
+    },
+    {
+      "type": "services-grid",
+      "title": "Product pillars",
+      "items": [
+        {
+          "title": "Smart equipment",
+          "description": "Machine intelligence at the edge: sensing, PLC integration, telemetry, and operator-safe diagnostics pathways."
+        },
+        {
+          "title": "Industrial automation",
+          "description": "Turnkey automation assemblies that reduce wiring time while keeping deterministic cycle performance."
+        },
+        {
+          "title": "Energy systems",
+          "description": "Storage, inverter, and ancillary components sized for tariff-driven optimisation and outage resilience targets."
+        }
+      ]
+    },
+    {
+      "type": "feature-list",
+      "title": "What buyers routinely validate",
+      "description": "These are checklist items procurement teams evaluate before awarding an equipment program.",
+      "items": [
+        {
+          "title": "Environmental envelope",
+          "description": "Documented ingress, temperature ranges, EMI profiles, and derating curves for predictable site fit.",
+          "icon": "A"
+        },
+        {
+          "title": "Cyber posture",
+          "description": "Hardened device roles, segmented networks, audit logs, and an agreed patch cadence for industrial networks.",
+          "icon": "B"
+        },
+        {
+          "title": "Manufacturing lineage",
+          "description": "Serial-level traceability, inspection records, and change control notices per hardware revision.",
+          "icon": "C"
+        }
+      ]
+    },
+    {
+      "type": "image-text",
+      "title": "Energy integration building blocks",
+      "description": "Energy equipment is staged as repeatable blocks: metering, inversion, storage, DC distribution, protection, communication. Buyers pick the watt-hour target and interconnect class; delivery follows a repeatable cabinet template.",
+      "image": "/assets/hero/energy-bay.jpg",
+      "imageAlt": "Industrial energy equipment cabinets with conduit runs",
+      "cta": {
+        "label": "See live projects",
+        "href": "/projects"
+      }
+    },
+    {
+      "type": "gallery",
+      "title": "Hardware families (demo photography)",
+      "images": [
+        "/assets/gallery/floor-overview.jpg",
+        "/assets/gallery/modular-rack.jpg",
+        "/assets/gallery/cable-management.jpg"
+      ]
+    },
+    {
+      "type": "case-studies",
+      "title": "Where these products anchor",
+      "items": [
+        {
+          "title": "Industrial technology refresh programme",
+          "industry": "Industrial technology",
+          "location": "Global",
+          "description": "A staged refresh that replaces intermittent legacy machines with repeatable cells that share tooling, IO, documentation, and spares economics.",
+          "image": "/assets/cases/modular-template.jpg"
+        },
+        {
+          "title": "Regional microgrid rollout",
+          "industry": "Energy equipment",
+          "location": "APAC",
+          "description": "Behind-the-meter storage plus inverter stacking at facilities that need outage tolerance without expanding grid import capacity.",
+          "image": "/assets/cases/microgrid.jpg"
+        }
+      ]
+    },
+    {
+      "type": "contact-form",
+      "title": "Request a SKU list",
+      "formId": "demo-tps-products-lead"
+    }
+  ]
+}

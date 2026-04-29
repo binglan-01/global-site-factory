@@ -1,0 +1,111 @@
+{
+  "slug": "/solutions",
+  "template": "standard",
+  "seo": {
+    "title": "Solutions",
+    "description": "End-to-end solution patterns for modular product systems: smart equipment programs, automation integration, and energy optimisation for B2B buyers."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "eyebrow": "Solutions catalog",
+      "title": "Modular architectures you can replicate across factories.",
+      "description": "Demonstration copy for the technical-product-showcase theme focusing on repeatable industrial technology delivery and pragmatic energy outcomes.",
+      "primaryCta": {
+        "label": "See products",
+        "href": "/products"
+      },
+      "image": "/assets/hero/services.jpg",
+      "imageAlt": "Engineering team reviewing equipment layout sketches"
+    },
+    {
+      "type": "process-steps",
+      "title": "Solution delivery playbook",
+      "steps": [
+        {
+          "title": "Architecture workshop",
+          "description": "Map production constraints, interoperability expectations, lifecycle ownership, and the metric that proves success."
+        },
+        {
+          "title": "Reference design freeze",
+          "description": "Lock module boundaries, BOM roles, cabling philosophy, commissioning scripts, and the acceptance tests that freeze scope."
+        },
+        {
+          "title": "Factory build-out",
+          "description": "Assemble repeatable cells with traceable QA, minimise custom wiring surprises, ship with commissioning packages."
+        },
+        {
+          "title": "Operational hand-over",
+          "description": "Train operators against runbooks; leave documentation that downstream teams inherit without archaeology."
+        }
+      ]
+    },
+    {
+      "type": "image-text",
+      "title": "Smart equipment overlays",
+      "description": "Add sensing, anomaly detection, remote diagnostics, and secure maintenance access routes without forcing a forklift replacement of dependable legacy assets.",
+      "image": "/assets/hero/smart-equipment.jpg",
+      "imageAlt": "Technician commissioning a sensor retrofit on manufacturing equipment",
+      "reverse": true
+    },
+    {
+      "type": "stats",
+      "items": [
+        {
+          "value": "24 h",
+          "label": "Target triage SLA",
+          "description": "For remote-supported smart equipment anomalies during commissioning windows."
+        },
+        {
+          "value": "+18%",
+          "label": "Typical uptime lift",
+          "description": "Illustrative range from phased industrial technology programmes; actual results depend on baseline."
+        },
+        {
+          "value": "≤ 6 mo",
+          "label": "Modular rollout window",
+          "description": "Time-boxed phased deployment for repeatable modular hardware platforms."
+        },
+        {
+          "value": "N+1",
+          "label": "Energy redundancy pattern",
+          "description": "Redundant inverter stacking pattern for resilient energy deployments."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Solutions FAQ",
+      "items": [
+        {
+          "question": "Do you cover both greenfield plants and retrofit sites?",
+          "answer": "Yes — modular product systems prioritise repeatable mechanical interfaces even when incumbent equipment remains in place."
+        },
+        {
+          "question": "How tightly do automation and analytics couple?",
+          "answer": "Control loops stay deterministic; analytics feed parallel paths that never starve deterministic cycle budgets."
+        },
+        {
+          "question": "What does an energy optimisation engagement include?",
+          "answer": "Load profiling, tariff modelling, storage sizing, interconnect strategy, commissioning, and instrumentation for ongoing verification."
+        }
+      ]
+    },
+    {
+      "type": "contact-block",
+      "title": "Talk to integration engineering",
+      "description": "If you prefer email or phone channels over the contact form, use the routed addresses below.",
+      "channels": [
+        {
+          "label": "Solution desk availability",
+          "value": "Mon–Fri 09:00–18:00 PT"
+        }
+      ]
+    },
+    {
+      "type": "contact-form",
+      "title": "Book a structured solution review",
+      "formId": "demo-tps-solutions-lead"
+    }
+  ]
+}

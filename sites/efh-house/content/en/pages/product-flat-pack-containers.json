@@ -1,0 +1,78 @@
+{
+  "slug": "/products/flat-pack-containers",
+  "template": "standard",
+  "seo": {
+    "title": "Flat Pack Containers — Efficient Shipping, Modular Assembly | EFH House",
+    "description": "EFH House flat pack containers for site offices, mobilization housing, tight lots, and batch modular programs—prioritizing freight efficiency and combinatorial planning."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "eyebrow": "Volume-friendly delivery",
+      "title": "Flat Pack Containers",
+      "description": "Flat pack containers ship as panelized or componentized loads, cutting shipment volume for distant ports, narrow haul roads, or phased mobilization constraints. On arrival, experienced crews assemble modules against EFH House construction guides—common in site offices, mobile headquarters, concentrated lodging, urban infill, and volume housing programs. We co-develop batching logic, connection details, and weatherization priorities with you so each module hands over reliably.",
+      "primaryCta": {
+        "label": "Discuss Your Housing Project",
+        "href": "/contact"
+      },
+      "image": "/assets/products/flat-pack-container.jpg",
+      "imageAlt": "EFH House flat pack modular components"
+    },
+    {
+      "type": "gallery",
+      "title": "Products & applications",
+      "layout": "product-grid",
+      "columns": 4,
+      "imageAspect": "landscape",
+      "assetDir": "/assets/products/flat-pack-containers",
+      "lightbox": true,
+      "zoom": true
+    },
+    {
+      "type": "feature-list",
+      "title": "Strengths & partner profiles",
+      "description": "Deep factory prefabrication plus disciplined field assembly yields modular pathways that are both economical and scalable.",
+      "items": [
+        {
+          "title": "Long-haul & multimodal freight",
+          "description": "Panelized packing helps manage ocean or inland freight cost and inspection pacing—especially when procurement interacts with several transport legs."
+        },
+        {
+          "title": "Tight sites & phased construction",
+          "description": "Roll work forward inside limited laydown while matching cash flow and construction windows—reducing yard congestion."
+        },
+        {
+          "title": "Site offices & mobile HQ",
+          "description": "Fast office, meeting, and records space sustaining management through the build cycle."
+        },
+        {
+          "title": "Volume housing & public support",
+          "description": "Programs led by agencies, developers, or enterprises that need repeatable quality and predictable delivery rhythm."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "FAQ",
+      "items": [
+        {
+          "question": "Are comparative summary tables posted by unit area?",
+          "answer": "No. Project proposals depend on country or region, batch structure, specification band, logistics, and field support—prepared specifically so guidance stays accountable to your job."
+        },
+        {
+          "question": "What belongs in an opening note?",
+          "answer": "Destination, quantity intent, use case, code or insulation posture, lifting and labor assumptions, plus your target window—we will mirror that with the right project cadence."
+        },
+        {
+          "question": "Do you support consumer self-service selection?",
+          "answer": "EFH House concentrates on engineered B2B programs. Requirements and contracts move through human review; we do not offer instant consumer-style transaction paths on this site."
+        }
+      ]
+    },
+    {
+      "type": "contact-form",
+      "title": "Contact Our Project Team — Flat Pack Containers",
+      "formId": "efh-house-inquiry-flat-pack-containers"
+    }
+  ]
+}

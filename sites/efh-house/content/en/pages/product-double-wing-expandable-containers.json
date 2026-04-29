@@ -1,0 +1,78 @@
+{
+  "slug": "/products/double-wing-expandable-containers",
+  "template": "standard",
+  "seo": {
+    "title": "Double-Wing Expandable Containers — Spacious Footprint, Efficient Transport | EFH House",
+    "description": "Double-wing expandable containers balance shipping efficiency with on-site floor area—field offices, camp lodging, hospitality pods, and interim housing for international B2B programs."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "eyebrow": "High-flex spatial solution",
+      "title": "Double-Wing Expandable Containers",
+      "description": "Double-wing expandable containers travel compact, then deploy sideways to widen usable interior area—perfect when roadway or bridge limits are tight yet the working or living envelope must feel generous. Typical uses include site headquarters, camp sleeping wings, hospitality experience units, and swing housing between project phases. EFH House refines planning and building services with your haul geometry, grading, headcount, and performance goals so each scheme balances visual impact with day-to-day operations.",
+      "primaryCta": {
+        "label": "Request Project Information",
+        "href": "/contact"
+      },
+      "image": "/assets/solutions/mobile-office.jpg",
+      "imageAlt": "EFH House double-wing expandable container applications"
+    },
+    {
+      "type": "gallery",
+      "title": "Products & applications",
+      "layout": "product-grid",
+      "columns": 4,
+      "imageAspect": "landscape",
+      "assetDir": "/assets/products/double-wing-expandable-containers",
+      "lightbox": true,
+      "zoom": true
+    },
+    {
+      "type": "feature-list",
+      "title": "Highlights & who we serve",
+      "description": "Expandable geometry delivers “compact on the road, generous in place”—especially on complex sites.",
+      "items": [
+        {
+          "title": "Site offices & dispatch hubs",
+          "description": "Post-deployment space for meetings, war rooms, and collaboration during construction peaks."
+        },
+        {
+          "title": "Camp lodging & guest reception",
+          "description": "Wider sleeping and living zones for long-stay crews or resort visitors who expect comfort."
+        },
+        {
+          "title": "Brand-led hospitality activations",
+          "description": "Interior depth supports curated interiors and experiential programming for tourism operators."
+        },
+        {
+          "title": "International contractors & camp operators",
+          "description": "We respect multi-trade mobilization and help script deployment, knock-down, and redeployment strategies responsibly."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "FAQ",
+      "items": [
+        {
+          "question": "Do you publish multi-tier project schedules for open download?",
+          "answer": "Documentation is built per assignment. Destination, quantity, interior direction, freight mode, and field support scope all influence the final deliverable—so we collaborate case by case."
+        },
+        {
+          "question": "How is project scope usually framed?",
+          "answer": "Start with country or region, quantity class, specification band, transport path, and on-site assistance expectations—these drivers set the workplan better than headline copy alone."
+        },
+        {
+          "question": "What about off-grid or specialty MEP goals?",
+          "answer": "Engineering review follows load schedules and operating narratives. We lead with data and disciplined technical dialogue—not unsupported claims on the web."
+        }
+      ]
+    },
+    {
+      "type": "contact-form",
+      "title": "Contact Our Project Team — Double-Wing Expandable Containers",
+      "formId": "efh-house-inquiry-double-wing-expandable-containers"
+    }
+  ]
+}

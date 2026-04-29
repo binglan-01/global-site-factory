@@ -1,0 +1,146 @@
+{
+  "slug": "/about",
+  "template": "standard",
+  "seo": {
+    "title": "About the Demo Showcase",
+    "description": "Background, capabilities, and reference deployments for the technical-product-showcase theme demo site."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "eyebrow": "About",
+      "title": "An equipment program built for engineers, by engineers.",
+      "description": "Demo content describing how a technical product company would present its origins, capability footprint, and credibility signals to B2B buyers.",
+      "image": "/assets/hero/factory-overview.jpg",
+      "imageAlt": "Wide-angle view of a clean industrial production floor with overhead lighting"
+    },
+    {
+      "type": "image-text",
+      "title": "Origins and focus",
+      "description": "The team grew out of an industrial controls integrator and now ships its own modular hardware, energy systems, and smart equipment for B2B customers. The same engineers that designed the first product line still own technical decisions today.",
+      "image": "/assets/hero/origin-story.jpg",
+      "imageAlt": "Two engineers working on an early prototype on a wooden bench"
+    },
+    {
+      "type": "stats",
+      "items": [
+        {
+          "value": "240+",
+          "label": "Active customer accounts",
+          "description": "B2B buyers across automation integrators, energy operators, and electronics manufacturers."
+        },
+        {
+          "value": "65,000",
+          "label": "Modules shipped",
+          "description": "Cumulative across smart equipment, automation cells, energy storage, and test stations."
+        },
+        {
+          "value": "4",
+          "label": "Production sites",
+          "description": "Vertically integrated where it matters; partner-built where commodity scale is the better answer."
+        },
+        {
+          "value": "32",
+          "label": "Engineering staff",
+          "description": "Mechanical, electrical, firmware, controls, and machine vision under one roof."
+        }
+      ]
+    },
+    {
+      "type": "process-steps",
+      "title": "How we work with customers",
+      "steps": [
+        {
+          "title": "Listen",
+          "description": "Understand the constraint that matters most, before talking about hardware."
+        },
+        {
+          "title": "Specify",
+          "description": "Write down what \"good\" looks like, with measurable acceptance criteria."
+        },
+        {
+          "title": "Build",
+          "description": "Manufacture against the spec, with traceability from raw material to serial number."
+        },
+        {
+          "title": "Stand behind it",
+          "description": "Stay reachable through commissioning, warranty, and the inevitable change request."
+        }
+      ]
+    },
+    {
+      "type": "certificates",
+      "title": "Quality and compliance posture",
+      "items": [
+        {
+          "title": "ISO 9001",
+          "description": "Quality management baseline, audited each year.",
+          "image": "/assets/certificates/iso-9001.png"
+        },
+        {
+          "title": "ISO 14001",
+          "description": "Environmental management baseline across production sites.",
+          "image": "/assets/certificates/iso-14001.png"
+        },
+        {
+          "title": "IEC 61131-3",
+          "description": "Programming standard followed across all PLC code shipped from the controls practice.",
+          "image": "/assets/certificates/iec-61131.png"
+        },
+        {
+          "title": "FCC Part 15",
+          "description": "EMC conformity for unintentional radiators on covered electronic products.",
+          "image": "/assets/certificates/fcc.png"
+        }
+      ]
+    },
+    {
+      "type": "case-studies",
+      "title": "Selected references",
+      "items": [
+        {
+          "title": "Modular cell template for a contract manufacturer",
+          "industry": "Modular product systems",
+          "location": "Malaysia",
+          "description": "A reusable cell template that the customer now configures themselves for new SKUs, with a documented validation process.",
+          "image": "/assets/cases/modular-template.jpg"
+        },
+        {
+          "title": "Microgrid pilot at a packaging plant",
+          "industry": "Energy systems",
+          "location": "Australia",
+          "description": "Solar plus storage configuration that survives a planned grid disconnection drill without operator intervention.",
+          "image": "/assets/cases/microgrid.jpg"
+        },
+        {
+          "title": "Smart equipment program for a precision foundry",
+          "industry": "Smart equipment",
+          "location": "Italy",
+          "description": "Sensor and analytics package retrofit on existing furnaces, surfaced through the customer's existing dashboards instead of a new portal.",
+          "image": "/assets/cases/foundry-program.jpg"
+        }
+      ]
+    },
+    {
+      "type": "contact-block",
+      "title": "Talk to a person",
+      "description": "Use the channels below to reach the team directly. The mailbox and phone number flow in from the site config and are appended automatically.",
+      "channels": [
+        {
+          "label": "Sales",
+          "value": "Mon–Fri 09:00–18:00 PT",
+          "href": "/contact"
+        },
+        {
+          "label": "Press",
+          "value": "media@example.com",
+          "href": "mailto:media@example.com"
+        }
+      ],
+      "cta": {
+        "label": "Open the contact form",
+        "href": "/contact"
+      }
+    }
+  ]
+}

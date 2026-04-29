@@ -1,0 +1,78 @@
+{
+  "slug": "/products/flat-pack-containers",
+  "template": "standard",
+  "seo": {
+    "title": "打包箱（平板打包） — 高效运输 · 模块化组装｜EFH House",
+    "description": "EFH House 打包箱（平板打包）面向工地临建、移动办公、集中住宿、紧凑场地与批量模块化项目，强调运输效率与组合布置能力。"
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "eyebrow": "体积友好型方案",
+      "title": "打包箱（平板打包）",
+      "description": "打包箱采用板式或构件化包装运输，显著降低单次发货体积，尤其适合远程港口、狭窄便道或分批进场受限制的项目。抵达现场后，经验丰富的安装团队可按 EFH House 提供的工艺文件快速完成拼装，广泛应用于工地临建、移动办公室、集中宿舍、用地紧张城区更新及批量保障房配套。我们与客户共同制定批次计划、连接节点与防水保温策略，让每一箱模块可靠交付。",
+      "primaryCta": {
+        "label": "洽谈您的住房项目",
+        "href": "/zh/contact"
+      },
+      "image": "/assets/products/flat-pack-container.jpg",
+      "imageAlt": "EFH House 平板打包模块化构件"
+    },
+    {
+      "type": "gallery",
+      "title": "产品与应用展示",
+      "layout": "product-grid",
+      "columns": 4,
+      "imageAspect": "landscape",
+      "assetDir": "/assets/products/flat-pack-containers",
+      "lightbox": true,
+      "zoom": true
+    },
+    {
+      "type": "feature-list",
+      "title": "关键优势与合作对象",
+      "description": "以“工厂深度预制 + 现场高效拼装”为核心，为客户提供兼具经济性与可扩展性的模块化路径。",
+      "items": [
+        {
+          "title": "长途运输与多式联运",
+          "description": "板式装载帮助控制运费与通关检验节奏，适合跨国采购与内陆转运并存的项目。"
+        },
+        {
+          "title": "紧凑场地与分批建设",
+          "description": "可在有限作业面内滚动推进，匹配资金流与施工窗口，减少现场堆载压力。"
+        },
+        {
+          "title": "工地临建与移动办公",
+          "description": "快速形成办公、会议与档案空间，支持建设全过程内的管理需求。"
+        },
+        {
+          "title": "批量住房与公共配套",
+          "description": "服务政府、开发商或大型企业发起的集中住房计划，保持品质一致性与交付可预测性。"
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "常见问题",
+      "items": [
+        {
+          "question": "是否会贴出按面积汇总的对照资料？",
+          "answer": "不会。项目资料需结合国家或地区、批次结构、技术规格、物流及现场条件专项准备，以确保对客户负责。"
+        },
+        {
+          "question": "第一次沟通适合提供哪些资料？",
+          "answer": "请告知目的地、数量规划、用途、保温或规范取向、吊装与人力条件，以及期望推进窗口，我们将安排对应的项目支持节奏。"
+        },
+        {
+          "question": "是否支持消费端自助选购？",
+          "answer": "EFH House 聚焦 B2B 工程项目，通过人工服务完成需求确认与合同流程；不提供面向个人消费者的即时在线成交入口，项目合作以商务对接为准。"
+        }
+      ]
+    },
+    {
+      "type": "contact-form",
+      "title": "联系项目团队 — 打包箱（平板打包）",
+      "formId": "efh-house-inquiry-flat-pack-containers"
+    }
+  ]
+}

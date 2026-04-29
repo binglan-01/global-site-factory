@@ -1,0 +1,21 @@
+---
+import { buildCanonical } from "@factory/seo";
+import SectionBlock from "../components/SectionBlock.astro";
+import { pagesByLocale, siteConfig } from "../generated";
+import SiteLayout from "../layouts/SiteLayout.astro";
+
+const locale = siteConfig.defaultLocale;
+const page = pagesByLocale[locale]?.find((candidate) => candidate.slug === "/");
+
+if (!page) {
+  throw new Error(`Missing defaultLocale homepage for locale "${locale}".`);
+}
+
+const pageUrl = buildCanonical(siteConfig.domain, locale, page.slug, siteConfig.defaultLocale);
+---
+
+<SiteLayout siteConfig={siteConfig} page={page} locale={locale}>
+  {page.sections.map((section) => (
+    <SectionBlock section={section} siteConfig={siteConfig} siteSlug={siteConfig.slug} pageUrl={pageUrl} />
+  ))}
+</SiteLayout>

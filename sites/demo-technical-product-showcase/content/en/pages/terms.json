@@ -1,0 +1,43 @@
+{
+  "slug": "/terms",
+  "template": "legal",
+  "seo": {
+    "title": "Terms",
+    "description": "Terms of use placeholder for the technical-product-showcase demo site. Replace with reviewed legal copy before launch."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "eyebrow": "Terms",
+      "title": "Terms of Use",
+      "description": "This page is a structural placeholder. It exercises how the technical-product-showcase theme renders a legal page without a hero image."
+    },
+    {
+      "type": "image-text",
+      "title": "Scope of these terms",
+      "description": "A real terms-of-use document would cover acceptable use of this website, intellectual property, disclaimers, limitations of liability, governing law, and notice requirements. Replace this paragraph with reviewed legal copy that matches the operator's actual practice and jurisdiction."
+    },
+    {
+      "type": "faq",
+      "title": "Common terms questions",
+      "items": [
+        {
+          "question": "Who is the contracting party?",
+          "answer": "The legal entity displayed in the footer of the site. The entity name flows in from the company.legalName field in site.config.ts."
+        },
+        {
+          "question": "Are technical specifications binding?",
+          "answer": "Demo placeholder. A real operator would clarify which specifications are binding and which are illustrative pre-sales material."
+        },
+        {
+          "question": "What governing law applies?",
+          "answer": "Demo placeholder. A real operator would specify governing law and dispute resolution venue here."
+        },
+        {
+          "question": "How are these terms updated?",
+          "answer": "Demo placeholder. A real operator would describe the change-notification path and effective date convention."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "slug": "/cases",
+  "template": "standard",
+  "seo": {
+    "title": "应用场景参考 — 营地 · 工地 · 办公 · 临时住房｜EFH House",
+    "description": "浏览预制模块化住房的通用应用场景：度假营地、工地营区、移动办公与临时住房等，助力海外 B2B 客户快速建立选型参照。"
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "eyebrow": "应用参考",
+      "title": "典型场景，启发您的下一个项目",
+      "description": "本页展示 EFH House 在海外市场常见的模块化部署思路，涵盖度假接待、工地后勤、现场办公与过渡性居住等类型。所述内容为通用应用场景说明，旨在帮助开发商、总承包商与营地运营商形成直观印象，不代表任何具名客户的专有案例或背书。",
+      "primaryCta": {
+        "label": "获取项目资料",
+        "href": "/zh/contact"
+      },
+      "image": "/assets/gallery/gallery-1.jpg",
+      "imageAlt": "EFH House 模块化空间布局参考"
+    },
+    {
+      "type": "case-studies",
+      "title": "通用应用场景示例",
+      "items": [
+        {
+          "title": "度假营地应用场景",
+          "location": "文旅与滨海度假",
+          "industry": "营地与酒店开发",
+          "description": "沿景观轴线布置模块化宾客单元，配合餐饮、休闲等公共服务，塑造统一品牌形象。适用于规划阶段的参考，具体设计因项目而异。",
+          "image": "/assets/solutions/resort-cabin.jpg"
+        },
+        {
+          "title": "工地营区应用场景",
+          "location": "大型土木与基建现场",
+          "industry": "工程建设",
+          "description": "顺地形布置模块化宿舍与辅助用房，可结合立体组合提升用地效率，服务施工高峰期的后勤需求。适用于规划阶段的参考。",
+          "image": "/assets/solutions/site-accommodation.jpg"
+        },
+        {
+          "title": "移动办公应用场景",
+          "location": "集散区或临时作业面",
+          "industry": "施工与物流协调",
+          "description": "采用可拓展或标准箱型模块打造计划、调度与安全会议空间，靠近人员或物资流向热点。适用于规划阶段的参考。",
+          "image": "/assets/solutions/mobile-office.jpg"
+        },
+        {
+          "title": "临时住房应用场景",
+          "location": "过渡安置与周转住宿",
+          "industry": "项目配套",
+          "description": "打包或平板化模块可在场外预制、快速进场安装，用于阶段性集结或过渡住宿安排。适用于规划阶段的参考。",
+          "image": "/assets/products/flat-pack-container.jpg"
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "title": "产品与场景掠影",
+      "images": [
+        "/assets/gallery/gallery-1.jpg",
+        "/assets/hero/main-hero.jpg",
+        "/assets/hero/hero-1.jpg"
+      ]
+    },
+    {
+      "type": "contact-block",
+      "title": "从灵感到方案，只差一次对话",
+      "description": "若您已初步锁定国家或地区、产品量级与目标周期，欢迎通过以下方式联络项目团队。我们将根据您的具体需求安排后续资料与技术支持，并在双方确认范围后推进下一阶段工作安排。",
+      "channels": [
+        {
+          "label": "注册地址",
+          "value": "CHANGE_ME Registered Address（发布前请更新为真实地址）"
+        },
+        {
+          "label": "WhatsApp",
+          "value": "+86 18355248224",
+          "href": "https://wa.me/8618355248224"
+        }
+      ],
+      "cta": {
+        "label": "洽谈住房项目",
+        "href": "/zh/contact"
+      }
+    }
+  ]
+}

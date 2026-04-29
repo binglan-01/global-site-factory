@@ -1,0 +1,93 @@
+{
+  "slug": "/services",
+  "template": "standard",
+  "seo": {
+    "title": "SaaS Services and Platform Support",
+    "description": "Explore Beta SaaS services for workflow design, implementation, analytics setup, and ongoing product enablement."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "eyebrow": "Services",
+      "title": "Product and implementation support for modern teams",
+      "description": "Beta SaaS combines cloud software with guided services so your team can configure, launch, and improve operating workflows.",
+      "primaryCta": {
+        "label": "Plan an implementation",
+        "href": "/contact"
+      },
+      "image": "/assets/placeholder.jpg",
+      "imageAlt": "Beta SaaS implementation specialists pairing on a workflow design session"
+    },
+    {
+      "type": "services-grid",
+      "title": "How we help",
+      "items": [
+        {
+          "title": "Workflow mapping",
+          "description": "Translate messy internal processes into clear software flows with owners and outcomes."
+        },
+        {
+          "title": "Analytics configuration",
+          "description": "Set up dashboards for activation, retention, support load, and revenue operations signals."
+        },
+        {
+          "title": "Team enablement",
+          "description": "Help admins and operators understand how to maintain workflows after launch."
+        }
+      ]
+    },
+    {
+      "type": "feature-list",
+      "title": "What you get with the platform",
+      "description": "Operating-grade primitives so customer teams stop rebuilding the same coordination glue.",
+      "items": [
+        {
+          "icon": "⚡",
+          "title": "Workflow automation",
+          "description": "Trigger handoffs, approvals, and notifications without writing custom integration code."
+        },
+        {
+          "icon": "📊",
+          "title": "Operating analytics",
+          "description": "Pre-built dashboards for activation, retention, support, and renewal motion."
+        },
+        {
+          "icon": "🔐",
+          "title": "Role-based access",
+          "description": "Granular permissions so each team only sees the workflows and data they need."
+        },
+        {
+          "icon": "🔄",
+          "title": "Open API",
+          "description": "Sync data both ways with your CRM, support, billing, and product analytics tools."
+        }
+      ]
+    },
+    {
+      "type": "certificates",
+      "title": "Security and compliance",
+      "items": [
+        {
+          "title": "SOC 2 Type II",
+          "description": "Annual audit covering security, availability, and confidentiality controls.",
+          "image": "/assets/placeholder.jpg"
+        },
+        {
+          "title": "GDPR aligned",
+          "description": "Data subject rights workflows and EU data handling procedures documented and reviewed.",
+          "image": "/assets/placeholder.jpg"
+        },
+        {
+          "title": "Encrypted in transit and at rest",
+          "description": "TLS in transit and AES-256 at rest across application data stores.",
+          "image": "/assets/placeholder.jpg"
+        }
+      ]
+    },
+    {
+      "type": "contact-form",
+      "title": "Request a platform consultation",
+      "formId": "beta-services-lead"
+    }
+  ]
+}

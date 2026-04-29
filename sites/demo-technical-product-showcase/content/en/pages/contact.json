@@ -1,0 +1,66 @@
+{
+  "slug": "/contact",
+  "template": "standard",
+  "seo": {
+    "title": "Contact the Showcase Demo",
+    "description": "Talk to the demo company about smart equipment, energy systems, and modular hardware engagements."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "eyebrow": "Contact",
+      "title": "Open a technical conversation.",
+      "description": "Share enough context for an engineer to respond meaningfully. The demo form submits to the standard /api/lead handler.",
+      "image": "/assets/hero/contact.jpg",
+      "imageAlt": "Operator workstation with a phone and an open notebook"
+    },
+    {
+      "type": "contact-form",
+      "title": "Send a structured inquiry",
+      "formId": "demo-tps-contact-lead"
+    },
+    {
+      "type": "contact-block",
+      "title": "Direct channels",
+      "description": "If a written form is not the right fit, use the channels below. The mailbox and phone number from site.config.ts are appended automatically below the listed channels.",
+      "channels": [
+        {
+          "label": "Sales engineering",
+          "value": "Mon–Fri 09:00–18:00 PT"
+        },
+        {
+          "label": "Procurement",
+          "value": "purchasing@example.com",
+          "href": "mailto:purchasing@example.com"
+        },
+        {
+          "label": "Service desk",
+          "value": "service@example.com",
+          "href": "mailto:service@example.com"
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Before you write",
+      "items": [
+        {
+          "question": "How quickly do you reply?",
+          "answer": "Sales engineering replies on the next business day in the customer's timezone. Service desk requests are triaged within four business hours."
+        },
+        {
+          "question": "What information helps the first reply land usefully?",
+          "answer": "A short description of the process, current equipment, success metric, and the country where the system will operate is usually enough to send back a credible first response."
+        },
+        {
+          "question": "Do you sign mutual NDAs before technical detail?",
+          "answer": "Yes, on request. A standard mutual NDA template is available; customer paper is reviewed within five business days."
+        },
+        {
+          "question": "Can samples ship before a purchase order?",
+          "answer": "Sample units against an evaluation agreement are common for pilot deployments. The terms cover handling, return, and conversion to a production order."
+        }
+      ]
+    }
+  ]
+}

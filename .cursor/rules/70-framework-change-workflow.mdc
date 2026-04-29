@@ -1,0 +1,26 @@
+---
+description: When a site needs a new section type, change the framework generically — never hardcode for one site
+alwaysApply: true
+---
+
+# Framework Change Workflow
+
+When a site requires a section type or capability that the framework does not yet support, **do not hardcode it for that one site**. Add it generically so every site and every theme can use it.
+
+## Required surface area for a new section type
+
+A generic framework change MUST update all of:
+
+1. `packages/validators/src/page.schema.ts` — add a new `XxxSectionSchema`, include it in the `SectionSchema` discriminated union, and export the inferred type.
+2. `packages/theme-*/src/components/<Section>.tsx` — add a real implementation in every existing theme, OR a safe fallback component (minimal stacked layout) if the theme cannot visually express it. Both options are acceptable; missing the section entirely is not.
+3. `packages/theme-*/src/index.ts` — export the new section component and its `*Section` / `*Props` types from every theme.
+4. `apps/site-builder/src/components/SectionRenderer.tsx` — add a new `case` to the switch that dispatches into the active theme's component.
+5. `docs/themes/<theme-id>.md` — describe how the section looks in each theme.
+6. Existing example pages (e.g. `sites/<demo-slug>/content/<locale>/pages/*.json`) — only if a demonstrable example is needed; do NOT modify real customer sites just to showcase a new section.
+
+## Hard rules
+
+- Do NOT introduce per-site components inside `apps/site-builder` or any theme package.
+- Do NOT create one-off section types for a single company unless the user explicitly asks.
+- Do NOT branch on `siteConfig.slug` inside theme components or `SectionRenderer`. If different rendering is needed, model it as a new `section.type` variant or a typed config option in `site.config.ts`, not as a slug match.
+- After a framework change, run `pnpm build-all-sites` to confirm every existing site still builds.

@@ -1,0 +1,49 @@
+{
+  "slug": "/privacy",
+  "template": "legal",
+  "seo": {
+    "title": "Privacy Policy — EFH House",
+    "description": "How EFH House collects and uses contact and project information submitted through this website. B2B placeholder policy—have counsel review before production reliance."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "eyebrow": "Legal",
+      "title": "Privacy Policy (placeholder)",
+      "description": "This privacy page is used for test deployment only. Production legal information must be reviewed and replaced before official launch. This policy applies to visitors who browse EFH House online or reach us through forms and email. The legal entity is Anhui Easy Foldable Housing Co., Ltd. Where the registered address still reads CHANGE_ME, the official address has not yet been published for external use—please replace it before launching campaigns.",
+      "image": "/assets/gallery/gallery-1.jpg",
+      "imageAlt": "Privacy and information security"
+    },
+    {
+      "type": "feature-list",
+      "title": "Policy essentials",
+      "description": "These bullets summarize how we handle information—they are not comprehensive legal advice; obtain jurisdiction-specific counsel for final wording.",
+      "items": [
+        {
+          "title": "Coverage",
+          "description": "Primarily covers marketing and project communication initiated via this site. Separate contracts or systems may govern other relationships."
+        },
+        {
+          "title": "Information categories",
+          "description": "Typical fields include name, company, title, phone, email, project narrative, and attachments you voluntarily provide. We do not use covert tracking to harvest contact data."
+        },
+        {
+          "title": "Purposes of use",
+          "description": "We use details to answer inquiries, share project materials, advance commercial and technical dialogue, and meet legal obligations. We do not divert your request into unrelated marketing without explicit consent."
+        },
+        {
+          "title": "Retention",
+          "description": "Information is kept only as long as needed for the purposes described and as required by bookkeeping, tax, or dispute rules in applicable markets."
+        },
+        {
+          "title": "Cross-border processing",
+          "description": "International programs may involve service providers abroad. We expect reasonable safeguards and, where appropriate, data-processing agreements."
+        },
+        {
+          "title": "Your rights & contact",
+          "description": "To exercise access, correction, deletion, or related requests, email privacy@efh-house.com. While the postal address remains a placeholder, this inbox remains valid for privacy inquiries."
+        }
+      ]
+    }
+  ]
+}

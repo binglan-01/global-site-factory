@@ -1,0 +1,25 @@
+---
+description: Cloudflare Pages deployment and lead-form handling rules
+alwaysApply: true
+---
+
+# Cloudflare Pages & Lead Handling
+
+## Cloudflare Pages
+
+- One company site normally maps to **one** Cloudflare Pages Project.
+- Standard Pages Project configuration:
+  - Root directory: `/`
+  - Build command: `pnpm build-site <siteSlug>`
+  - Output directory: `dist/sites/<siteSlug>`
+  - Environment variable: `NODE_VERSION=20`
+- Builds run via Cloudflare Pages Git Integration. Do NOT create GitHub Actions unless the user explicitly asks.
+- Cloudflare Pages Project name MUST equal `siteSlug` (kebab-case ASCII), and MUST appear in the site's row in `docs/registries/site-registry.md`.
+
+## Lead handling (`functions/api/lead.ts`)
+
+- The `ContactForm` component submits to `/api/lead`. The implementation lives in `functions/api/lead.ts` at the repo root, not inside `apps/site-builder/`.
+- `functions/api/lead.ts` MUST NEVER log customer PII (name, email, phone, message body, IP, etc.) to console, files, or third-party log sinks. Treat every submission as confidential by default.
+- Webhook URLs, CRM API keys, signing secrets, and any other credentials MUST come from Cloudflare environment variables / secrets. NEVER hardcode them in the function source.
+- Do NOT hardcode CRM credentials, webhook URLs, or notification email addresses inside theme components.
+- Site-specific contact data (`email`, `phone`, `whatsapp`, `legal.privacyEmail`, etc.) belongs in `sites/<siteSlug>/site.config.ts` only. Theme components receive these as props.

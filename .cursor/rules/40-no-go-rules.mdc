@@ -1,0 +1,32 @@
+---
+description: Prohibited choices and patterns for global-site-factory
+alwaysApply: true
+---
+
+# No-Go Rules
+
+The following choices are explicitly prohibited unless the user explicitly asks for them in writing.
+
+## Frameworks & runtime
+
+- Do NOT introduce Next.js. Astro is the only static-site framework.
+- Do NOT introduce a database.
+- Do NOT connect a Headless CMS.
+- Do NOT use Tailwind or any utility-CSS framework.
+
+## Repo & CI
+
+- Do NOT create GitHub Actions. Builds run on Cloudflare Pages Git Integration.
+- Do NOT use Gitee.
+
+## File layout
+
+- Do NOT place Cloudflare Functions under `apps/site-builder/functions`. They live at the repo root `functions/` only.
+- Do NOT let Astro (`apps/site-builder`) read `sites/` directly. It reads only `apps/site-builder/.generated/`.
+- Do NOT manually edit `apps/site-builder/.generated/`. It is produced by build scripts and must remain regenerable.
+- Do NOT treat `dist/` as source. It is build output and is wiped on every build.
+
+## Themes & content
+
+- Do NOT hardcode real company names, logos, navigation labels, emails, phone numbers, or marketing copy inside `packages/theme-*` or `apps/site-builder` components.
+- Do NOT write per-site CSS inside a theme package. Site-level visual differentiation must flow through `site.config.ts` data only.

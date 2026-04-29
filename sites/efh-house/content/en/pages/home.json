@@ -1,0 +1,163 @@
+{
+  "slug": "/",
+  "template": "standard",
+  "seo": {
+    "title": "Prefab & Modular Housing Solutions for Global Projects | EFH House",
+    "description": "EFH House supplies prefab and modular building solutions to international B2B projects—space capsule houses, container houses, double-wing expandable containers, and flat pack containers—for resort camps, site accommodation, temporary housing, mobile offices, commercial fronts, and hospitality-style modular living."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "variant": "split-carousel",
+      "eyebrow": "Prefab · Modular · Global Projects",
+      "title": "The modular housing partner global projects rely on",
+      "description": "TEST SITE NOTICE: This website is currently used for Cloudflare Pages deployment testing. Product information and contact details are not for production use. EFH House works with overseas buyers, contractors, camp developers, and hospitality investors who need dependable prefab housing. Our range—Space Capsule Houses, Container Houses, Double-Wing Expandable Containers, and Flat Pack Containers—supports resort and RV parks, construction camps and site villages, temporary housing, mobile offices, commercial showcase space, and modular guest or lifestyle units. We focus on professional scoping and project dialogue so your camp, yard, or infrastructure program comes together efficiently. Share your intended use, scale, destination, and delivery expectations, and our project team will align product routes and configuration guidance with your goals.",
+      "primaryCta": {
+        "label": "Request Project Information",
+        "href": "/contact"
+      },
+      "image": "/assets/hero/main-hero.jpg",
+      "imageAlt": "EFH House prefab modular unit in application",
+      "carousel": {
+        "autoplay": true,
+        "intervalMs": 4500,
+        "perspective": true,
+        "lightbox": true,
+        "images": [
+          {
+            "src": "/assets/hero/hero-1.jpg",
+            "alt": "Modular campus cluster for site accommodation and project support",
+            "title": "Site camps & modular lodging"
+          },
+          {
+            "src": "/assets/hero/hero-2.jpg",
+            "alt": "Coastal resort and hospitality-oriented modular space",
+            "title": "Resort & hospitality settings"
+          },
+          {
+            "src": "/assets/hero/hero-3.jpg",
+            "alt": "Modular guest unit in scenic open landscape",
+            "title": "Lifestyle & retreat spaces"
+          }
+        ]
+      }
+    },
+    {
+      "type": "stats",
+      "items": [
+        {
+          "value": "Cross-sector",
+          "label": "Diverse use cases",
+          "description": "We support hospitality and resort work, heavy civil and energy builds, workforce housing, and temporary facilities—with modular concepts tuned to each program."
+        },
+        {
+          "value": "Project-led",
+          "label": "End-to-end collaboration",
+          "description": "Together we shape layouts and product mix around site conditions, logistics, operating intent, and how you will run the asset day to day."
+        },
+        {
+          "value": "Four families",
+          "label": "One-stop selection",
+          "description": "Space capsule houses, container houses, double-wing expandable containers, and flat pack containers cover export and project-scale needs from boutique hospitality to large site villages."
+        }
+      ]
+    },
+    {
+      "type": "services-grid",
+      "title": "Core application areas",
+      "items": [
+        {
+          "title": "Resort, hospitality & camp lodging",
+          "description": "Standalone or grouped guest modules for hotels, RV parks, and mixed-use tourism destinations—balancing façade impact, interior comfort, and brand consistency."
+        },
+        {
+          "title": "Construction site accommodation & project yards",
+          "description": "Worker dormitories, ancillaries, and circulation-conscious modular yards that sit close to the active work front and scale with the job."
+        },
+        {
+          "title": "Temporary worker housing",
+          "description": "Mid-density layouts that coordinate hygiene routes, egress, and phased module supply so quality stays high through peak manpower periods."
+        },
+        {
+          "title": "Mobile offices & commercial space",
+          "description": "Container or expandable modules for site HQ, coordination centers, or short-term commercial frontage—ready for both build-phase and early operations."
+        },
+        {
+          "title": "Emergency & interim shelter",
+          "description": "Interim modular envelopes when you need usable space quickly, with phased delivery and dependable structural intent."
+        },
+        {
+          "title": "Backyard studios & lifestyle modules",
+          "description": "Compact, flexible accessory forms that help owners extend useful space where local rules and site fit allow."
+        }
+      ]
+    },
+    {
+      "type": "image-text",
+      "title": "Tell us about your project",
+      "description": "Share the country or region, primary use, preferred product family, estimated quantity, desired delivery rhythm, and any finish or performance priorities. EFH House project teams respond with product combinations and documentation support grounded in location, quantity, configuration, logistics, and on-site installation context. The earlier we understand the full picture, the faster we can align on next steps and technical dialogue.",
+      "image": "/assets/gallery/gallery-1.jpg",
+      "imageAlt": "EFH House modular products and production context",
+      "reverse": false,
+      "cta": {
+        "label": "Discuss Your Housing Project",
+        "href": "/contact"
+      }
+    },
+    {
+      "type": "gallery",
+      "title": "Products & scenes",
+      "images": [
+        "/assets/gallery/gallery-1.jpg",
+        "/assets/hero/main-hero.jpg",
+        "/assets/hero/hero-1.jpg",
+        "/assets/hero/hero-3.jpg"
+      ]
+    },
+    {
+      "type": "process-steps",
+      "title": "How we work with you",
+      "steps": [
+        {
+          "title": "Capture requirements",
+          "description": "Country or region, climate and terrain, purpose, estimated quantity, site access, and day-to-day operation of the space."
+        },
+        {
+          "title": "Match the modular approach",
+          "description": "We recommend capsule, container, expandable, or flat pack directions—and how to combine them—based on logistics and site assumptions you confirm."
+        },
+        {
+          "title": "Align documentation",
+          "description": "Once priorities and timing are mutual, we advance drawing dialogue, reference samples, or engineering notes in an orderly cadence."
+        },
+        {
+          "title": "Coordinate delivery thinking",
+          "description": "Shipping and installation concepts stay aligned with your contractor schedule so each step is actionable and traceable."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Frequently asked questions",
+      "items": [
+        {
+          "question": "Can I download a universal product catalog or one-size commercial pack from this website?",
+          "answer": "EFH House works project by project. Product mix, logistics, and configuration change with every buyer and region, so we provide matched briefings through direct dialogue rather than generic web downloads."
+        },
+        {
+          "question": "May we request technical drawings early in the relationship?",
+          "answer": "Yes. After an initial needs review and mutual intent to proceed, we support structured drawing exchange and technical clarification so both sides can move forward with confidence."
+        },
+        {
+          "question": "Which modular lines do you focus on?",
+          "answer": "Our core offer is space capsule houses, container houses, double-wing expandable containers, and flat pack containers—usable alone or together across hospitality, site accommodation, mobile offices, and more."
+        }
+      ]
+    },
+    {
+      "type": "contact-form",
+      "title": "Contact Our Project Team",
+      "formId": "efh-house-contact-inquiry"
+    }
+  ]
+}

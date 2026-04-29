@@ -1,0 +1,80 @@
+---
+import { buildCanonical, buildOrganizationSchema, buildPageTitle } from "@factory/seo";
+import "@factory/theme-enterprise/styles/theme-enterprise.css";
+import "@factory/theme-technical-product-showcase/styles/theme-technical-product-showcase.css";
+import type { PageContent, SiteConfig } from "@factory/validators";
+import {
+  getThemeBundle,
+  type FooterLink,
+  type HeaderNavItem,
+} from "../themes/registry";
+import { buildLanguageLinks } from "../utils/locale-switch";
+import { buildLocalizedPath } from "../utils/route";
+
+type Props = {
+  siteConfig: SiteConfig;
+  page: PageContent;
+  locale: string;
+};
+
+const { siteConfig, page, locale } = Astro.props;
+const title = buildPageTitle(page.seo.title, siteConfig.seo.titleTemplate);
+const pageUrl = buildCanonical(siteConfig.domain, locale, page.slug, siteConfig.defaultLocale);
+const organizationSchema = buildOrganizationSchema(siteConfig);
+
+const navigation: HeaderNavItem[] = siteConfig.navigation.map((item) => ({
+  label: item.label,
+  href: buildLocalizedPath(siteConfig, locale, item.href),
+}));
+
+const footerLinks: FooterLink[] = [
+  {
+    label: "Privacy",
+    href: buildLocalizedPath(siteConfig, locale, "/privacy"),
+  },
+  {
+    label: "Terms",
+    href: buildLocalizedPath(siteConfig, locale, "/terms"),
+  },
+  {
+    label: siteConfig.legal.privacyEmail,
+    href: `mailto:${siteConfig.legal.privacyEmail}`,
+  },
+];
+
+const copyrightText = `© ${new Date().getFullYear()} ${siteConfig.company.legalName}`;
+const homeHref = buildLocalizedPath(siteConfig, locale, "/");
+const bodyClass = `theme-${siteConfig.theme}`;
+
+const languageLinks = buildLanguageLinks(siteConfig, locale, page.slug);
+
+const { Header, Footer } = getThemeBundle(siteConfig.theme);
+---
+
+<!doctype html>
+<html lang={locale}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={page.seo.description} />
+    <link rel="canonical" href={pageUrl} />
+    <script is:inline type="application/ld+json" set:html={JSON.stringify(organizationSchema)} />
+  </head>
+  <body class={bodyClass}>
+    <Header
+      companyName={siteConfig.company.displayName}
+      homeHref={homeHref}
+      navigation={navigation}
+      languageLinks={languageLinks}
+    />
+    <main>
+      <slot />
+    </main>
+    <Footer
+      companyName={siteConfig.company.legalName}
+      copyrightText={copyrightText}
+      links={footerLinks}
+    />
+  </body>
+</html>

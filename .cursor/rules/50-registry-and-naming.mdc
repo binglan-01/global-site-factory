@@ -1,0 +1,51 @@
+---
+description: Identifier naming rules and required registries for sites and themes
+alwaysApply: true
+---
+
+# Identifier Naming & Registries
+
+## Technical vs. display names
+
+- All technical identifiers MUST use lowercase kebab-case ASCII.
+- Chinese characters are allowed ONLY in:
+  - Documentation files under `docs/`.
+  - Page copy and `seo.*` fields inside `content/<locale>/pages/*.json`.
+  - `navigation[].label`, `company.displayName`, marketing copy in `site.config.ts`.
+  - Registry display-name columns.
+- The following MUST NEVER contain Chinese characters: `siteSlug`, theme ID, package names, folder names, Cloudflare Pages Project names, environment variable names, import paths, JSON file names, JSON field names.
+
+## Required registries
+
+Every site and every theme MUST be recorded in a Markdown registry under `docs/registries/`.
+
+### `docs/registries/site-registry.md`
+
+One row per site, including:
+
+- `siteSlug`
+- Chinese name (中文公司名称)
+- English display name
+- Legal entity
+- Industry
+- Theme (theme ID)
+- Domain
+- Cloudflare Pages Project name
+- Status (e.g. `active`, `staging`, `archived`)
+- Purpose (one sentence)
+
+### `docs/registries/theme-registry.md`
+
+One row per theme, including:
+
+- Theme ID
+- Chinese name (中文主题名称)
+- Package directory (`packages/theme-<id>`)
+- CSS root class (`.theme-<id>`)
+- CSS prefix (e.g. `.ims-*`)
+- Scenario / target industries
+- Visual keywords
+- Status (e.g. `active`, `draft`, `archived`)
+- Theme document path (`docs/themes/<id>.md`)
+
+The registries are the single source of truth for "what sites exist" and "what themes exist". Any creation, deletion, or status change MUST update them.

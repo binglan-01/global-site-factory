@@ -1,0 +1,78 @@
+{
+  "slug": "/products/container-houses",
+  "template": "standard",
+  "seo": {
+    "title": "集装箱房屋 — 工地住宿 · 模块化营区 · 商业配套｜EFH House",
+    "description": "EFH House 集装箱房屋服务工地住宿、临时办公、员工宿舍、模块化营地及商业前场，强调模块化组合、运输组织与全球项目适配能力。"
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "eyebrow": "模块化营区主力",
+      "title": "集装箱房屋",
+      "description": "集装箱房屋以标准化模块与可扩展组合见长，是全球工地住宿、临时办公、员工宿舍、模块化营地及商业前场的成熟方案。模块可在工厂预制后整箱运输至现场，结合项目动线与吊装条件迅速形成可用空间，帮助总承包商与营地运营商在紧迫工期下保持稳定的后勤保障与办公效率。",
+      "primaryCta": {
+        "label": "洽谈您的住房项目",
+        "href": "/zh/contact"
+      },
+      "image": "/assets/products/container-house.jpg",
+      "imageAlt": "EFH House 集装箱模块化房屋"
+    },
+    {
+      "type": "gallery",
+      "title": "产品与应用展示",
+      "layout": "product-grid",
+      "columns": 4,
+      "imageAspect": "landscape",
+      "assetDir": "/assets/products/container-houses",
+      "lightbox": true,
+      "zoom": true
+    },
+    {
+      "type": "feature-list",
+      "title": "典型优势与目标用户",
+      "description": "依托模块化重复组装逻辑，集装箱房屋帮助客户把营地建设转化为可管理的工业化流程。",
+      "items": [
+        {
+          "title": "工地住宿与后勤保障",
+          "description": "为土建、能源、交通等大型项目提供近场宿舍、卫浴与餐饮配套，缩短工人通勤时间，提升安全管理水平。"
+        },
+        {
+          "title": "临时办公与指挥中心",
+          "description": "可快速部署的现场办公、指挥或培训空间，保持与施工现场的信息同步。"
+        },
+        {
+          "title": "模块化营地与复合功能组团",
+          "description": "线性或网格化排布实现宿舍、办公、仓储一体化，适配分期建设与扩展计划。"
+        },
+        {
+          "title": "商业前场与品牌展示",
+          "description": "利用模块化箱体打造可循环使用的展销、接待或服务中心，突出企业识别度。"
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "常见问题",
+      "items": [
+        {
+          "question": "是否能在线查看面向所有地区的统一商务资料？",
+          "answer": "我们按项目单独准备资料。不同地区的法规、运输与现场条件差异较大，统一表格难以反映真实情况，因此需通过项目沟通获取。"
+        },
+        {
+          "question": "哪些信息有助于加快首次反馈？",
+          "answer": "建议提供场地与基础情况、起重或道路条件、目标入住人数、气候与保温诉求，以及对外立面或隔声的特殊要求。"
+        },
+        {
+          "question": "合作流程是否类似电商平台？",
+          "answer": "EFH House 面向 B2B 项目客户，采取人工评审与资料交换模式，确保每一项供货都与合同与技术附件一致。"
+        }
+      ]
+    },
+    {
+      "type": "contact-form",
+      "title": "联系项目团队 — 集装箱房屋",
+      "formId": "efh-house-inquiry-container-houses"
+    }
+  ]
+}
