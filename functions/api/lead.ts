@@ -1,5 +1,11 @@
+type LeadBindings = {
+  LEAD_WEBHOOK_URL?: string;
+  LEAD_WEBHOOK_SECRET?: string;
+};
+
 type PagesFunctionContext = {
   request: Request;
+  env?: LeadBindings;
 };
 
 type JsonBody = {
@@ -14,6 +20,19 @@ type LeadFormData = {
   message: string;
   companySlug: string;
   formId: string;
+  phone?: string;
+  pageUrl?: string;
+};
+
+/** JSON body forwarded to LEAD_WEBHOOK_URL after validation succeeds */
+type LeadWebhookPayload = {
+  name: string;
+  email: string;
+  message: string;
+  companySlug: string;
+  formId: string;
+  createdAt: string;
+  userAgent: string;
   phone?: string;
   pageUrl?: string;
 };
@@ -110,8 +129,83 @@ function redirectResponse(targetUrl: string): Response {
   });
 }
 
+function configuredWebhookUrl(env: LeadBindings): string | undefined {
+  const raw = env.LEAD_WEBHOOK_URL;
+  if (typeof raw !== "string") {
+    return undefined;
+  }
+  const trimmed = raw.trim();
+  return trimmed.length > 0 ? trimmed : undefined;
+}
+
+function configuredWebhookSecret(env: LeadBindings): string | undefined {
+  const raw = env.LEAD_WEBHOOK_SECRET;
+  if (typeof raw !== "string") {
+    return undefined;
+  }
+  const trimmed = raw.trim();
+  return trimmed.length > 0 ? trimmed : undefined;
+}
+
+function buildWebhookPayload(data: LeadFormData, request: Request): LeadWebhookPayload {
+  const base: LeadWebhookPayload = {
+    name: data.name,
+    email: data.email,
+    message: data.message,
+    companySlug: data.companySlug,
+    formId: data.formId,
+    createdAt: new Date().toISOString(),
+    userAgent: request.headers.get("user-agent") ?? "",
+  };
+
+  const withOptionals: LeadWebhookPayload = { ...base };
+  if (data.phone !== undefined) {
+    withOptionals.phone = data.phone;
+  }
+  if (data.pageUrl !== undefined) {
+    withOptionals.pageUrl = data.pageUrl;
+  }
+  return withOptionals;
+}
+
+function webhookUpstreamFailedResponse(wantsJson: boolean, redirectBaseUrl: string): Response {
+  if (wantsJson) {
+    return jsonResponse(
+      {
+        ok: false,
+        message: "Lead submission failed. Please try again later.",
+      },
+      503,
+    );
+  }
+  return redirectResponse(appendQueryParam(redirectBaseUrl, "lead", "error"));
+}
+
+async function forwardLeadToWebhook(
+  webhookUrl: string,
+  payload: LeadWebhookPayload,
+  env: LeadBindings,
+): Promise<Response> {
+  const headers = new Headers();
+  headers.set("content-type", "application/json; charset=utf-8");
+
+  const secret = configuredWebhookSecret(env);
+  if (secret !== undefined) {
+    headers.set("X-Lead-Webhook-Secret", secret);
+  }
+
+  const webhookResponse = await fetch(webhookUrl, {
+    method: "POST",
+    headers,
+    body: JSON.stringify(payload),
+  });
+
+  return webhookResponse;
+}
+
 export async function onRequest(context: PagesFunctionContext): Promise<Response> {
   const { request } = context;
+  const env: LeadBindings = context.env ?? {};
 
   if (request.method !== "POST") {
     return new Response("Method Not Allowed", {
@@ -144,6 +238,24 @@ export async function onRequest(context: PagesFunctionContext): Promise<Response
       return redirectResponse(appendQueryParam(fallbackUrl, "lead", "invalid"));
     }
 
+    const data = result.data;
+    const redirectBaseOnError = data.pageUrl ?? "/";
+
+    const webhookUrl = configuredWebhookUrl(env);
+    if (webhookUrl !== undefined) {
+      const payload = buildWebhookPayload(data, request);
+      let webhookResponse: Response;
+      try {
+        webhookResponse = await forwardLeadToWebhook(webhookUrl, payload, env);
+      } catch {
+        return webhookUpstreamFailedResponse(wantsJson, redirectBaseOnError);
+      }
+
+      if (!webhookResponse.ok) {
+        return webhookUpstreamFailedResponse(wantsJson, redirectBaseOnError);
+      }
+    }
+
     if (wantsJson) {
       return jsonResponse(
         {
@@ -154,7 +266,7 @@ export async function onRequest(context: PagesFunctionContext): Promise<Response
       );
     }
 
-    const successUrl = result.data.pageUrl ?? "/";
+    const successUrl = data.pageUrl ?? "/";
     return redirectResponse(appendQueryParam(successUrl, "lead", "ok"));
   } catch {
     if (wantsJson) {
