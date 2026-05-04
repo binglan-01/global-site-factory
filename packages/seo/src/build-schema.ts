@@ -1,4 +1,4 @@
-import type { SiteConfig } from "@factory/validators";
+import { resolveLocalizedString, type SiteConfig } from "@factory/validators";
 
 export type OrganizationSchema = {
   "@context": "https://schema.org";
@@ -14,7 +14,11 @@ export function buildOrganizationSchema(siteConfig: SiteConfig): OrganizationSch
   return {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: siteConfig.company.displayName,
+    name: resolveLocalizedString(
+      siteConfig.company.displayName,
+      siteConfig.defaultLocale,
+      siteConfig.defaultLocale,
+    ),
     legalName: siteConfig.company.legalName,
     url: siteConfig.domain,
     email: siteConfig.company.email,

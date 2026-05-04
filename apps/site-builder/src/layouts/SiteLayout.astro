@@ -2,7 +2,7 @@
 import { buildCanonical, buildOrganizationSchema, buildPageTitle } from "@factory/seo";
 import "@factory/theme-enterprise/styles/theme-enterprise.css";
 import "@factory/theme-technical-product-showcase/styles/theme-technical-product-showcase.css";
-import type { PageContent, SiteConfig } from "@factory/validators";
+import { resolveLocalizedString, type PageContent, type SiteConfig } from "@factory/validators";
 import {
   getThemeBundle,
   type FooterLink,
@@ -23,17 +23,26 @@ const pageUrl = buildCanonical(siteConfig.domain, locale, page.slug, siteConfig.
 const organizationSchema = buildOrganizationSchema(siteConfig);
 
 const navigation: HeaderNavItem[] = siteConfig.navigation.map((item) => ({
-  label: item.label,
+  label: resolveLocalizedString(item.label, locale, siteConfig.defaultLocale),
   href: buildLocalizedPath(siteConfig, locale, item.href),
 }));
 
+const footerPrivacyLabel =
+  siteConfig.footerLinkLabels?.privacy !== undefined
+    ? resolveLocalizedString(siteConfig.footerLinkLabels.privacy, locale, siteConfig.defaultLocale)
+    : "Privacy";
+const footerTermsLabel =
+  siteConfig.footerLinkLabels?.terms !== undefined
+    ? resolveLocalizedString(siteConfig.footerLinkLabels.terms, locale, siteConfig.defaultLocale)
+    : "Terms";
+
 const footerLinks: FooterLink[] = [
   {
-    label: "Privacy",
+    label: footerPrivacyLabel,
     href: buildLocalizedPath(siteConfig, locale, "/privacy"),
   },
   {
-    label: "Terms",
+    label: footerTermsLabel,
     href: buildLocalizedPath(siteConfig, locale, "/terms"),
   },
   {
@@ -63,7 +72,11 @@ const { Header, Footer } = getThemeBundle(siteConfig.theme);
   </head>
   <body class={bodyClass}>
     <Header
-      companyName={siteConfig.company.displayName}
+      companyName={resolveLocalizedString(
+        siteConfig.company.displayName,
+        locale,
+        siteConfig.defaultLocale,
+      )}
       homeHref={homeHref}
       navigation={navigation}
       languageLinks={languageLinks}

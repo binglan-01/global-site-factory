@@ -6,7 +6,10 @@ export default defineSiteConfig({
     // PRODUCTION legalName: "Anhui Easy Foldable Housing Co., Ltd."
     legalName: "EFH House Test Site (Not a production website)",
     // PRODUCTION displayName: "EFH House"
-    displayName: "EFH House Test Site",
+    displayName: {
+      en: "EFH House Test Site",
+      zh: "EFH House 测试站",
+    },
     registeredCountry: "China",
     registeredAddress: "CHANGE_ME Registered Address",
     // PRODUCTION email: "info@efhhouse.com"
@@ -24,34 +27,38 @@ export default defineSiteConfig({
   defaultLocale: "en",
   navigation: [
     {
-      label: "Home",
+      label: { en: "Home", zh: "首页" },
       href: "/",
     },
     {
-      label: "Products",
+      label: { en: "Products", zh: "产品" },
       href: "/products",
     },
     {
-      label: "Solutions",
+      label: { en: "Solutions", zh: "解决方案" },
       href: "/solutions",
     },
     {
-      label: "Cases",
+      label: { en: "Cases", zh: "案例" },
       href: "/cases",
     },
     {
-      label: "Blog",
+      label: { en: "Blog", zh: "博客" },
       href: "/blog",
     },
     {
-      label: "About Us",
+      label: { en: "About Us", zh: "关于我们" },
       href: "/about",
     },
     {
-      label: "Contact Us",
+      label: { en: "Contact Us", zh: "联系我们" },
       href: "/contact",
     },
   ],
+  footerLinkLabels: {
+    privacy: { en: "Privacy", zh: "隐私政策" },
+    terms: { en: "Terms", zh: "使用条款" },
+  },
   seo: {
     defaultTitle:
       "[TEST SITE] EFH House | Prefab Housing and Modular Building Solutions",
