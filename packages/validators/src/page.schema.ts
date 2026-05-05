@@ -158,6 +158,7 @@ const ContactFormSectionSchema = z.object({
 
 const FeatureListSectionSchema = z.object({
   type: z.literal("feature-list"),
+  variant: z.optional(z.enum(["standard", "scroll-mask-carousel"])),
   title: z.string().min(1, "Feature list title is required."),
   description: z.optional(z.string().min(1, "Feature list description cannot be empty.")),
   items: z
@@ -166,6 +167,7 @@ const FeatureListSectionSchema = z.object({
         icon: z.optional(z.string().min(1, "Feature icon cannot be empty.")),
         image: z.optional(z.string().min(1, "Feature image cannot be empty.")),
         imageAlt: z.optional(z.string().min(1, "Feature imageAlt cannot be empty.")),
+        href: z.optional(SiteRelativeHrefSchema),
       }),
     )
     .min(1, "Feature list requires at least one item."),

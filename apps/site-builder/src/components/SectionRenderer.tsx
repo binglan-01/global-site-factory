@@ -51,6 +51,7 @@ export function SectionRenderer({ pageUrl, section, siteConfig, siteSlug }: Sect
     case "contact-form":
       return <ContactForm section={section} siteSlug={siteSlug} pageUrl={pageUrl} />;
     case "feature-list":
+      /* ESS `variant: "scroll-mask-carousel"` is hydrated in SectionBlock.astro (client:visible). */
       return <FeatureList section={section} />;
     case "image-text":
       return <ImageText section={section} />;

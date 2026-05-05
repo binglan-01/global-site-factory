@@ -40,6 +40,10 @@ export {
   type FullScreenHeroCarouselProps,
 } from "./components/FullScreenHeroCarousel";
 export {
+  ScrollMaskRevealCarousel,
+  type ScrollMaskRevealCarouselProps,
+} from "./components/ScrollMaskRevealCarousel";
+export {
   ScrollRevealShowcase,
   type ScrollRevealShowcaseProps,
 } from "./components/ScrollRevealShowcase";

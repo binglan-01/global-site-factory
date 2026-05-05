@@ -29,50 +29,51 @@
     },
     {
       "type": "feature-list",
-      "title": "Application showcase",
-      "description": "Scroll-driven cards highlight where rigid enclosures matter most — swap imagery for your programs.",
+      "variant": "scroll-mask-carousel",
+      "title": "Energy Storage Enclosures Across Applications",
+      "description": "From utility-scale storage to commercial energy systems, our enclosure platforms support reliable protection across clean energy infrastructure.",
       "items": [
         {
-          "title": "Utility-scale Energy Storage",
-          "description": "Modular enclosures for grid-forming assets and ancillary services deployments.",
-          "image": "/assets/placeholder-1.jpg",
-          "imageAlt": "Placeholder visual",
-          "icon": "①"
+          "title": "Utility-scale Storage",
+          "description": "Walkable and modular bay layouts for grid programs, frequency response, and ancillary services.",
+          "image": "/assets/showcase-energy-1.jpg",
+          "imageAlt": "Utility-scale storage enclosure placeholder",
+          "href": "/products#utility"
         },
         {
-          "title": "Commercial & Industrial Storage",
-          "description": "Rugged cabinet systems engineered for constrained plant footprints and uptime.",
-          "image": "/assets/placeholder-2.jpg",
-          "imageAlt": "Placeholder visual",
-          "icon": "②"
+          "title": "C&I Energy Storage",
+          "description": "Rugged cabinets for plant peaks, demand management, and uptime-first operations.",
+          "image": "/assets/showcase-energy-2.jpg",
+          "imageAlt": "Commercial and industrial storage enclosure placeholder",
+          "href": "/products#ci"
         },
         {
-          "title": "Solar Energy Storage",
-          "description": "Coupled enclosures that pair with photovoltaic generation for smoothed ramp rates.",
-          "image": "/assets/placeholder-1.jpg",
-          "imageAlt": "Placeholder visual",
-          "icon": "③"
-        },
-        {
-          "title": "Wind Power Storage",
-          "description": "Vibration-aware structures for remote turbine balance-of-plant applications.",
-          "image": "/assets/placeholder-2.jpg",
-          "imageAlt": "Placeholder visual",
-          "icon": "④"
+          "title": "Solar Storage",
+          "description": "Coupled enclosures that pair with PV generation for smoother ramp and firming.",
+          "image": "/assets/showcase-energy-3.jpg",
+          "imageAlt": "Solar plus storage enclosure placeholder",
+          "href": "/solutions"
         },
         {
           "title": "EV Charging Storage",
-          "description": "Buffer cabinets that support high-power dispensing without grid overload.",
-          "image": "/assets/placeholder-1.jpg",
-          "imageAlt": "Placeholder visual",
-          "icon": "⑤"
+          "description": "Buffer cabinets for high-power dispensing without overloading host feeders.",
+          "image": "/assets/showcase-energy-1.jpg",
+          "imageAlt": "EV charging storage enclosure placeholder",
+          "href": "/solutions#ev"
+        },
+        {
+          "title": "Telecom Backup Power",
+          "description": "Sealed bays for remote towers, edge switching, and long maintenance cycles.",
+          "image": "/assets/showcase-energy-2.jpg",
+          "imageAlt": "Telecom backup cabinet placeholder",
+          "href": "/products#telecom"
         },
         {
           "title": "Data Center Backup Power",
-          "description": "Walkable bay layouts for hyperscale standby and edge compute resilience.",
-          "image": "/assets/placeholder-2.jpg",
-          "imageAlt": "Placeholder visual",
-          "icon": "⑥"
+          "description": "Walkable layouts for standby and distributed compute resilience at scale.",
+          "image": "/assets/showcase-energy-3.jpg",
+          "imageAlt": "Data center backup enclosure placeholder",
+          "href": "/solutions"
         }
       ]
     },

@@ -29,50 +29,51 @@
     },
     {
       "type": "feature-list",
-      "title": "应用场景展示",
-      "description": "以下卡片用于演示滚动呈现与轮播交互，请替换为贵司真实项目与摄影资产。",
+      "variant": "scroll-mask-carousel",
+      "title": "多场景储能壳体应用",
+      "description": "从源网侧储能到工商业能源系统，为不同能源基础设施提供可靠防护与结构支撑。",
       "items": [
         {
           "title": "源网侧储能",
-          "description": "适配电网调度与辅助服务项目的模块化储能壳体与电池舱方案占位。",
-          "image": "/assets/placeholder-1.jpg",
-          "imageAlt": "Placeholder visual",
-          "icon": "①"
+          "description": "面向电网调度、调频与辅助服务项目的模块化电池舱与维护通道占位说明。",
+          "image": "/assets/showcase-energy-1.jpg",
+          "imageAlt": "源网侧储能壳体占位图",
+          "href": "/products#utility"
         },
         {
           "title": "工商业储能",
-          "description": "为高可用制造与园区负荷设计的紧凑机柜与并柜结构占位说明。",
-          "image": "/assets/placeholder-2.jpg",
-          "imageAlt": "Placeholder visual",
-          "icon": "②"
+          "description": "为园区与制造场景设计的紧凑机柜、并柜结构与长期可维护性占位。",
+          "image": "/assets/showcase-energy-2.jpg",
+          "imageAlt": "工商业储能壳体占位图",
+          "href": "/products#ci"
         },
         {
           "title": "光伏储能",
-          "description": "与光伏发电协同的平滑出力与峰谷调节场景占位描述。",
-          "image": "/assets/placeholder-1.jpg",
-          "imageAlt": "Placeholder visual",
-          "icon": "③"
-        },
-        {
-          "title": "风电储能",
-          "description": "面向风电场站与远程集控的耐振结构与环境隔离示例占位。",
-          "image": "/assets/placeholder-2.jpg",
-          "imageAlt": "Placeholder visual",
-          "icon": "④"
+          "description": "与光伏发电耦合的出力平滑与峰谷调节场景占位文案。",
+          "image": "/assets/showcase-energy-3.jpg",
+          "imageAlt": "光伏储能壳体占位图",
+          "href": "/solutions"
         },
         {
           "title": "充电站储能",
-          "description": "缓解大功率充电尖峰对配电网冲击的缓冲型储能柜占位。",
-          "image": "/assets/placeholder-1.jpg",
-          "imageAlt": "Placeholder visual",
-          "icon": "⑤"
+          "description": "缓解大功率充电尖峰冲击、提升配电友好度的缓冲型储能柜占位。",
+          "image": "/assets/showcase-energy-1.jpg",
+          "imageAlt": "充电站储能壳体占位图",
+          "href": "/solutions#ev"
+        },
+        {
+          "title": "通信备电",
+          "description": "面向远端站点与边缘交换的密封、温控取向电池舱占位示例。",
+          "image": "/assets/showcase-energy-2.jpg",
+          "imageAlt": "通信备电储能柜占位图",
+          "href": "/products#telecom"
         },
         {
           "title": "数据中心备用电源",
-          "description": "面向超大规模与边缘算力场景的维护通道与并柜布局占位。",
-          "image": "/assets/placeholder-2.jpg",
-          "imageAlt": "Placeholder visual",
-          "icon": "⑥"
+          "description": "面向超大规模与边缘算力的维护通道及并柜散热布局占位描述。",
+          "image": "/assets/showcase-energy-3.jpg",
+          "imageAlt": "数据中心备用电源壳体占位图",
+          "href": "/solutions"
         }
       ]
     },

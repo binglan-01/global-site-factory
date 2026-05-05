@@ -1,5 +1,6 @@
 import type { FeatureListProps as EnterpriseFeatureProps } from "@factory/theme-enterprise";
 
+import { ScrollMaskRevealCarousel } from "./ScrollMaskRevealCarousel";
 import { ScrollRevealShowcase } from "./ScrollRevealShowcase";
 
 export type FeatureListProps = EnterpriseFeatureProps;
@@ -12,6 +13,10 @@ export function FeatureList({ section }: FeatureListProps) {
     imageAlt: item.imageAlt,
     title: item.title,
   }));
+
+  if (section.variant === "scroll-mask-carousel") {
+    return <ScrollMaskRevealCarousel section={section} />;
+  }
 
   return <ScrollRevealShowcase items={items} sectionDescription={section.description} sectionTitle={section.title} />;
 }

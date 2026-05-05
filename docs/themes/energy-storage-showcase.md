@@ -37,7 +37,7 @@
 | --- | --- |
 | `hero` | `fullscreen-carousel`：`FullScreenHeroCarousel`（SectionRenderer 占位，主要由 SectionBlock `client:visible` 挂载）；默认 / `plain`：`Hero` |
 | `hero` · `product-hero` | `ProductHero`（含从 `tabs[].href` 解析的页内 **`#fragment` 锚点** div，供 Footer / 站内链接跳转）；需要时配合 `ProductSolutionTabs` |
-| `feature-list`（场景橱窗） | `ScrollRevealShowcase` |
+| `feature-list`（场景橱窗） | 默认：`ScrollRevealShowcase`（滚动揭示卡片 + 移动端轮播）。`variant: "scroll-mask-carousel"`：`ScrollMaskRevealCarousel`（白幕 + 圆角菱形视窗滚动揭示 + 底层持续轮播大图，`SectionBlock` `client:visible` 挂载） |
 | `stats` · 含 intro / aboutCta | `CompanyIntroStats` |
 | `case-studies` · 含 CTA | `NewsActivityGrid` |
 | `image-text` / `services-grid` / `gallery` / `contact-*` / 等 | 与其它主题相同的类型名对应 ESS 独占样式 |

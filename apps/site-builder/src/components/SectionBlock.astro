@@ -5,8 +5,12 @@ import {
   type GallerySection,
   type HeroSection,
 } from "@factory/theme-technical-product-showcase";
-import { Hero as EnergyHero } from "@factory/theme-energy-storage-showcase";
+import {
+  FeatureList as EnergyFeatureList,
+  Hero as EnergyHero,
+} from "@factory/theme-energy-storage-showcase";
 import type { Section, SiteConfig } from "@factory/validators";
+import type { FeatureListSection } from "@factory/theme-enterprise";
 import { SectionRenderer } from "./SectionRenderer";
 
 type Props = {
@@ -35,6 +39,15 @@ const isEssFullscreenCarousel =
 
 const essCarouselHero: HeroSection | null = isEssFullscreenCarousel ? (section as HeroSection) : null;
 
+const isEssScrollMaskCarousel =
+  siteConfig.theme === "energy-storage-showcase" &&
+  section.type === "feature-list" &&
+  section.variant === "scroll-mask-carousel";
+
+const essScrollMaskSection: FeatureListSection | null = isEssScrollMaskCarousel
+  ? (section as FeatureListSection)
+  : null;
+
 /* THIS IS TEMPLATE COUPLING POINT — hydrated gallery/lightbox belongs to technical-product-showcase only today */
 const isHydratedTpsGallery =
   siteConfig.theme === "technical-product-showcase" &&
@@ -50,6 +63,8 @@ const hydratedGallery: GallerySection | null = isHydratedTpsGallery ? (section a
     <Hero client:visible section={splitHero} />
   ) : essCarouselHero ? (
     <EnergyHero client:visible section={essCarouselHero} />
+  ) : essScrollMaskSection ? (
+    <EnergyFeatureList client:visible section={essScrollMaskSection} />
   ) : hydratedGallery ? (
     <Gallery client:visible section={hydratedGallery} />
   ) : (
