@@ -11,6 +11,8 @@ export type ProductHeroProps = {
   imageAlt?: string | undefined;
   tabs?: HeroPageSection["tabs"];
   primaryCta?: HeroPageSection["primaryCta"];
+  /** When true, do not render placeholder `#fragment` divs — target sections must expose matching `id`. */
+  hideTabFragmentAnchors?: boolean | undefined;
 };
 
 function hashTargetsFromTabs(tabs: NonNullable<ProductHeroProps["tabs"]>): string[] {
@@ -36,17 +38,15 @@ export function ProductHero(props: ProductHeroProps) {
     props.image !== undefined ? { backgroundImage: `url(${JSON.stringify(props.image)})` } : undefined;
 
   const tabHashes = props.tabs && props.tabs.length > 0 ? hashTargetsFromTabs(props.tabs) : [];
+  const renderTabFragments = !props.hideTabFragmentAnchors;
 
   return (
     <section aria-label={props.title} className="energy-storage-product-hero" style={style}>
-      {tabHashes.map((id) => (
-        <div
-          aria-hidden
-          className="energy-storage-hash-target"
-          id={id}
-          key={`fragment-${id}`}
-        />
-      ))}
+      {renderTabFragments
+        ? tabHashes.map((id) => (
+            <div aria-hidden className="energy-storage-hash-target" id={id} key={`fragment-${id}`} />
+          ))
+        : null}
       <div className="energy-storage-product-hero__scrim" />
       <div className="energy-storage-product-hero__inner">
         {props.eyebrow ? <p className="energy-storage-product-hero__eyebrow">{props.eyebrow}</p> : null}

@@ -29,6 +29,7 @@ export function Hero({ section }: HeroProps) {
       <ProductHero
         description={section.description}
         eyebrow={section.eyebrow}
+        hideTabFragmentAnchors={section.hideTabFragmentAnchors}
         image={section.image}
         imageAlt={section.imageAlt}
         primaryCta={section.primaryCta}

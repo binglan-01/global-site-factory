@@ -3,77 +3,46 @@
   "template": "standard",
   "seo": {
     "title": "产品中心",
-    "description": "储能壳体与机柜产品线的占位展示，请替换型号、图纸与认证说明。"
+    "description": "面向工商业与家庭储能应用，提供可靠、安全、可定制的储能柜体结构解决方案。"
   },
   "sections": [
     {
       "type": "hero",
       "variant": "product-hero",
-      "eyebrow": "产品族",
-      "title": "储能壳体平台化方案",
-      "description": "面向电池集成商与总包伙伴的可配置机柜项目占位说明。",
+      "title": "产品中心",
+      "description": "面向工商业与家庭储能应用，提供可靠、安全、可定制的储能柜体结构解决方案。",
       "image": "/assets/product-hero.jpg",
-      "imageAlt": "产品首屏占位图",
+      "imageAlt": "储能柜体产品中心",
+      "hideTabFragmentAnchors": true,
       "tabs": [
         {
-          "label": "源网侧",
-          "href": "/products#utility"
+          "label": "工商业储能柜体",
+          "href": "/products/commercial-industrial"
         },
         {
-          "label": "工商业",
-          "href": "/products#ci"
-        },
-        {
-          "label": "户用",
-          "href": "/products#residential"
-        },
-        {
-          "label": "通信",
-          "href": "/products#telecom"
+          "label": "户用储能柜体",
+          "href": "/products/residential"
         }
-      ],
-      "primaryCta": {
-        "label": "预约技术交流",
-        "href": "/contact"
-      }
-    },
-    {
-      "type": "gallery",
-      "title": "代表性柜体方案（占位图）",
-      "columns": 3,
-      "images": [
-        "/assets/placeholder-1.jpg",
-        "/assets/placeholder-2.jpg",
-        "/assets/placeholder-1.jpg",
-        "/assets/placeholder-2.jpg"
       ]
     },
     {
-      "type": "feature-list",
-      "title": "工程化优势",
+      "type": "services-grid",
+      "title": "产品分类",
+      "suppressSolutionTabs": true,
       "items": [
         {
-          "title": "热分区",
-          "description": "用于风道与传感器布置的示例描述占位。"
+          "title": "工商业储能柜体",
+          "description": "适用于工厂园区、商业建筑、光伏配储、充电站及微电网等场景。",
+          "href": "/products/commercial-industrial",
+          "cardCtaLabel": "查看详情"
         },
         {
-          "title": "防腐等级",
-          "description": "C3–C5 涂层体系与验证范围占位。"
-        },
-        {
-          "title": "可维护性",
-          "description": "吊装点、门铰与维护通道的示例说明占位。"
+          "title": "户用储能柜体",
+          "description": "适用于住宅光伏储能、家庭备用电源、低压电池系统及小型能源管理场景。",
+          "href": "/products/residential",
+          "cardCtaLabel": "查看详情"
         }
       ]
-    },
-    {
-      "type": "contact-block",
-      "title": "联系产品与销售",
-      "description": "请提供目标容量、适用标准与交付区域等关键参数——本演示站不含自动报价。",
-      "cta": {
-        "label": "联系销售",
-        "href": "/contact"
-      }
     }
   ]
 }

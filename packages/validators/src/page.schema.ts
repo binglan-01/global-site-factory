@@ -76,6 +76,8 @@ const HeroSectionSchema = z.object({
     z.enum(["standard", "split-carousel", "fullscreen-carousel", "product-hero"]),
   ),
   carousel: z.optional(HeroCarouselConfigSchema),
+  /** When true, skip inline fragment `<div id="…">` anchors from tabs — use target section `anchorId` instead. */
+  hideTabFragmentAnchors: z.optional(z.boolean()),
   tabs: z.optional(
     z
       .array(
@@ -91,12 +93,16 @@ const HeroSectionSchema = z.object({
 const ServicesGridSectionSchema = z.object({
   type: z.literal("services-grid"),
   title: z.string().min(1, "Services grid title is required."),
+  /** When true, suppress the redundant top tab strip in themes that duplicate item links as tabs (e.g. Energy Storage Showcase). */
+  suppressSolutionTabs: z.optional(z.boolean()),
   items: z
     .array(
       z.object({
         title: z.string().min(1, "Service title is required."),
         description: z.string().min(1, "Service description is required."),
         href: z.optional(SiteRelativeHrefSchema),
+        /** Visible CTA/subcopy on linked cards — content-authored; avoids hardcoded labels in themes. */
+        cardCtaLabel: z.optional(z.string().min(1, "cardCtaLabel cannot be empty.")),
       }),
     )
     .min(1, "Services grid requires at least one item."),
@@ -156,11 +162,25 @@ const ContactFormSectionSchema = z.object({
   fieldLabels: z.optional(ContactFormFieldLabelsSchema),
 });
 
-const FeatureListSectionSchema = z.object({
+const AnchorIdSchema = z
+  .string()
+  .min(1, "anchorId cannot be empty.")
+  .regex(
+    /^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$/,
+    "anchorId must be a valid HTML id fragment: kebab-case, ASCII, start with a letter.",
+  );
+
+const FeatureListSectionBaseSchema = z.object({
   type: z.literal("feature-list"),
-  variant: z.optional(z.enum(["standard", "scroll-mask-carousel"])),
+  variant: z.optional(z.enum(["standard", "scroll-mask-carousel", "product-scenario"])),
   title: z.string().min(1, "Feature list title is required."),
   description: z.optional(z.string().min(1, "Feature list description cannot be empty.")),
+  /** HTML id on the section root for in-page anchors (e.g. `#commercial-industrial`). */
+  anchorId: z.optional(AnchorIdSchema),
+  /** Primary scenario illustration — required when variant is `product-scenario`. */
+  scenarioImage: z.optional(z.string().min(1, "scenarioImage cannot be empty.")),
+  scenarioImageAlt: z.optional(z.string().min(1, "scenarioImageAlt cannot be empty.")),
+  cta: z.optional(CtaSchema),
   items: z
     .array(
       TitleDescriptionItemSchema.extend({
@@ -171,6 +191,25 @@ const FeatureListSectionSchema = z.object({
       }),
     )
     .min(1, "Feature list requires at least one item."),
+});
+
+const FeatureListSectionSchema = FeatureListSectionBaseSchema.superRefine((data, ctx) => {
+  if (data.variant === "product-scenario") {
+    if (data.anchorId === undefined) {
+      ctx.addIssue({
+        code: z.ZodIssueCode.custom,
+        message: 'feature-list variant "product-scenario" requires anchorId.',
+        path: ["anchorId"],
+      });
+    }
+    if (data.scenarioImage === undefined) {
+      ctx.addIssue({
+        code: z.ZodIssueCode.custom,
+        message: 'feature-list variant "product-scenario" requires scenarioImage.',
+        path: ["scenarioImage"],
+      });
+    }
+  }
 });
 
 const ImageTextSectionSchema = z.object({

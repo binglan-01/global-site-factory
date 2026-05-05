@@ -38,14 +38,14 @@
           "description": "面向电网调度、调频与辅助服务项目的模块化电池舱与维护通道占位说明。",
           "image": "/assets/showcase-energy-1.jpg",
           "imageAlt": "源网侧储能壳体占位图",
-          "href": "/products#utility"
+          "href": "/products"
         },
         {
           "title": "工商业储能",
           "description": "为园区与制造场景设计的紧凑机柜、并柜结构与长期可维护性占位。",
           "image": "/assets/showcase-energy-2.jpg",
           "imageAlt": "工商业储能壳体占位图",
-          "href": "/products#ci"
+          "href": "/products/commercial-industrial"
         },
         {
           "title": "光伏储能",
@@ -66,7 +66,7 @@
           "description": "面向远端站点与边缘交换的密封、温控取向电池舱占位示例。",
           "image": "/assets/showcase-energy-2.jpg",
           "imageAlt": "通信备电储能柜占位图",
-          "href": "/products#telecom"
+          "href": "/products"
         },
         {
           "title": "数据中心备用电源",
@@ -84,22 +84,22 @@
         {
           "title": "源网侧储能壳体",
           "description": "面向大型储能电站的模块化电池舱与维护通道布局占位。",
-          "href": "/products#utility"
+          "href": "/products"
         },
         {
           "title": "工商业储能壳体",
           "description": "紧凑并柜结构，适配园区与制造场景占位说明。",
-          "href": "/products#ci"
+          "href": "/products/commercial-industrial"
         },
         {
           "title": "户用储能壳体",
           "description": "低高度外观与户外防腐涂层的示例占位。",
-          "href": "/products#residential"
+          "href": "/products/residential"
         },
         {
           "title": "通信储能电池柜",
           "description": "密封与温控导向的远程站点方案占位。",
-          "href": "/products#telecom"
+          "href": "/products"
         },
         {
           "title": "充电站储能柜",

@@ -21,19 +21,19 @@
           "title": "Utility buffer yard",
           "industry": "Grid",
           "description": "Placeholder description for a utility-scale buffer installation.",
-          "image": "/assets/placeholder-1.jpg"
+          "image": "/assets/application-grid-storage.jpg"
         },
         {
           "title": "Logistics hub peak shaving",
           "industry": "C&I",
           "description": "Illustrative copy for a warehouse peak management roll-out.",
-          "image": "/assets/placeholder-2.jpg"
+          "image": "/assets/application-industrial-park.jpg"
         },
         {
           "title": "Edge compute standby",
           "industry": "Edge",
           "description": "Sample story for a distributed IT + storage hybrid site.",
-          "image": "/assets/placeholder-1.jpg"
+          "image": "/assets/application-edge-backup.jpg"
         }
       ]
     },

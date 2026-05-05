@@ -38,14 +38,14 @@
           "description": "Walkable and modular bay layouts for grid programs, frequency response, and ancillary services.",
           "image": "/assets/showcase-energy-1.jpg",
           "imageAlt": "Utility-scale storage enclosure placeholder",
-          "href": "/products#utility"
+          "href": "/products"
         },
         {
           "title": "C&I Energy Storage",
           "description": "Rugged cabinets for plant peaks, demand management, and uptime-first operations.",
           "image": "/assets/showcase-energy-2.jpg",
           "imageAlt": "Commercial and industrial storage enclosure placeholder",
-          "href": "/products#ci"
+          "href": "/products/commercial-industrial"
         },
         {
           "title": "Solar Storage",
@@ -66,7 +66,7 @@
           "description": "Sealed bays for remote towers, edge switching, and long maintenance cycles.",
           "image": "/assets/showcase-energy-2.jpg",
           "imageAlt": "Telecom backup cabinet placeholder",
-          "href": "/products#telecom"
+          "href": "/products"
         },
         {
           "title": "Data Center Backup Power",
@@ -84,22 +84,22 @@
         {
           "title": "Utility-scale Storage Enclosures",
           "description": "Walkable or skid-mounted cabinets for large-scale battery arrays.",
-          "href": "/products#utility"
+          "href": "/products"
         },
         {
           "title": "C&I Storage Cabinets",
           "description": "Compact rows for manufacturing campuses and logistics hubs.",
-          "href": "/products#ci"
+          "href": "/products/commercial-industrial"
         },
         {
           "title": "Residential Storage Enclosures",
           "description": "Low-profile housings for distributed residential programs.",
-          "href": "/products#residential"
+          "href": "/products/residential"
         },
         {
           "title": "Telecom Backup Battery Cabinets",
           "description": "Sealed bays for remote tower and edge switching sites.",
-          "href": "/products#telecom"
+          "href": "/products"
         },
         {
           "title": "EV Charging Storage Cabinets",

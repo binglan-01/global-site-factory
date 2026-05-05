@@ -1,0 +1,50 @@
+{
+  "slug": "/products/residential",
+  "template": "standard",
+  "seo": {
+    "title": "Residential Energy Storage Cabinets",
+    "description": "Cabinet enclosure solutions for residential solar storage, home backup power, low-voltage battery systems and compact energy management scenarios."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "variant": "product-hero",
+      "title": "Residential Energy Storage Cabinets",
+      "description": "Cabinet enclosure solutions for residential solar storage, home backup power, low-voltage battery systems and compact energy management scenarios.",
+      "image": "/assets/product-hero.jpg",
+      "imageAlt": "Residential energy storage cabinet lineup",
+      "hideTabFragmentAnchors": true
+    },
+    {
+      "type": "feature-list",
+      "variant": "product-scenario",
+      "anchorId": "scenario",
+      "title": "Scenario illustration",
+      "description": "Built for residential solar storage, home backup power, low-voltage battery systems and compact energy management, balancing safety, structure, ventilation and home-friendly installation.",
+      "scenarioImage": "/assets/product-residential-scenario.jpg",
+      "scenarioImageAlt": "Residential energy storage cabinet deployment scenarios",
+      "cta": {
+        "label": "Contact Sales",
+        "href": "/contact"
+      },
+      "items": [
+        {
+          "title": "Home solar storage",
+          "description": "Coupled enclosures for rooftop residential PV programs."
+        },
+        {
+          "title": "Backup power",
+          "description": "Keeps essential household loads online during outages."
+        },
+        {
+          "title": "Low-voltage battery systems",
+          "description": "Compact routing for LV home battery bays."
+        },
+        {
+          "title": "Compact energy management",
+          "description": "Household load orchestration paired with inverter control."
+        }
+      ]
+    }
+  ]
+}

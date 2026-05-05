@@ -21,19 +21,19 @@
           "title": "电网侧缓冲场地",
           "industry": "电网",
           "description": "用于大型缓冲安装工程的占位描述。",
-          "image": "/assets/placeholder-1.jpg"
+          "image": "/assets/application-grid-storage.jpg"
         },
         {
           "title": "物流园区削峰",
           "industry": "工商业",
           "description": "园区负荷调节类项目的示例叙事。",
-          "image": "/assets/placeholder-2.jpg"
+          "image": "/assets/application-industrial-park.jpg"
         },
         {
           "title": "边缘算力备电",
           "industry": "边缘",
           "description": "分布式 IT + 储能协同站点的示例文字。",
-          "image": "/assets/placeholder-1.jpg"
+          "image": "/assets/application-edge-backup.jpg"
         }
       ]
     },

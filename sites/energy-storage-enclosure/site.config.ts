@@ -35,9 +35,9 @@ export default defineSiteConfig({
     {
       title: { en: "Products", zh: "产品中心" },
       links: [
-        { label: { en: "Utility-scale line", zh: "源网侧产品线" }, href: "/products#utility" },
-        { label: { en: "C&I line", zh: "工商业产品线" }, href: "/products#ci" },
-        { label: { en: "Residential line", zh: "户用产品线" }, href: "/products#residential" },
+        { label: { en: "Utility-scale line", zh: "源网侧产品线" }, href: "/products" },
+        { label: { en: "C&I line", zh: "工商业产品线" }, href: "/products/commercial-industrial" },
+        { label: { en: "Residential line", zh: "户用产品线" }, href: "/products/residential" },
       ],
     },
     {

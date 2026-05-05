@@ -48,6 +48,10 @@ export {
   type ScrollRevealShowcaseProps,
 } from "./components/ScrollRevealShowcase";
 export {
+  ProductScenarioSection,
+  type ProductScenarioSectionProps,
+} from "./components/ProductScenarioSection";
+export {
   ProductSolutionTabs,
   type ProductSolutionTabsProps,
 } from "./components/ProductSolutionTabs";

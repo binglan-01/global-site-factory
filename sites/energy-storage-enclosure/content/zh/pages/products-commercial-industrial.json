@@ -1,0 +1,50 @@
+{
+  "slug": "/products/commercial-industrial",
+  "template": "standard",
+  "seo": {
+    "title": "工商业储能柜体",
+    "description": "面向工厂园区、商业建筑、光伏配储、充电站及微电网应用的储能柜体结构平台。"
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "variant": "product-hero",
+      "title": "工商业储能柜体",
+      "description": "面向工厂园区、商业建筑、光伏配储、充电站及微电网应用的储能柜体结构平台。",
+      "image": "/assets/product-hero.jpg",
+      "imageAlt": "工商业储能柜体概览",
+      "hideTabFragmentAnchors": true
+    },
+    {
+      "type": "feature-list",
+      "variant": "product-scenario",
+      "anchorId": "scenario",
+      "title": "使用场景示意图",
+      "description": "适用于工厂削峰填谷、园区微电网、光伏配储、充电站储能等场景，为电池系统、热管理、电气控制与安全防护提供结构承载与环境保护。",
+      "scenarioImage": "/assets/product-ci-scenario.jpg",
+      "scenarioImageAlt": "工商业储能柜体在厂区、光伏、充电站及微电网等场景中的应用示意",
+      "cta": {
+        "label": "联系销售",
+        "href": "/contact"
+      },
+      "items": [
+        {
+          "title": "工厂削峰填谷",
+          "description": "工业负荷优化与电费管理场景。"
+        },
+        {
+          "title": "光伏配储系统",
+          "description": "与工商业光伏协同的一体化储能应用。"
+        },
+        {
+          "title": "充电站储能",
+          "description": "配套快充站点与配电缓冲的储能配置。"
+        },
+        {
+          "title": "园区微电网",
+          "description": "多能互补与就地消纳的园区级拓扑。"
+        }
+      ]
+    }
+  ]
+}

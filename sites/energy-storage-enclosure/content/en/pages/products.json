@@ -3,77 +3,46 @@
   "template": "standard",
   "seo": {
     "title": "Products",
-    "description": "Placeholder catalog of enclosure lines — replace SKUs, drawings, and compliance notes."
+    "description": "Reliable enclosure platforms for commercial, industrial and residential energy storage applications."
   },
   "sections": [
     {
       "type": "hero",
       "variant": "product-hero",
-      "eyebrow": "Product families",
-      "title": "Storage enclosure platforms",
-      "description": "Configurable cabinet programs for battery integrators and EPC partners — sample copy only.",
+      "title": "Products",
+      "description": "Reliable enclosure platforms for commercial, industrial and residential energy storage applications.",
       "image": "/assets/product-hero.jpg",
-      "imageAlt": "Product hero placeholder",
+      "imageAlt": "Energy storage enclosure products overview",
+      "hideTabFragmentAnchors": true,
       "tabs": [
         {
-          "label": "Utility-scale",
-          "href": "/products#utility"
+          "label": "Commercial & Industrial Energy Storage Cabinets",
+          "href": "/products/commercial-industrial"
         },
         {
-          "label": "C&I",
-          "href": "/products#ci"
-        },
-        {
-          "label": "Residential",
-          "href": "/products#residential"
-        },
-        {
-          "label": "Telecom",
-          "href": "/products#telecom"
+          "label": "Residential Energy Storage Cabinets",
+          "href": "/products/residential"
         }
-      ],
-      "primaryCta": {
-        "label": "Request a technical review",
-        "href": "/contact"
-      }
-    },
-    {
-      "type": "gallery",
-      "title": "Representative cabinet studies",
-      "columns": 3,
-      "images": [
-        "/assets/placeholder-1.jpg",
-        "/assets/placeholder-2.jpg",
-        "/assets/placeholder-1.jpg",
-        "/assets/placeholder-2.jpg"
       ]
     },
     {
-      "type": "feature-list",
-      "title": "Engineering advantages",
+      "type": "services-grid",
+      "title": "Product categories",
+      "suppressSolutionTabs": true,
       "items": [
         {
-          "title": "Thermal zoning",
-          "description": "Illustrative copy for aisle-aware airflow and sensor placement."
+          "title": "Commercial & Industrial Energy Storage Cabinets",
+          "description": "Designed for factories, commercial buildings, solar-plus-storage systems, charging stations and microgrid applications.",
+          "href": "/products/commercial-industrial",
+          "cardCtaLabel": "View details"
         },
         {
-          "title": "Corrosion classes",
-          "description": "Placeholder for C3–C5 coating stacks and validation scope."
-        },
-        {
-          "title": "Serviceability",
-          "description": "Reference copy for lift points, door swing, and maintenance clearances."
+          "title": "Residential Energy Storage Cabinets",
+          "description": "Built for residential solar storage, home backup power, low-voltage battery systems and compact energy management scenarios.",
+          "href": "/products/residential",
+          "cardCtaLabel": "View details"
         }
       ]
-    },
-    {
-      "type": "contact-block",
-      "title": "Talk with product sales",
-      "description": "Share target capacity, standards, and delivery region — no automated pricing on this demo.",
-      "cta": {
-        "label": "Contact sales",
-        "href": "/contact"
-      }
     }
   ]
 }
