@@ -14,14 +14,43 @@ const TitleDescriptionItemSchema = z.object({
   description: z.string().min(1, "Item description is required."),
 });
 
-const HeroCarouselImageSchema = z.object({
-  src: z.string().min(1, "Carousel image src is required."),
-  alt: z.optional(z.string()),
-  title: z.optional(z.string()),
-});
+const HeroCarouselSlideSchema = z
+  .object({
+    /** Legacy image URL; use `image` for new authoring — either satisfies an image slide. */
+    src: z.optional(z.string().min(1, "Carousel slide src cannot be empty.")),
+    image: z.optional(z.string().min(1, "Carousel slide image cannot be empty.")),
+    video: z.optional(z.string().min(1, "Carousel slide video cannot be empty.")),
+    poster: z.optional(z.string().min(1, "Carousel slide poster cannot be empty.")),
+    mediaType: z.optional(z.enum(["image", "video"])),
+    alt: z.optional(z.string()),
+    title: z.optional(z.string()),
+  })
+  .superRefine((slide, ctx) => {
+    const isVideoSlide = slide.mediaType === "video" || Boolean(slide.video);
+    if (isVideoSlide) {
+      if (!slide.video && !slide.poster) {
+        ctx.addIssue({
+          code: z.ZodIssueCode.custom,
+          message:
+            'Video carousel slide requires at least one of "video" or "poster" (or use an image slide with src/image).',
+          path: [],
+        });
+      }
+      return;
+    }
+    const imageUrl = slide.image ?? slide.src;
+    if (!imageUrl) {
+      ctx.addIssue({
+        code: z.ZodIssueCode.custom,
+        message:
+          'Image carousel slide requires "src" or "image"; or mark as video via "mediaType": "video" or set "video".',
+        path: [],
+      });
+    }
+  });
 
 const HeroCarouselConfigSchema = z.object({
-  images: z.array(HeroCarouselImageSchema).min(1, "Carousel requires at least one image."),
+  images: z.array(HeroCarouselSlideSchema).min(1, "Carousel requires at least one image."),
   autoplay: z.optional(z.boolean()),
   intervalMs: z.optional(z.number().int().positive().max(120000)),
   perspective: z.optional(z.boolean()),

@@ -14,6 +14,14 @@ function mod(n: number, m: number): number {
   return ((n % m) + m) % m;
 }
 
+type HeroCarouselSlide = NonNullable<
+  NonNullable<HeroSplitCarouselSection["carousel"]>["images"]
+>[number];
+
+function slideImageSrc(slide: HeroCarouselSlide): string {
+  return slide.image ?? slide.src ?? "";
+}
+
 export function HeroSplitCarousel({ section }: HeroSplitCarouselProps) {
   const carousel = section.carousel;
   const images = carousel?.images ?? [];
@@ -155,7 +163,7 @@ export function HeroSplitCarousel({ section }: HeroSplitCarouselProps) {
               {images.map((img, i) => {
                 const broken = brokenSrcs.has(i);
                 return (
-                  <div className={slideClassFor(i)} key={`${img.src}-${i}`}>
+                  <div className={slideClassFor(i)} key={`${slideImageSrc(img)}-${i}`}>
                     {broken ? (
                       <div className="tps-hero-carousel__placeholder" />
                     ) : (
@@ -170,7 +178,7 @@ export function HeroSplitCarousel({ section }: HeroSplitCarouselProps) {
                           className="tps-hero-carousel__img"
                           decoding="async"
                           loading={i === activeIndex ? "eager" : "lazy"}
-                          src={img.src}
+                          src={slideImageSrc(img)}
                           onError={() => onImgError(i)}
                         />
                       </button>
@@ -243,7 +251,7 @@ export function HeroSplitCarousel({ section }: HeroSplitCarouselProps) {
               alt={lightboxItem.alt ?? ""}
               className="tps-hero-lightbox__img"
               decoding="async"
-              src={lightboxItem.src}
+              src={slideImageSrc(lightboxItem)}
             />
             {len > 1 ? (
               <button
