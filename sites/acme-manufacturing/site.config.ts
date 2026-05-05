@@ -34,6 +34,10 @@ export default defineSiteConfig({
       href: "/contact",
     },
   ],
+  footerLinkLabels: {
+    privacy: "Privacy Policy",
+    terms: "Terms of Use",
+  },
   seo: {
     defaultTitle: "Acme Manufacturing",
     titleTemplate: "%s | Acme Manufacturing",

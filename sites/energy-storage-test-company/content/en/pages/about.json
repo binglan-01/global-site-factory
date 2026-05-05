@@ -1,0 +1,74 @@
+{
+  "slug": "/about",
+  "template": "standard",
+  "seo": {
+    "title": "About · PLACEHOLDER governance shell",
+    "description": "Governance scaffolding for Voltpack Enclosure demo — replace leadership bios, audited metrics, and geography claims."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "title": "Operate as a repeatable mechanical platform team",
+      "description": "PLACEHOLDER — Voltpack narration highlights container-friendly fabrication cells, coolant-aware stations, outdoor paint lines, without naming partner factories.",
+      "image": "/assets/placeholder-1.jpg",
+      "imageAlt": "PLACEHOLDER factory moodboard"
+    },
+    {
+      "type": "image-text",
+      "title": "Entity snapshot · PLACEHOLDER",
+      "description": "REPLACE with audited legal disclosures, capitalization table references, certifications, geography, CSR commitments, and escalation contacts.",
+      "image": "/assets/placeholder-2.jpg",
+      "imageAlt": "PLACEHOLDER footprint map",
+      "reverse": true
+    },
+    {
+      "type": "stats",
+      "intro": "PLACEHOLDER KPIs — CFO & legal clearance required prior to quoting.",
+      "aboutCta": {
+        "label": "Download synthetic fact-pack · PLACEHOLDER",
+        "href": "/contact"
+      },
+      "items": [
+        {
+          "label": "Cross-functional reviewers (demo)",
+          "value": "85 reviewers PLACEHOLDER",
+          "description": "compositeHeadcount"
+        },
+        {
+          "label": "Fabrication footprints (demo)",
+          "value": "2 bays PLACEHOLDER",
+          "description": "compositePlants"
+        },
+        {
+          "label": "Average documentation cycle",
+          "value": "Weeks PLACEHOLDER",
+          "description": "compositeCycle"
+        }
+      ]
+    },
+    {
+      "type": "process-steps",
+      "title": "Quality · Logistics · Stewardship · PLACEHOLDER",
+      "steps": [
+        {
+          "title": "Design-for-lift checkpoints",
+          "description": "PLACEHOLDER — hoist spreader rehearsals and tie-down FEM summaries."
+        },
+        {
+          "title": "Weld & sealing traceability mock",
+          "description": "PLACEHOLDER — traveller packets until MES integrations go live."
+        },
+        {
+          "title": "Customer witness dry-runs",
+          "description": "PLACEHOLDER scheduling language with no guarantee of availability."
+        }
+      ]
+    },
+    {
+      "type": "contact-block",
+      "title": "Arrange audits when ready · PLACEHOLDER",
+      "description": "Facility tours referenced here are illustrative — schedule offline only after NDAs finalize.",
+      "cta": { "label": "Open channel", "href": "/contact" }
+    }
+  ]
+}

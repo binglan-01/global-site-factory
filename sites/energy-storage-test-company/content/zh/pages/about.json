@@ -1,0 +1,74 @@
+{
+  "slug": "/about",
+  "template": "standard",
+  "seo": {
+    "title": "关于我们（占位）",
+    "description": "治理与制造叙事占位，上线前需替换为公司经审阅事实。"
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "title": "定位为可重复的机械钣金平台队伍",
+      "description": "占位：强调适配集装箱尺寸的加工岛、具备液冷相关工位与外场喷涂线示意，不出现合作工厂全称。",
+      "image": "/assets/placeholder-1.jpg",
+      "imageAlt": "占位厂区氛围图"
+    },
+    {
+      "type": "image-text",
+      "title": "主体简介占位",
+      "description": "请替换为审计后的法人沿革、资本金、持证信息、地理位置与 CSR 口径。",
+      "image": "/assets/placeholder-2.jpg",
+      "imageAlt": "占位地图",
+      "reverse": true
+    },
+    {
+      "type": "stats",
+      "intro": "以下为演示指标组合，须经财务及法务签发后才能引用。",
+      "aboutCta": {
+        "label": "索取简介占位文件",
+        "href": "/contact"
+      },
+      "items": [
+        {
+          "label": "跨职能评审席位（演示）",
+          "value": "85 人·占位",
+          "description": "compositeHeadcount"
+        },
+        {
+          "label": "制造跨度（演示）",
+          "value": "2 条产线占位",
+          "description": "compositePlants"
+        },
+        {
+          "label": "资料编制周期占位",
+          "value": "若干周",
+          "description": "compositeCycle"
+        }
+      ]
+    },
+    {
+      "type": "process-steps",
+      "title": "质量 · 物流 · 监管协同（占位流程）",
+      "steps": [
+        {
+          "title": "可吊装结构校核",
+          "description": "占位：简述耳板复盘与绑扎仿真摘要。"
+        },
+        {
+          "title": "焊接与密封可追溯包",
+          "description": "占位：在导入 MES 前使用纸质 traveller 话术。"
+        },
+        {
+          "title": "客户见证演练",
+          "description": "占位：强调需线下排期且无公开承诺。"
+        }
+      ]
+    },
+    {
+      "type": "contact-block",
+      "title": "开放审厂占位",
+      "description": "任何参观需在线下完成保密协议与排期，本段仅为布局示例。",
+      "cta": { "label": "联系访客协调", "href": "/contact" }
+    }
+  ]
+}

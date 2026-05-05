@@ -1,0 +1,35 @@
+{
+  "slug": "/privacy",
+  "template": "legal",
+  "seo": {
+    "title": "Privacy notice",
+    "description": "Privacy placeholder for {{DISPLAY_NAME_EN}}. Replace before production."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "eyebrow": "Privacy",
+      "title": "Privacy Notice",
+      "description": "Structural placeholder. Replace with counsel-reviewed copy."
+    },
+    {
+      "type": "image-text",
+      "title": "What this notice should cover",
+      "description": "Describe collection via contact forms and /api/lead, lawful basis, retention, transfers, and data subject rights matching your operator."
+    },
+    {
+      "type": "faq",
+      "title": "Common questions",
+      "items": [
+        {
+          "question": "What data is collected?",
+          "answer": "Typical submissions include name, email, optional phone, and message content. Routing metadata may include site slug and form ID."
+        },
+        {
+          "question": "Where is {{DISPLAY_NAME_EN}} registered?",
+          "answer": "See company.registeredAddress and legal.dataController in site.config.ts."
+        }
+      ]
+    }
+  ]
+}

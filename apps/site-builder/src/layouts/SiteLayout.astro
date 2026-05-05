@@ -2,7 +2,12 @@
 import { buildCanonical, buildOrganizationSchema, buildPageTitle } from "@factory/seo";
 import "@factory/theme-enterprise/styles/theme-enterprise.css";
 import "@factory/theme-technical-product-showcase/styles/theme-technical-product-showcase.css";
-import { resolveLocalizedString, type PageContent, type SiteConfig } from "@factory/validators";
+import "@factory/theme-energy-storage-showcase/styles/theme-energy-storage-showcase.css";
+import { resolveLocalizedString, type LocalizedString, type PageContent, type SiteConfig } from "@factory/validators";
+import type { FooterColumnResolved } from "@factory/theme-enterprise";
+import { Header as EnterpriseHeader } from "@factory/theme-enterprise";
+import { Header as TechnicalProductShowcaseHeader } from "@factory/theme-technical-product-showcase";
+import { Header as EnergyStorageShowcaseHeader } from "@factory/theme-energy-storage-showcase";
 import {
   getThemeBundle,
   type FooterLink,
@@ -18,7 +23,10 @@ type Props = {
 };
 
 const { siteConfig, page, locale } = Astro.props;
-const title = buildPageTitle(page.seo.title, siteConfig.seo.titleTemplate);
+const trimmedPageTitle = page.seo.title?.trim() ?? "";
+const resolvedSeoTitle =
+  trimmedPageTitle.length > 0 ? trimmedPageTitle : siteConfig.seo.defaultTitle;
+const title = buildPageTitle(resolvedSeoTitle, siteConfig.seo.titleTemplate);
 const pageUrl = buildCanonical(siteConfig.domain, locale, page.slug, siteConfig.defaultLocale);
 const organizationSchema = buildOrganizationSchema(siteConfig);
 
@@ -27,14 +35,16 @@ const navigation: HeaderNavItem[] = siteConfig.navigation.map((item) => ({
   href: buildLocalizedPath(siteConfig, locale, item.href),
 }));
 
-const footerPrivacyLabel =
-  siteConfig.footerLinkLabels?.privacy !== undefined
-    ? resolveLocalizedString(siteConfig.footerLinkLabels.privacy, locale, siteConfig.defaultLocale)
-    : "Privacy";
-const footerTermsLabel =
-  siteConfig.footerLinkLabels?.terms !== undefined
-    ? resolveLocalizedString(siteConfig.footerLinkLabels.terms, locale, siteConfig.defaultLocale)
-    : "Terms";
+const footerPrivacyLabel = resolveLocalizedString(
+  siteConfig.footerLinkLabels.privacy,
+  locale,
+  siteConfig.defaultLocale,
+);
+const footerTermsLabel = resolveLocalizedString(
+  siteConfig.footerLinkLabels.terms,
+  locale,
+  siteConfig.defaultLocale,
+);
 
 const footerLinks: FooterLink[] = [
   {
@@ -57,7 +67,85 @@ const bodyClass = `theme-${siteConfig.theme}`;
 
 const languageLinks = buildLanguageLinks(siteConfig, locale, page.slug);
 
-const { Header, Footer } = getThemeBundle(siteConfig.theme);
+const { Footer } = getThemeBundle(siteConfig.theme);
+
+const footerColumnsResolved: FooterColumnResolved[] | undefined =
+  siteConfig.footerColumns?.map((column) => ({
+    title: resolveLocalizedString(column.title, locale, siteConfig.defaultLocale),
+    links: column.links.map((link) => ({
+      label: resolveLocalizedString(link.label, locale, siteConfig.defaultLocale),
+      href: buildLocalizedPath(siteConfig, locale, link.href),
+    })),
+  })) ?? undefined;
+
+const footerColumnsProp =
+  footerColumnsResolved !== undefined && footerColumnsResolved.length > 0
+    ? footerColumnsResolved
+    : undefined;
+
+const headerCompanyDisplay = resolveLocalizedString(
+  siteConfig.company.displayName,
+  locale,
+  siteConfig.defaultLocale,
+);
+
+function localizeSiteHref(href: string): string {
+  const hashIndex = href.indexOf("#");
+  const rawPath = hashIndex >= 0 ? href.slice(0, hashIndex) : href;
+  const hash = hashIndex >= 0 ? href.slice(hashIndex) : "";
+  if (!rawPath.startsWith("/")) {
+    return href;
+  }
+
+  const pathForBuilder = rawPath.length === 0 ? "/" : rawPath;
+
+  return `${buildLocalizedPath(siteConfig, locale, pathForBuilder)}${hash}`;
+}
+
+const fabSrc = siteConfig.floatingActions;
+
+function resolveFabLabel(value: LocalizedString | undefined): string | undefined {
+  if (value === undefined) {
+    return undefined;
+  }
+  return resolveLocalizedString(value, locale, siteConfig.defaultLocale);
+}
+
+const floatingActionsLocalized = fabSrc
+  ? {
+      enquiry: fabSrc.enquiry
+        ? {
+            enabled: fabSrc.enquiry.enabled,
+            href: localizeSiteHref(fabSrc.enquiry.href),
+            label: resolveFabLabel(fabSrc.enquiry.label),
+            ariaLabel: resolveFabLabel(fabSrc.enquiry.ariaLabel),
+          }
+        : undefined,
+      document: fabSrc.document
+        ? {
+            enabled: fabSrc.document.enabled,
+            href: localizeSiteHref(fabSrc.document.href),
+            label: resolveFabLabel(fabSrc.document.label),
+            ariaLabel: resolveFabLabel(fabSrc.document.ariaLabel),
+          }
+        : undefined,
+      support: fabSrc.support
+        ? {
+            enabled: fabSrc.support.enabled,
+            href: localizeSiteHref(fabSrc.support.href),
+            label: resolveFabLabel(fabSrc.support.label),
+            ariaLabel: resolveFabLabel(fabSrc.support.ariaLabel),
+          }
+        : undefined,
+      backToTop: fabSrc.backToTop
+        ? {
+            enabled: fabSrc.backToTop.enabled,
+            label: resolveFabLabel(fabSrc.backToTop.label),
+            ariaLabel: resolveFabLabel(fabSrc.backToTop.ariaLabel),
+          }
+        : undefined,
+    }
+  : undefined;
 ---
 
 <!doctype html>
@@ -71,16 +159,31 @@ const { Header, Footer } = getThemeBundle(siteConfig.theme);
     <script is:inline type="application/ld+json" set:html={JSON.stringify(organizationSchema)} />
   </head>
   <body class={bodyClass}>
-    <Header
-      companyName={resolveLocalizedString(
-        siteConfig.company.displayName,
-        locale,
-        siteConfig.defaultLocale,
-      )}
-      homeHref={homeHref}
-      navigation={navigation}
-      languageLinks={languageLinks}
-    />
+    {
+      siteConfig.theme === "energy-storage-showcase" ? (
+        <EnergyStorageShowcaseHeader
+          client:load
+          companyName={headerCompanyDisplay}
+          homeHref={homeHref}
+          navigation={navigation}
+          languageLinks={languageLinks}
+        />
+      ) : siteConfig.theme === "technical-product-showcase" ? (
+        <TechnicalProductShowcaseHeader
+          companyName={headerCompanyDisplay}
+          homeHref={homeHref}
+          navigation={navigation}
+          languageLinks={languageLinks}
+        />
+      ) : (
+        <EnterpriseHeader
+          companyName={headerCompanyDisplay}
+          homeHref={homeHref}
+          navigation={navigation}
+          languageLinks={languageLinks}
+        />
+      )
+    }
     <main>
       <slot />
     </main>
@@ -88,6 +191,8 @@ const { Header, Footer } = getThemeBundle(siteConfig.theme);
       companyName={siteConfig.company.legalName}
       copyrightText={copyrightText}
       links={footerLinks}
+      footerColumns={footerColumnsProp}
+      floatingActions={floatingActionsLocalized}
     />
   </body>
 </html>

@@ -1,0 +1,23 @@
+{
+  "slug": "/contact",
+  "template": "standard",
+  "seo": {
+    "title": "Contact {{DISPLAY_NAME_EN}}",
+    "description": "Send a message to {{DISPLAY_NAME_EN}}."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "eyebrow": "Contact",
+      "title": "Start a conversation",
+      "description": "Use this form for business inquiries; contact channels on the live site come from site.config.ts.",
+      "image": "/assets/placeholder.jpg",
+      "imageAlt": "Contact placeholder image"
+    },
+    {
+      "type": "contact-form",
+      "title": "Send a message",
+      "formId": "{{SITE_SLUG}}-contact-lead"
+    }
+  ]
+}

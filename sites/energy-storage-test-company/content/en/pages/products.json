@@ -1,0 +1,65 @@
+{
+  "slug": "/products",
+  "template": "standard",
+  "seo": {
+    "title": "Products · PLACEHOLDER scaffold",
+    "description": "Synthetic catalog page for Voltpack Enclosure demo — replace SKUs, tolerances, approvals, and CAD references before production."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "variant": "product-hero",
+      "eyebrow": "Product envelopes",
+      "title": "Structural families for container & cabinet programs",
+      "description": "PLACEHOLDER — describe how Voltpack maps containerized BESS, liquid-cooled indoor lines, C&I skid platforms, outdoor shelters, and fabricated subassemblies without referencing real integrator programs.",
+      "image": "/assets/products-hero.jpg",
+      "imageAlt": "PLACEHOLDER products hero",
+      "tabs": [
+        { "label": "Containerized shells", "href": "/products#container" },
+        { "label": "Liquid cooling", "href": "/products#liquid-cooling" },
+        { "label": "C&I cabinets", "href": "/products#ci-commercial" },
+        { "label": "Outdoor housings", "href": "/products#outdoor-shell" },
+        { "label": "Custom fab", "href": "/products#fabrication" }
+      ],
+      "primaryCta": {
+        "label": "Desk review · PLACEHOLDER",
+        "href": "/contact"
+      }
+    },
+    {
+      "type": "gallery",
+      "title": "Fabrication studies · PLACEHOLDER gallery",
+      "columns": 3,
+      "images": [
+        "/assets/placeholder-1.jpg",
+        "/assets/placeholder-2.jpg",
+        "/assets/placeholder-1.jpg",
+        "/assets/placeholder-2.jpg"
+      ]
+    },
+    {
+      "type": "feature-list",
+      "title": "Engineering checkpoints",
+      "items": [
+        {
+          "title": "Interface control documents",
+          "description": "PLACEHOLDER — stress that ICD packages are mock until customer data is attached."
+        },
+        {
+          "title": "Corrosion & coating matrix",
+          "description": "PLACEHOLDER — cite no specific class until lab reports exist."
+        },
+        {
+          "title": "Thermal & drain strategy",
+          "description": "PLACEHOLDER — generic language for condensate routing and fan cutouts."
+        }
+      ]
+    },
+    {
+      "type": "contact-block",
+      "title": "Speak with applications engineering",
+      "description": "Forms still post to /api/lead with synthetic metadata only — replace routing with real CRM policies.",
+      "cta": { "label": "Open contact", "href": "/contact" }
+    }
+  ]
+}

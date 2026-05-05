@@ -22,6 +22,7 @@ type LeadFormData = {
   formId: string;
   phone?: string;
   pageUrl?: string;
+  company?: string;
 };
 
 /** JSON body forwarded to LEAD_WEBHOOK_URL after validation succeeds */
@@ -35,6 +36,7 @@ type LeadWebhookPayload = {
   userAgent: string;
   phone?: string;
   pageUrl?: string;
+  company?: string;
 };
 
 function jsonResponse(body: JsonBody, status: number): Response {
@@ -81,6 +83,7 @@ function validateLeadForm(formData: FormData): { data?: LeadFormData; errors: Re
   const formId = readRequiredString(formData, "formId", errors);
   const phone = readOptionalString(formData, "phone");
   const pageUrl = readOptionalString(formData, "pageUrl");
+  const company = readOptionalString(formData, "company");
 
   if (email && !email.includes("@")) {
     errors.email = "email must be a valid email address.";
@@ -99,6 +102,7 @@ function validateLeadForm(formData: FormData): { data?: LeadFormData; errors: Re
       formId,
       phone,
       pageUrl,
+      company,
     },
     errors,
   };
@@ -164,6 +168,9 @@ function buildWebhookPayload(data: LeadFormData, request: Request): LeadWebhookP
   }
   if (data.pageUrl !== undefined) {
     withOptionals.pageUrl = data.pageUrl;
+  }
+  if (data.company !== undefined) {
+    withOptionals.company = data.company;
   }
   return withOptionals;
 }

@@ -3,6 +3,7 @@ import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { execa } from "execa";
 import { copySiteAssets, loadSite } from "@factory/site-core";
+import { requireSiteCliInvocation } from "./site-script-guard.js";
 
 function getRepoRoot(): string {
   return resolve(dirname(fileURLToPath(import.meta.url)), "..");
@@ -17,10 +18,12 @@ async function writeJsonFile(filePath: string, value: unknown): Promise<void> {
 }
 
 async function main(): Promise<void> {
+  requireSiteCliInvocation("build-site");
+
   const siteSlug = process.argv[2];
 
   if (!siteSlug) {
-    throw new Error('Missing site slug. Usage: pnpm build-site <siteSlug>');
+    throw new Error('Missing site slug. Usage: pnpm site build <siteSlug>');
   }
 
   const repoRoot = getRepoRoot();

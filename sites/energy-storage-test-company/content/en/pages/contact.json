@@ -1,0 +1,49 @@
+{
+  "slug": "/contact",
+  "template": "standard",
+  "seo": {
+    "title": "Contact Voltpack demo desk",
+    "description": "PLACEHOLDER inbound page — Voltpack scaffold routes form posts to /api/lead with synthetic payloads only."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "title": "Program intake desk · PLACEHOLDER",
+      "description": "Synthetic availability — escalate through offline channels before promising response times.",
+      "image": "/assets/placeholder-2.jpg",
+      "imageAlt": "PLACEHOLDER meeting scene"
+    },
+    {
+      "type": "contact-form",
+      "title": "Structured intake · PLACEHOLDER",
+      "formId": "voltpack-demo-intake-en",
+      "fieldLabels": {
+        "name": "Name · PLACEHOLDER label",
+        "email": "Work email · PLACEHOLDER",
+        "phone": "Phone · optional PLACEHOLDER",
+        "company": "Organization · PLACEHOLDER",
+        "message": "Project notes · PLACEHOLDER",
+        "submit": "Send · PLACEHOLDER"
+      }
+    },
+    {
+      "type": "contact-block",
+      "title": "Routing legend · PLACEHOLDER",
+      "description": "No live phone escalation on this scaffold — cite site.config contacts only after factual entry.",
+      "channels": [
+        {
+          "label": "Mailbox (demo)",
+          "value": "hello@energy-storage-test-company.example.com"
+        },
+        {
+          "label": "Response cadence",
+          "value": "PLACEHOLDER SLA — substitute with staffed policy"
+        }
+      ],
+      "cta": {
+        "label": "Privacy escalation · PLACEHOLDER",
+        "href": "/privacy"
+      }
+    }
+  ]
+}

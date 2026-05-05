@@ -1,0 +1,65 @@
+{
+  "slug": "/products",
+  "template": "standard",
+  "seo": {
+    "title": "产品中心（占位）",
+    "description": "占位产品目录：正式上线前请替换型号、公差、认证与 CAD 引用。"
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "variant": "product-hero",
+      "eyebrow": "壳体与包络",
+      "title": "面向集装箱与工商业柜体的结构族",
+      "description": "占位：阐述集装箱式储能、室内液冷储能柜、工商业平台、户外舱体与钣金子总成等模块化思路，不涉及真实集成商项目编号。",
+      "image": "/assets/products-hero.jpg",
+      "imageAlt": "占位产品首屏",
+      "tabs": [
+        { "label": "集装箱储能外壳", "href": "/products#container" },
+        { "label": "液冷柜壳体", "href": "/products#liquid-cooling" },
+        { "label": "工商业柜方案", "href": "/products#ci-commercial" },
+        { "label": "户外电池舱", "href": "/products#outdoor-shell" },
+        { "label": "定制钣金", "href": "/products#fabrication" }
+      ],
+      "primaryCta": {
+        "label": "预约工程沟通（占位）",
+        "href": "/contact"
+      }
+    },
+    {
+      "type": "gallery",
+      "title": "工艺示例图（全部为占位素材）",
+      "columns": 3,
+      "images": [
+        "/assets/placeholder-1.jpg",
+        "/assets/placeholder-2.jpg",
+        "/assets/placeholder-1.jpg",
+        "/assets/placeholder-2.jpg"
+      ]
+    },
+    {
+      "type": "feature-list",
+      "title": "工程检查点占位",
+      "items": [
+        {
+          "title": "接口控制文件",
+          "description": "占位：在挂载客户 BOM 前先使用内部模拟 ICD。"
+        },
+        {
+          "title": "防腐与涂装矩阵",
+          "description": "占位：未取得实验室报告前禁止对外断言等级。"
+        },
+        {
+          "title": "热管理与导流",
+          "description": "占位：泛泛描述冷凝水与风机开孔策略。"
+        }
+      ]
+    },
+    {
+      "type": "contact-block",
+      "title": "应用工程联络",
+      "description": "表单仍提交至 /api/lead，路由策略需在线下替换；此处不含真实 SLA。",
+      "cta": { "label": "前往联系表单", "href": "/contact" }
+    }
+  ]
+}

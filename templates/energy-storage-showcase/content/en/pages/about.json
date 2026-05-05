@@ -1,0 +1,77 @@
+{
+  "slug": "/about",
+  "template": "standard",
+  "seo": {
+    "title": "About",
+    "description": "Placeholder company overview — replace leadership, geography, and certifications."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "title": "Built for integrators who ship globally",
+      "description": "Use this page to explain governance, manufacturing philosophy, and compliance posture at a high level.",
+      "image": "/assets/placeholder-1.jpg",
+      "imageAlt": "About hero placeholder"
+    },
+    {
+      "type": "image-text",
+      "title": "Company overview",
+      "description": "Replace this paragraph with a factual overview of your entity, capacity, and markets served. No executive names are provided in this scaffold.",
+      "image": "/assets/placeholder-2.jpg",
+      "imageAlt": "Facility placeholder",
+      "reverse": true
+    },
+    {
+      "type": "stats",
+      "intro": "Figures below are intentionally generic. Insert audited metrics after finance and legal sign-off.",
+      "aboutCta": {
+        "label": "Download fact sheet (via contact)",
+        "href": "/contact"
+      },
+      "items": [
+        {
+          "label": "Engineering staff (placeholder)",
+          "value": "120+",
+          "description": "globalFte"
+        },
+        {
+          "label": "Manufacturing footprint (placeholder)",
+          "value": "3 sites",
+          "description": "plants"
+        },
+        {
+          "label": "Avg. project cycle (placeholder)",
+          "value": "18 weeks",
+          "description": "cycleTime"
+        }
+      ]
+    },
+    {
+      "type": "process-steps",
+      "title": "Quality · Manufacturing · Service",
+      "steps": [
+        {
+          "title": "Design review",
+          "description": "Placeholder for DFMEA, thermal, and seismic checkpoints."
+        },
+        {
+          "title": "Fabrication",
+          "description": "Illustrative copy for welding, coating, and assembly controls."
+        },
+        {
+          "title": "Commissioning support",
+          "description": "Placeholder for field advisors and documentation packs."
+        }
+      ]
+    },
+    {
+      "type": "contact-block",
+      "title": "Ready for a facility tour?",
+      "description": "Coordinate through your account team — use the contact form for routing.",
+      "cta": {
+        "label": "Contact us",
+        "href": "/contact"
+      }
+    }
+  ]
+}

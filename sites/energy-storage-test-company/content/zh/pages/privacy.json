@@ -1,0 +1,35 @@
+{
+  "slug": "/privacy",
+  "template": "legal",
+  "seo": {
+    "title": "隐私政策占位（演示）",
+    "description": "伏特演示站占位页面，不包含可执行的法域条文。"
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "eyebrow": "Privacy",
+      "title": "隐私声明占位正文",
+      "description": "本段仅为版面演示，必须由执业律师改写为适用法律下的正式文本。"
+    },
+    {
+      "type": "image-text",
+      "title": "律师需覆盖的要点占位",
+      "description": "说明通过 /contact 与 /api/lead 收集的个人数据类别、法律依据、留存周期、境内外传输、次级处理者、用户的访问/删除路径、监管机构联络方式、营销活动（若启用）与 Cookie 方针等。"
+    },
+    {
+      "type": "faq",
+      "title": "占位问答 · 不得以未审文本对外承诺",
+      "items": [
+        {
+          "question": "本演示是否代表合规结论？",
+          "answer": "否。占位内容不得解释为合规断言。"
+        },
+        {
+          "question": "控制者信息在哪里维护？",
+          "answer": "请在 site.config.ts 更新 legal.dataController，并与注册登记信息保持一致。"
+        }
+      ]
+    }
+  ]
+}

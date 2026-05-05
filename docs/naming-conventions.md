@@ -83,7 +83,7 @@ CSS 前缀:          .ims-*
 1. 把它改成对应的 ASCII kebab-case slug。
 2. 在 `docs/registries/site-registry.md` 或 `docs/registries/theme-registry.md` 添加 / 更新中文名称列。
 3. 把所有引用（package.json、import、site.config.ts 等）一并改完。
-4. 跑 `pnpm validate-site <slug>` 和 `pnpm build-site <slug>` 确认未破坏。
+4. 跑 `pnpm site validate <slug>` 和 `pnpm site build <slug>` 确认未破坏。
 5. 在 commit message 里说明这是命名规范修复。
 
 参见 `.cursor/rules/50-registry-and-naming.mdc`、`.cursor/rules/30-new-site-workflow.mdc`、`.cursor/rules/20-theme-naming-and-governance.mdc`。

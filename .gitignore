@@ -12,14 +12,14 @@ node_modules/
 .pnpm-store/
 
 # --- Build output ----------------------------------------------------
-# `pnpm build-site <slug>` 产物和 Astro 的中间产物。
+# `pnpm site build <slug>` 产物和 Astro 的中间产物。
 # 保留原有规则：dist 全局忽略 + apps/site-builder/dist 显式忽略。
 dist/
 build/
 apps/site-builder/dist/
 
 # --- Site-builder generated artefacts --------------------------------
-# `apps/site-builder/.generated/` 由 `pnpm build-site <slug>` 从
+# `apps/site-builder/.generated/` 由 `pnpm site build <slug>` 从
 # sites/<slug>/ 重新生成。**不要**手工编辑，**也不要**提交其中任何
 # 文件，但保留 .gitkeep 让目录在 git 里依然存在，方便 IDE 解析路径。
 apps/site-builder/.generated/*

@@ -1,0 +1,49 @@
+{
+  "slug": "/contact",
+  "template": "standard",
+  "seo": {
+    "title": "Contact",
+    "description": "Route inquiries through the standard /api/lead handler — no webhooks in theme code."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "title": "Contact the energy enclosure team",
+      "description": "Share project stage, standards, and regions — responses are handled outside this static demo.",
+      "image": "/assets/placeholder-2.jpg",
+      "imageAlt": "Contact hero placeholder"
+    },
+    {
+      "type": "contact-form",
+      "title": "Project intake form",
+      "formId": "{{SITE_SLUG}}-ess-contact",
+      "fieldLabels": {
+        "name": "Name",
+        "email": "Email",
+        "phone": "Phone",
+        "company": "Company",
+        "message": "Message",
+        "submit": "Send request"
+      }
+    },
+    {
+      "type": "contact-block",
+      "title": "Commercial desk (placeholder)",
+      "description": "Use structured fields in the form for faster routing. Phone numbers belong in site.config.ts only.",
+      "channels": [
+        {
+          "label": "Business hours",
+          "value": "Weekdays 09:00–18:00 (placeholder timezone)"
+        },
+        {
+          "label": "Routing",
+          "value": "Sales → Solutions → Program management (illustrative)"
+        }
+      ],
+      "cta": {
+        "label": "Email privacy office",
+        "href": "mailto:privacy@{{PRIMARY_HOST}}"
+      }
+    }
+  ]
+}

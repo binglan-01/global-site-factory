@@ -1,0 +1,41 @@
+{
+  "slug": "/",
+  "template": "standard",
+  "seo": {
+    "title": "{{DISPLAY_NAME_ZH}} — 首页",
+    "description": "{{DEFAULT_DESCRIPTION_ZH}}"
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "eyebrow": "B2B 产品官网",
+      "title": "欢迎访问 {{DISPLAY_NAME_ZH}}",
+      "description": "本页由 Site Factory 模板生成，上线前请替换文案与图片资源。",
+      "image": "/assets/placeholder.jpg",
+      "imageAlt": "占位图，请替换为产品或工厂实景图片"
+    },
+    {
+      "type": "services-grid",
+      "title": "核心能力",
+      "items": [
+        {
+          "title": "工程与设计",
+          "description": "说明如何为客户做方案、规格与验证。"
+        },
+        {
+          "title": "制造与交付",
+          "description": "概述产能、质量体系与交期。"
+        },
+        {
+          "title": "服务与支持",
+          "description": "描述调试、备件与技术支持。"
+        }
+      ]
+    },
+    {
+      "type": "contact-form",
+      "title": "留言咨询",
+      "formId": "{{SITE_SLUG}}-home-zh-lead"
+    }
+  ]
+}

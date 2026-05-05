@@ -10,7 +10,7 @@ alwaysApply: true
 - One company site normally maps to **one** Cloudflare Pages Project.
 - Standard Pages Project configuration:
   - Root directory: `/`
-  - Build command: `pnpm build-site <siteSlug>`
+  - Build command: `pnpm site build <siteSlug>`
   - Output directory: `dist/sites/<siteSlug>`
   - Environment variable: `NODE_VERSION=20`
 - Builds run via Cloudflare Pages Git Integration. Do NOT create GitHub Actions unless the user explicitly asks.

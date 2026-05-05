@@ -1,0 +1,77 @@
+{
+  "slug": "/about",
+  "template": "standard",
+  "seo": {
+    "title": "关于我们",
+    "description": "公司简介占位，请替换为经审阅的实体信息、治理架构与认证清单。"
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "title": "面向全球交付的集成伙伴",
+      "description": "用于概述制造理念、质量体系与合规策略的高层叙事占位。",
+      "image": "/assets/placeholder-1.jpg",
+      "imageAlt": "关于首屏占位"
+    },
+    {
+      "type": "image-text",
+      "title": "公司简介",
+      "description": "请用经法务与市场确认的事实替换本段，不在模板中放置具体人员姓名或未经披露的客户。",
+      "image": "/assets/placeholder-2.jpg",
+      "imageAlt": "工厂摄影占位",
+      "reverse": true
+    },
+    {
+      "type": "stats",
+      "intro": "以下指标为演示占位，请在财务与法务确认后更新。",
+      "aboutCta": {
+        "label": "索取简介（通过联系表单）",
+        "href": "/contact"
+      },
+      "items": [
+        {
+          "label": "工程人员规模（占位）",
+          "value": "120+",
+          "description": "globalFte"
+        },
+        {
+          "label": "制造基地（占位）",
+          "value": "3 处",
+          "description": "plants"
+        },
+        {
+          "label": "平均项目周期（占位）",
+          "value": "18 周",
+          "description": "cycleTime"
+        }
+      ]
+    },
+    {
+      "type": "process-steps",
+      "title": "质量 · 制造 · 服务",
+      "steps": [
+        {
+          "title": "设计评审",
+          "description": "DFMEA、热管理与结构校核等检查点占位。"
+        },
+        {
+          "title": "制造与装配",
+          "description": "焊接、涂装与装配过程控制示例描述。"
+        },
+        {
+          "title": "调试与交付支持",
+          "description": "现场顾问与文件包交付占位。"
+        }
+      ]
+    },
+    {
+      "type": "contact-block",
+      "title": "预约参观或审厂？",
+      "description": "请通过联系表单由客户经理安排，当前文案不含具体承诺。",
+      "cta": {
+        "label": "联系我们",
+        "href": "/contact"
+      }
+    }
+  ]
+}

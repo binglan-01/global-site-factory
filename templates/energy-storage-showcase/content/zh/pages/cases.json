@@ -1,0 +1,50 @@
+{
+  "slug": "/cases",
+  "template": "standard",
+  "seo": {
+    "title": "案例展示",
+    "description": "代表性项目栅格占位，对外发布前请替换为经客户许可的案例内容。"
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "title": "可参考的交付模式",
+      "description": "以下为合成示例，不含具体客户事实，发布前请完成市场与法务审阅。",
+      "image": "/assets/placeholder-2.jpg",
+      "imageAlt": "案例首屏占位"
+    },
+    {
+      "type": "case-studies",
+      "title": "行业应用快照",
+      "items": [
+        {
+          "title": "电网侧缓冲场地",
+          "industry": "电网",
+          "description": "用于大型缓冲安装工程的占位描述。",
+          "image": "/assets/placeholder-1.jpg"
+        },
+        {
+          "title": "物流园区削峰",
+          "industry": "工商业",
+          "description": "园区负荷调节类项目的示例叙事。",
+          "image": "/assets/placeholder-2.jpg"
+        },
+        {
+          "title": "边缘算力备电",
+          "industry": "边缘",
+          "description": "分布式 IT + 储能协同站点的示例文字。",
+          "image": "/assets/placeholder-1.jpg"
+        }
+      ]
+    },
+    {
+      "type": "contact-block",
+      "title": "需要参考参观或审厂？",
+      "description": "当前案例均为演示占位，对外沟通前请更新。",
+      "cta": {
+        "label": "联系我们",
+        "href": "/contact"
+      }
+    }
+  ]
+}

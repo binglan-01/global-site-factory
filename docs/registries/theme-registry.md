@@ -33,22 +33,16 @@
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | `enterprise` | 企业官网主题 | `packages/theme-enterprise` | `.theme-enterprise` | `.enterprise-*` | 工业制造、B2B 服务、传统企业宣传站 | 浅色 / 蓝色主色 / 文字主导 / 结构清晰 / 中性稳重 | `active` | `docs/themes/enterprise.md` (active) |
 | `technical-product-showcase` | 科技产品展示主题 | `packages/theme-technical-product-showcase` | `.theme-technical-product-showcase` | `.tps-*` | 智能装备、工业设备、能源设备、模块化产品、B2B 科技产品展示官网 | 深色导航 / 大图首屏 / 技术感 / 产品展示 / 模块化结构 | `draft` | `docs/themes/technical-product-showcase.md` (active) |
+| `energy-storage-showcase` | 储能案例展示主题 | `packages/theme-energy-storage-showcase` | `.theme-energy-storage-showcase` | `.energy-storage-*` | 储能系统集成、工商业与源网侧 B2B、机柜外壳 / 电池舱类产品站 | 全屏 Hero 轮播 / 场景橱窗滚动卡片 / FAB + 多列 Footer / 双语文案槽位 | **`active`** | `docs/themes/energy-storage-showcase.md` |
 
+### `energy-storage-showcase` — 状态：**`active`**
 
-> 当前只有 `enterprise` 是已经在代码中完成注册、并处于 `active` 状态的主题。
->
-> `technical-product-showcase` 目前处于 `planned` 状态，表示该主题已经完成登记，但尚未正式创建主题包、注册到 validators / site-builder，也尚未通过测试站点完成 validate / build。
->
-> 在 `technical-product-showcase` 进入 `draft` 或 `active` 状态前，需要完成：
->
-> - 创建 `docs/themes/technical-product-showcase.md`
-> - 创建 `packages/theme-technical-product-showcase/`
-> - 将主题加入 `packages/validators/src/site-config.schema.ts` 的 `theme` 枚举
-> - 注册到 `apps/site-builder` 的主题 registry
-> - 确保 `SectionRenderer` 可以根据 `siteConfig.theme` 分发到该主题
-> - 使用至少一个测试站点完成 `pnpm validate-site <siteSlug>` 和 `pnpm build-site <siteSlug>`
+- 已满足「**至少两个引用站点** + **validate / build / build-all** 路径稳定通过」的登记表口径（见下方复用验证简述及 `docs/themes/energy-storage-showcase.md` 第 6 节「复用验证」）。
+- 视觉与文案仍可按站点迭代；**`active`** 表示**可安全作为生产候选主题**选用，不代表各站点内容已审阅可对外发布。
 
-> ⚠️ 现有 `theme-enterprise` 的 CSS 在历史上被写为全局选择器（`:root`、`body`、`header` 等），尚未按 `20-theme-naming-and-governance.mdc` 要求统一 scope 到 `.theme-enterprise` 之下。这是已知的 legacy 状态；引入第二个主题之前必须先把 enterprise 的 CSS scope 化，否则会与新主题样式冲突。
+> 上表中 **`enterprise`、`technical-product-showcase`、`energy-storage-showcase`** 均已：存在 `packages/theme-<id>/`、列入 `packages/validators/src/site-config.schema.ts` 的 `theme` 枚举、写入 `apps/site-builder/src/themes/registry.ts`，并已通过管线内站点的 **`pnpm site validate`** / **`pnpm site build`** 及 **`pnpm site build-all`** 的组合验证。其中 **`technical-product-showcase`** 在登记列为 **`draft`**（视觉与文档仍可迭代，但**不阻断**构建）。**`energy-storage-showcase`** 已升格为 **`active`**，复用依据见 `docs/themes/energy-storage-showcase.md`「复用验证」一节。
+>
+> ⚠️ 现有 `theme-enterprise` 的 CSS 在历史上曾使用较多全局选择器（`:root`、`body`、`header` 等），仍未完全按 `20-theme-naming-and-governance.mdc` scope 到 `.theme-enterprise`。这是已知 legacy：其它主题通过 **`body.theme-<theme-id>`** 与按需挂载的 JSX 减小串扰风险；若在 **同一 HTML 文档中并行加载多套主题全局 CSS**，仍可能存在体积与特异性层面的叠加，须在后续架构版本中单独论证（不改变 FACTORY v1 管线的前提下，当前仍以「全局 import 多套主题样式表」的现状为准）。
 
 
 ---

@@ -1,0 +1,187 @@
+{
+  "slug": "/",
+  "template": "standard",
+  "seo": {
+    "title": "{{DISPLAY_NAME_EN}} — Industrial energy storage enclosures",
+    "description": "Energy storage enclosures for industrial power systems — placeholder marketing copy; replace before launch."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "variant": "fullscreen-carousel",
+      "eyebrow": "Industrial B2B",
+      "title": "Energy Storage Enclosures for Industrial Power Systems",
+      "description": "Reliable protection for clean energy infrastructure — built for utility, C&I, and edge deployments.",
+      "primaryCta": {
+        "label": "Talk to sales",
+        "href": "/contact"
+      },
+      "carousel": {
+        "images": [
+          {
+            "src": "/assets/hero-energy-1.jpg",
+            "alt": "Energy landscape placeholder 1"
+          },
+          {
+            "src": "/assets/hero-energy-2.jpg",
+            "alt": "Energy landscape placeholder 2"
+          },
+          {
+            "src": "/assets/hero-energy-3.jpg",
+            "alt": "Energy landscape placeholder 3"
+          }
+        ],
+        "autoplay": true,
+        "intervalMs": 6500
+      }
+    },
+    {
+      "type": "feature-list",
+      "title": "Application showcase",
+      "description": "Scroll-driven cards highlight where rigid enclosures matter most — swap imagery for your programs.",
+      "items": [
+        {
+          "title": "Utility-scale Energy Storage",
+          "description": "Modular enclosures for grid-forming assets and ancillary services deployments.",
+          "image": "/assets/placeholder-1.jpg",
+          "imageAlt": "Placeholder visual",
+          "icon": "①"
+        },
+        {
+          "title": "Commercial & Industrial Storage",
+          "description": "Rugged cabinet systems engineered for constrained plant footprints and uptime.",
+          "image": "/assets/placeholder-2.jpg",
+          "imageAlt": "Placeholder visual",
+          "icon": "②"
+        },
+        {
+          "title": "Solar Energy Storage",
+          "description": "Coupled enclosures that pair with photovoltaic generation for smoothed ramp rates.",
+          "image": "/assets/placeholder-1.jpg",
+          "imageAlt": "Placeholder visual",
+          "icon": "③"
+        },
+        {
+          "title": "Wind Power Storage",
+          "description": "Vibration-aware structures for remote turbine balance-of-plant applications.",
+          "image": "/assets/placeholder-2.jpg",
+          "imageAlt": "Placeholder visual",
+          "icon": "④"
+        },
+        {
+          "title": "EV Charging Storage",
+          "description": "Buffer cabinets that support high-power dispensing without grid overload.",
+          "image": "/assets/placeholder-1.jpg",
+          "imageAlt": "Placeholder visual",
+          "icon": "⑤"
+        },
+        {
+          "title": "Data Center Backup Power",
+          "description": "Walkable bay layouts for hyperscale standby and edge compute resilience.",
+          "image": "/assets/placeholder-2.jpg",
+          "imageAlt": "Placeholder visual",
+          "icon": "⑥"
+        }
+      ]
+    },
+    {
+      "type": "services-grid",
+      "title": "Product & solution entry points",
+      "items": [
+        {
+          "title": "Utility-scale Storage Enclosures",
+          "description": "Walkable or skid-mounted cabinets for large-scale battery arrays.",
+          "href": "/products#utility"
+        },
+        {
+          "title": "C&I Storage Cabinets",
+          "description": "Compact rows for manufacturing campuses and logistics hubs.",
+          "href": "/products#ci"
+        },
+        {
+          "title": "Residential Storage Enclosures",
+          "description": "Low-profile housings for distributed residential programs.",
+          "href": "/products#residential"
+        },
+        {
+          "title": "Telecom Backup Battery Cabinets",
+          "description": "Sealed bays for remote tower and edge switching sites.",
+          "href": "/products#telecom"
+        },
+        {
+          "title": "EV Charging Storage Cabinets",
+          "description": "Buffer units co-located with high-power charging plazas.",
+          "href": "/solutions#ev"
+        }
+      ]
+    },
+    {
+      "type": "stats",
+      "intro": "Placeholders below are intentionally generic — replace with audited figures. This block pairs narrative with operational metrics for B2B homepages.",
+      "aboutCta": {
+        "label": "Learn more",
+        "href": "/about"
+      },
+      "items": [
+        {
+          "label": "Years of experience (placeholder)",
+          "value": "12+",
+          "description": "yearsOfExperience"
+        },
+        {
+          "label": "Countries served (placeholder)",
+          "value": "30+",
+          "description": "countriesServed"
+        },
+        {
+          "label": "Annual capacity (placeholder)",
+          "value": "2.4 GWh",
+          "description": "annualCapacity"
+        },
+        {
+          "label": "Projects delivered (placeholder)",
+          "value": "180+",
+          "description": "projectsDelivered"
+        }
+      ]
+    },
+    {
+      "type": "case-studies",
+      "title": "Programs, cases, and newsroom highlights",
+      "primaryCta": {
+        "label": "Browse cases",
+        "href": "/cases"
+      },
+      "secondaryCta": {
+        "label": "More updates",
+        "href": "/cases"
+      },
+      "items": [
+        {
+          "title": "Clean energy program rollout",
+          "industry": "Utility",
+          "description": "Placeholder narrative for a multi-site cabinet deployment — replace with approved reference.",
+          "image": "/assets/placeholder-1.jpg"
+        },
+        {
+          "title": "Enclosure retrofit for C&I campus",
+          "industry": "Manufacturing",
+          "description": "Illustrative copy for a factory peak-shaving project — no customer claims yet.",
+          "image": "/assets/placeholder-2.jpg"
+        },
+        {
+          "title": "Company milestones calendar",
+          "industry": "News",
+          "description": "Use this card for tradeshow, certification, or roadmap updates — swap dates and facts.",
+          "image": "/assets/placeholder-1.jpg"
+        },
+        {
+          "title": "Industrial application photo study",
+          "industry": "Application",
+          "description": "Generic story block for process cooling + storage integration — replace photography.",
+          "image": "/assets/placeholder-2.jpg"
+        }
+      ]
+    }
+  ]
+}

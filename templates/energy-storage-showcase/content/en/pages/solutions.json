@@ -1,0 +1,102 @@
+{
+  "slug": "/solutions",
+  "template": "standard",
+  "seo": {
+    "title": "Solutions",
+    "description": "Illustrative solution flows for grid, commercial, and edge energy storage — replace with vetted claims."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "variant": "product-hero",
+      "eyebrow": "Solutions",
+      "title": "Integrated solution architecture",
+      "description": "Use this hero to outline how enclosure, BMS interfaces, and services fit together for integrators.",
+      "image": "/assets/placeholder-1.jpg",
+      "imageAlt": "Solutions hero placeholder",
+      "primaryCta": {
+        "label": "Book a solution workshop",
+        "href": "/contact"
+      },
+      "tabs": [
+        {
+          "label": "Utility & grid-scale",
+          "href": "/solutions#grid"
+        },
+        {
+          "label": "Commercial & industrial",
+          "href": "/solutions#commercial"
+        },
+        {
+          "label": "Edge & backup",
+          "href": "/solutions#edge"
+        },
+        {
+          "label": "Telecom & remote",
+          "href": "/solutions#telecom"
+        },
+        {
+          "label": "EV charging",
+          "href": "/solutions#ev"
+        }
+      ]
+    },
+    {
+      "type": "image-text",
+      "title": "Application scenario diagram",
+      "description": "Explain how enclosures stage power conversion, fire mitigation, and service access — sample engineering story only.",
+      "image": "/assets/solution-diagram.jpg",
+      "imageAlt": "System diagram placeholder",
+      "reverse": false,
+      "cta": {
+        "label": "Download narrative (via contact)",
+        "href": "/contact"
+      }
+    },
+    {
+      "type": "feature-list",
+      "title": "Technical strengths",
+      "items": [
+        {
+          "title": "Standards-ready frameworks",
+          "description": "Placeholder bullets for IEC / UL pathways under review."
+        },
+        {
+          "title": "Factory-tested assemblies",
+          "description": "Illustrative copy for FAT checkpoints and QA reporting."
+        },
+        {
+          "title": "Logistics-conscious packaging",
+          "description": "Placeholder for sea/land cradle strategies."
+        }
+      ]
+    },
+    {
+      "type": "feature-list",
+      "title": "Where teams deploy first",
+      "items": [
+        {
+          "title": "Grid-forming corridors",
+          "description": "Placeholder for ancillary services wording."
+        },
+        {
+          "title": "Mission-critical campuses",
+          "description": "Illustrative C&I resiliency copy."
+        },
+        {
+          "title": "Edge + telecom sites",
+          "description": "Space-constrained enclosures for remote assets."
+        }
+      ]
+    },
+    {
+      "type": "contact-block",
+      "title": "Collaborate with our solution engineers",
+      "description": "Tell us voltage class, coolant strategy, and required certifications — placeholders only.",
+      "cta": {
+        "label": "Message the team",
+        "href": "/contact"
+      }
+    }
+  ]
+}

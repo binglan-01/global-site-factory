@@ -12,6 +12,7 @@
     "@astrojs/react": "^4.4.2",
     "@factory/seo": "workspace:*",
     "@factory/theme-enterprise": "workspace:*",
+    "@factory/theme-energy-storage-showcase": "workspace:*",
     "@factory/theme-technical-product-showcase": "workspace:*",
     "@factory/validators": "workspace:*",
     "astro": "^5.16.6",

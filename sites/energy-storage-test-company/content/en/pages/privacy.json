@@ -1,0 +1,35 @@
+{
+  "slug": "/privacy",
+  "template": "legal",
+  "seo": {
+    "title": "Privacy notice · Voltpack scaffold",
+    "description": "PLACEHOLDER jurisdiction-neutral privacy scaffolding — Voltpack demo only."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "eyebrow": "Privacy",
+      "title": "Placeholder privacy statement",
+      "description": "This block exists for layout fidelity. Replace entirely with jurisdiction-specific counsel-reviewed text."
+    },
+    {
+      "type": "image-text",
+      "title": "What counsel should author",
+      "description": "Document intake via /contact forms routed to /api/lead with fields name, email, optional phone & company, message, siteSlug, pageUrl snapshot. Declare lawful basis, retention, subprocessors (if any), international transfers (if applicable), DSAR timelines, supervisory authority linkage, breach notification paths, children's data posture, calibration with marketing trackers in site.config (none here yet)."
+    },
+    {
+      "type": "faq",
+      "title": "Illustrative Q&A · PLACEHOLDER",
+      "items": [
+        {
+          "question": "Does this demo site imply GDPR compliance?",
+          "answer": "No — placeholders must be replaced before claiming any regulatory conformance."
+        },
+        {
+          "question": "Where is Voltpack legally domiciled in this scaffold?",
+          "answer": "Use company.registeredAddress and legal.dataController in site.config.ts after auditors confirm facts."
+        }
+      ]
+    }
+  ]
+}

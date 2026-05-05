@@ -2,6 +2,7 @@ import { readdir } from "node:fs/promises";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { execa } from "execa";
+import { requireSiteCliInvocation } from "./site-script-guard.js";
 
 function getRepoRoot(): string {
   return resolve(dirname(fileURLToPath(import.meta.url)), "..");
@@ -12,6 +13,8 @@ function formatUnknownError(error: unknown): string {
 }
 
 async function main(): Promise<void> {
+  requireSiteCliInvocation("build-all-sites");
+
   const repoRoot = getRepoRoot();
   const sitesDir = join(repoRoot, "sites");
   const entries = await readdir(sitesDir, { withFileTypes: true });
@@ -26,7 +29,7 @@ async function main(): Promise<void> {
 
   for (const siteSlug of siteSlugs) {
     console.log(`Building site "${siteSlug}"...`);
-    await execa("pnpm", ["build-site", siteSlug], {
+    await execa("pnpm", ["site", "build", siteSlug], {
       cwd: repoRoot,
       stdio: "inherit",
     });

@@ -1,0 +1,25 @@
+{
+  "slug": "/terms",
+  "template": "legal",
+  "seo": {
+    "title": "服务条款占位（演示）",
+    "description": "伏特储能装备演示文案，不产生合同效力。"
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "eyebrow": "Terms",
+      "title": "网站使用条款占位文本",
+      "description": "需由律师补充免责声明、知识产权归属、不可抗力、赔偿责任上限、适用法律与争议解决条款、离线采购合同优先关系、机密信息处理与电子签收效力等条文。"
+    },
+    {
+      "type": "contact-block",
+      "title": "合同流转占位提示",
+      "description": "正式商务合作仍需在线下签署框架协议，本占位页不可替代书面合同。",
+      "cta": {
+        "label": "法务联络占位邮箱入口",
+        "href": "/contact"
+      }
+    }
+  ]
+}

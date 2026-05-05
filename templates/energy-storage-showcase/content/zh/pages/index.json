@@ -1,0 +1,187 @@
+{
+  "slug": "/",
+  "template": "standard",
+  "seo": {
+    "title": "{{DISPLAY_NAME_ZH}} — 工业储能壳体与系统防护",
+    "description": "面向工业能源系统与储能项目的壳体与机柜方案占位文案，上线前请替换为经审阅的市场与合规表述。"
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "variant": "fullscreen-carousel",
+      "eyebrow": "工业 B2B",
+      "title": "让储能服务千行百业",
+      "description": "为工业能源系统提供可靠壳体解决方案，支撑清洁能源与智慧电网稳定运行。",
+      "primaryCta": {
+        "label": "联系顾问",
+        "href": "/contact"
+      },
+      "carousel": {
+        "images": [
+          {
+            "src": "/assets/hero-energy-1.jpg",
+            "alt": "Energy landscape placeholder 1"
+          },
+          {
+            "src": "/assets/hero-energy-2.jpg",
+            "alt": "Energy landscape placeholder 2"
+          },
+          {
+            "src": "/assets/hero-energy-3.jpg",
+            "alt": "Energy landscape placeholder 3"
+          }
+        ],
+        "autoplay": true,
+        "intervalMs": 6500
+      }
+    },
+    {
+      "type": "feature-list",
+      "title": "应用场景展示",
+      "description": "以下卡片用于演示滚动呈现与轮播交互，请替换为贵司真实项目与摄影资产。",
+      "items": [
+        {
+          "title": "源网侧储能",
+          "description": "适配电网调度与辅助服务项目的模块化储能壳体与电池舱方案占位。",
+          "image": "/assets/placeholder-1.jpg",
+          "imageAlt": "Placeholder visual",
+          "icon": "①"
+        },
+        {
+          "title": "工商业储能",
+          "description": "为高可用制造与园区负荷设计的紧凑机柜与并柜结构占位说明。",
+          "image": "/assets/placeholder-2.jpg",
+          "imageAlt": "Placeholder visual",
+          "icon": "②"
+        },
+        {
+          "title": "光伏储能",
+          "description": "与光伏发电协同的平滑出力与峰谷调节场景占位描述。",
+          "image": "/assets/placeholder-1.jpg",
+          "imageAlt": "Placeholder visual",
+          "icon": "③"
+        },
+        {
+          "title": "风电储能",
+          "description": "面向风电场站与远程集控的耐振结构与环境隔离示例占位。",
+          "image": "/assets/placeholder-2.jpg",
+          "imageAlt": "Placeholder visual",
+          "icon": "④"
+        },
+        {
+          "title": "充电站储能",
+          "description": "缓解大功率充电尖峰对配电网冲击的缓冲型储能柜占位。",
+          "image": "/assets/placeholder-1.jpg",
+          "imageAlt": "Placeholder visual",
+          "icon": "⑤"
+        },
+        {
+          "title": "数据中心备用电源",
+          "description": "面向超大规模与边缘算力场景的维护通道与并柜布局占位。",
+          "image": "/assets/placeholder-2.jpg",
+          "imageAlt": "Placeholder visual",
+          "icon": "⑥"
+        }
+      ]
+    },
+    {
+      "type": "services-grid",
+      "title": "产品与方案入口",
+      "items": [
+        {
+          "title": "源网侧储能壳体",
+          "description": "面向大型储能电站的模块化电池舱与维护通道布局占位。",
+          "href": "/products#utility"
+        },
+        {
+          "title": "工商业储能壳体",
+          "description": "紧凑并柜结构，适配园区与制造场景占位说明。",
+          "href": "/products#ci"
+        },
+        {
+          "title": "户用储能壳体",
+          "description": "低高度外观与户外防腐涂层的示例占位。",
+          "href": "/products#residential"
+        },
+        {
+          "title": "通信储能电池柜",
+          "description": "密封与温控导向的远程站点方案占位。",
+          "href": "/products#telecom"
+        },
+        {
+          "title": "充电站储能柜",
+          "description": "与高功率充电协同的缓冲型储能柜占位。",
+          "href": "/solutions#ev"
+        }
+      ]
+    },
+    {
+      "type": "stats",
+      "intro": "以下数字为可替换占位，不代表经审计事实。用于首页“公司介绍 + 指标”组合展示，请在合规确认后更新。",
+      "aboutCta": {
+        "label": "了解更多",
+        "href": "/about"
+      },
+      "items": [
+        {
+          "label": "行业经验（占位）",
+          "value": "12+",
+          "description": "yearsOfExperience"
+        },
+        {
+          "label": "服务国家/地区（占位）",
+          "value": "30+",
+          "description": "countriesServed"
+        },
+        {
+          "label": "年产能（占位）",
+          "value": "2.4 GWh",
+          "description": "annualCapacity"
+        },
+        {
+          "label": "交付项目（占位）",
+          "value": "180+",
+          "description": "projectsDelivered"
+        }
+      ]
+    },
+    {
+      "type": "case-studies",
+      "title": "案例、活动与动态",
+      "primaryCta": {
+        "label": "查看案例",
+        "href": "/cases"
+      },
+      "secondaryCta": {
+        "label": "更多动态",
+        "href": "/cases"
+      },
+      "items": [
+        {
+          "title": "清洁能源项目推进",
+          "industry": "源网侧",
+          "description": "示例叙事：多站点壳体交付与调试协同——上线前请替换为审批后的客户案例。",
+          "image": "/assets/placeholder-1.jpg"
+        },
+        {
+          "title": "工商业园区改造",
+          "industry": "制造",
+          "description": "示例叙事：削峰填谷与并柜散热方案占位，不含具体客户承诺。",
+          "image": "/assets/placeholder-2.jpg"
+        },
+        {
+          "title": "公司动态与活动",
+          "industry": "动态",
+          "description": "用于展会、认证或里程碑发布占位，请替换日期与事实。",
+          "image": "/assets/placeholder-1.jpg"
+        },
+        {
+          "title": "工业场景摄影占位",
+          "industry": "应用",
+          "description": "用于展示工艺环境 + 储能集成思路的示例卡片。",
+          "image": "/assets/placeholder-2.jpg"
+        }
+      ]
+    }
+  ]
+}

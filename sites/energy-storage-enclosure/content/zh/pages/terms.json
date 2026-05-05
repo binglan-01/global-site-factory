@@ -1,0 +1,35 @@
+{
+  "slug": "/terms",
+  "template": "legal",
+  "seo": {
+    "title": "使用条款",
+    "description": "占位：请修改为中文公司名称 网站条款占位文本，上线前请替换并经法务审阅。"
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "eyebrow": "条款",
+      "title": "网站使用条款",
+      "description": "结构占位页，请按适用司法辖区准备正式条款。"
+    },
+    {
+      "type": "image-text",
+      "title": "适用范围",
+      "description": "正式文本通常需涵盖合理使用、知识产权、免责声明、责任限制、适用法律与修订机制等。"
+    },
+    {
+      "type": "faq",
+      "title": "常见问题",
+      "items": [
+        {
+          "question": "站点由谁运营？",
+          "answer": "法律主体名称见 site.config.ts 中的 company.legalName。"
+        },
+        {
+          "question": "页面上的技术说明是否具有约束力？",
+          "answer": "请在正式条款中明确网站内容为示意说明还是构成合同要约。"
+        }
+      ]
+    }
+  ]
+}

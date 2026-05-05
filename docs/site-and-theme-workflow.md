@@ -16,10 +16,10 @@
 ### 第 2 步 · 用脚手架创建站点
 
 ```powershell
-pnpm create-site <siteSlug>
+pnpm site pipeline <siteSlug>
 ```
 
-只允许通过 `pnpm create-site` 创建。**不要**复制粘贴别的 `sites/<other-slug>/` 目录。
+只允许通过 `pnpm site pipeline`（Site Pipeline）一键完成「生成 → 校验 → 构建」来落盘新站。**不要**复制粘贴别的 `sites/<other-slug>/` 目录。若只需单独脚手架而不跑校验/构建，可使用 `pnpm site create <siteSlug>`（仍经统一 CLI）。
 
 ### 第 3 步 · 配置与内容
 
@@ -40,8 +40,8 @@ pnpm create-site <siteSlug>
 每次有意义的修改之后都要跑：
 
 ```powershell
-pnpm validate-site <siteSlug>   # Zod 校验 site.config.ts 与所有 page JSON
-pnpm build-site <siteSlug>      # 构建产物输出到 dist/sites/<siteSlug>/
+pnpm site validate <siteSlug>   # Zod 校验 site.config.ts 与所有 page JSON
+pnpm site build <siteSlug>      # 构建产物输出到 dist/sites/<siteSlug>/
 ```
 
 ### 第 5 步 · Cloudflare Pages 配置
@@ -50,7 +50,7 @@ pnpm build-site <siteSlug>      # 构建产物输出到 dist/sites/<siteSlug>/
 
 - Project name = `siteSlug`
 - Root directory `/`
-- Build command `pnpm build-site <siteSlug>`
+- Build command `pnpm site build <siteSlug>`
 - Output directory `dist/sites/<siteSlug>`
 - 环境变量 `NODE_VERSION=20`
 - 不要新建 GitHub Actions（除非用户明确要求）。
@@ -92,8 +92,8 @@ pnpm build-site <siteSlug>      # 构建产物输出到 dist/sites/<siteSlug>/
 修改 `locales` 或新增某一语言的页面后，仍需对该站点执行：
 
 ```powershell
-pnpm validate-site <siteSlug>
-pnpm build-site <siteSlug>
+pnpm site validate <siteSlug>
+pnpm site build <siteSlug>
 ```
 
 ---
@@ -101,7 +101,7 @@ pnpm build-site <siteSlug>
 ## 三、修改已存在的站点 / Update an existing site
 
 1. 只在 `sites/<siteSlug>/` 之下改动。
-2. 改完跑 `pnpm validate-site <siteSlug>`、`pnpm build-site <siteSlug>`。
+2. 改完跑 `pnpm site validate <siteSlug>`、`pnpm site build <siteSlug>`。
 3. 如果改动涉及域名、状态或主题切换，同步更新 `docs/registries/site-registry.md` 对应行。
 4. 如果改动需要"框架里目前没有的能力"，**先暂停修站点**，进入**第八节**走通用框架变更，再回来用。
 
@@ -117,7 +117,7 @@ pnpm build-site <siteSlug>
 4. 处理 docs/sites/<siteSlug>.md（若存在）：删除或在文档顶部标注 archived。
 5. 提醒用户在 Cloudflare 控制台删除或断开对应 Pages Project。
 6. 提醒用户解绑自定义域名并删除相关 DNS 记录。
-7. 跑 pnpm build-all-sites 确认其余站点仍然构建成功。
+7. 跑 pnpm site build-all 确认其余站点仍然构建成功。
 ```
 
 执行人不要"顺手"在 Cloudflare / DNS 上代为操作，本仓库流程仅负责代码与构建产物，云资源回收必须由用户在控制台完成。
@@ -179,8 +179,8 @@ pnpm build-site <siteSlug>
 pnpm install                       # workspace 数应该 +1
 pnpm -F @factory/theme-<id> typecheck
 pnpm -F @factory/site-builder typecheck
-pnpm validate-site <一个用 enterprise 的站>   # 旧站不能受影响
-pnpm build-site   <一个用 enterprise 的站>
+pnpm site validate <一个用 enterprise 的站>   # 旧站不能受影响
+pnpm site build    <一个用 enterprise 的站>
 ```
 
 至少有一个 `active` 站点把 `theme:` 切到新 ID 并成功构建后，再把 `docs/registries/theme-registry.md` 中状态从 `draft` 改为 `active`。
@@ -189,7 +189,7 @@ pnpm build-site   <一个用 enterprise 的站>
 
 ## 六、修改已存在的主题 / Update an existing theme
 
-- 视觉调整 / 加新 section / 改 token：直接在 `packages/theme-<id>/` 内做。所有 site 都会受影响，所以必须跑 `pnpm build-all-sites` 验证。
+- 视觉调整 / 加新 section / 改 token：直接在 `packages/theme-<id>/` 内做。所有 site 都会受影响，所以必须跑 `pnpm site build-all` 验证。
 - 加新 section 类型属于框架变更，见**第八节**。
 - 不允许"为某个站点的特殊情况"在主题里写死分支，例如不允许 `if (siteConfig.slug === "...")`。差异需求请通过 `site.config.ts` 数据（如 `themeTokens`、`brand.logo`）解决。
 
@@ -206,7 +206,7 @@ pnpm build-site   <一个用 enterprise 的站>
 6. 从 apps/site-builder/src/layouts/SiteLayout.astro（或等价的 loader）里移除该主题的 CSS import 与 class 处理。
 7. 处理 docs/themes/<id>.md：删除或在顶部标注 archived。
 8. 在 docs/registries/theme-registry.md 中把该行 `状态` 改为 `archived`，不要直接删行。
-9. 跑 pnpm build-all-sites 确认所有站点仍然成功构建。
+9. 跑 pnpm site build-all 确认所有站点仍然成功构建。
 ```
 
 ---
@@ -224,6 +224,6 @@ pnpm build-site   <一个用 enterprise 的站>
 5. `docs/themes/<id>.md` — 在每个主题文档中描述这种 section 的展示策略。
 6. 必要时在示例页面中加演示，但不要为了演示去改真实客户的 page JSON。
 
-完成后跑 `pnpm build-all-sites`。
+完成后跑 `pnpm site build-all`。
 
 > 还有一些跨主题硬规则在 `.cursor/rules/40-no-go-rules.mdc` 与 `.cursor/rules/80-cloudflare-and-leads.mdc` 中明确，例如"不引入数据库"、"不接 CMS"、"不在主题包硬编码客户信息"、"`functions/api/lead.ts` 不允许记录 PII"等。这些是**长期红线**，不在本工作流文档里重复。

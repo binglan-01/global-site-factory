@@ -1,0 +1,173 @@
+{
+  "slug": "/",
+  "template": "standard",
+  "seo": {
+    "title": "Voltpack Enclosure · Energy storage enclosures (demo scaffold)",
+    "description": "PLACEHOLDER — demo homepage for ESS theme reusability testing. Figures, certifications, visuals, contacts are synthetic until formally replaced."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "variant": "fullscreen-carousel",
+      "eyebrow": "Industrial B2B demo",
+      "title": "Enclosures for Modular Energy Containers & Liquid-Cooled Cabinets",
+      "description": "PLACEHOLDER storyline — Voltpack scaffold focuses on containment for containerized ESS, pumped liquid cooling interfaces, outdoor battery cabinets, C&I skids and custom fabricated shells (no customer claims stated).",
+      "primaryCta": {
+        "label": "Request a schematic review · PLACEHOLDER",
+        "href": "/contact"
+      },
+      "carousel": {
+        "images": [
+          {
+            "src": "/assets/hero-volt-1.jpg",
+            "alt": "PLACEHOLDER — containerized ESS enclosure collage"
+          },
+          {
+            "src": "/assets/hero-volt-2.jpg",
+            "alt": "PLACEHOLDER — indoor liquid-cooling cabinet mock photography"
+          },
+          {
+            "src": "/assets/hero-volt-3.jpg",
+            "alt": "PLACEHOLDER — outdoor battery housing sketch-render"
+          }
+        ],
+        "autoplay": true,
+        "intervalMs": 7000
+      }
+    },
+    {
+      "type": "feature-list",
+      "title": "Application portfolio · PLACEHOLDER",
+      "description": "Demonstrates scroll cards only — substitute with audited program references before release.",
+      "items": [
+        {
+          "title": "ISO-style container integration",
+          "description": "PLACEHOLDER copy for high-cube compatible beam paths, corner castings, and lifting hardpoints (no standard certification stated).",
+          "image": "/assets/placeholder-1.jpg",
+          "imageAlt": "PLACEHOLDER visual",
+          "icon": "C"
+        },
+        {
+          "title": "Liquid-cooled cabinet envelopes",
+          "description": "PLACEHOLDER overview of manifold standoffs, drip management, and service panel zones for liquid-cooled modules.",
+          "image": "/assets/placeholder-2.jpg",
+          "imageAlt": "PLACEHOLDER visual",
+          "icon": "L"
+        },
+        {
+          "title": "C&I factory skids",
+          "description": "PLACEHOLDER description for shop-floor friendly rigging, cable tray channels, and maintenance clearances.",
+          "image": "/assets/placeholder-1.jpg",
+          "imageAlt": "PLACEHOLDER visual",
+          "icon": "I"
+        },
+        {
+          "title": "Outdoor battery cabinets",
+          "description": "PLACEHOLDER narrative for environmental louvers, HVAC cutouts, and corrosion class placeholders.",
+          "image": "/assets/placeholder-2.jpg",
+          "imageAlt": "PLACEHOLDER visual",
+          "icon": "O"
+        },
+        {
+          "title": "Custom sheet-metal modules",
+          "description": "PLACEHOLDER for bespoke stiffeners, inspection doors, and modular subassemblies co-designed with integrators.",
+          "image": "/assets/placeholder-1.jpg",
+          "imageAlt": "PLACEHOLDER visual",
+          "icon": "F"
+        }
+      ]
+    },
+    {
+      "type": "services-grid",
+      "title": "Entry points · PLACEHOLDER",
+      "items": [
+        {
+          "title": "Containerized ESS shells",
+          "description": "Jump to product anchor #container — PLACEHOLDER summary text.",
+          "href": "/products#container"
+        },
+        {
+          "title": "Liquid-cooled cabinet skins",
+          "description": "Jump to #liquid-cooling — PLACEHOLDER summary text.",
+          "href": "/products#liquid-cooling"
+        },
+        {
+          "title": "C&I cabinet families",
+          "description": "Jump to #ci-commercial — PLACEHOLDER summary text.",
+          "href": "/products#ci-commercial"
+        },
+        {
+          "title": "Outdoor housings",
+          "description": "Jump to #outdoor-shell — PLACEHOLDER summary text.",
+          "href": "/products#outdoor-shell"
+        },
+        {
+          "title": "Custom fabrication backlog",
+          "description": "Jump to #fabrication — PLACEHOLDER summary text.",
+          "href": "/products#fabrication"
+        },
+        {
+          "title": "Solutions overview",
+          "description": "Factory-fit / deployment hooks — PLACEHOLDER summary text.",
+          "href": "/solutions"
+        }
+      ]
+    },
+    {
+      "type": "stats",
+      "intro": "PLACEHOLDER KPI band — Numbers below are synthetic for layout QA only. Obtain finance & legal endorsement before quoting externally.",
+      "aboutCta": {
+        "label": "Manufacturing storyline · PLACEHOLDER",
+        "href": "/about"
+      },
+      "items": [
+        {
+          "label": "Engineering-hours logged (demo)",
+          "value": "9.5k/yr PLACEHOLDER",
+          "description": "syntheticWorkload"
+        },
+        {
+          "label": "Project waves quoted (demo)",
+          "value": "42 waves",
+          "description": "syntheticThroughput"
+        },
+        {
+          "label": "Geographies referenced (demo)",
+          "value": "11 regions PLACEHOLDER",
+          "description": "syntheticMarkets"
+        },
+        {
+          "label": "Average concept cycle (demo)",
+          "value": "Weeks PLACEHOLDER",
+          "description": "syntheticCycle"
+        }
+      ]
+    },
+    {
+      "type": "case-studies",
+      "title": "Programs board · PLACEHOLDER",
+      "primaryCta": {
+        "label": "Synthetic case explorer",
+        "href": "/cases"
+      },
+      "secondaryCta": {
+        "label": "Newsroom backlog",
+        "href": "/cases"
+      },
+      "items": [
+        {
+          "title": "Container harmonization rehearsal",
+          "industry": "PLACEHOLDER rollout",
+          "description": "Illustrative only — recounts no signed customer engagements.",
+          "image": "/assets/placeholder-1.jpg"
+        },
+        {
+          "title": "Liquid loop interface mock",
+          "industry": "Thermal lab rehearsal",
+          "description": "PLACEHOLDER wording for coupling trials with mock fluid circuits.",
+          "image": "/assets/placeholder-2.jpg"
+        }
+      ]
+    }
+  ]
+}

@@ -1,6 +1,7 @@
 import { mkdir, rm, writeFile } from "node:fs/promises";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import { requireSiteCliInvocation } from "./site-script-guard.js";
 
 function getRepoRoot(): string {
   return resolve(dirname(fileURLToPath(import.meta.url)), "..");
@@ -11,6 +12,8 @@ function formatUnknownError(error: unknown): string {
 }
 
 async function main(): Promise<void> {
+  requireSiteCliInvocation("clean");
+
   const repoRoot = getRepoRoot();
   const siteBuilderDir = join(repoRoot, "apps", "site-builder");
   const generatedDir = join(siteBuilderDir, ".generated");

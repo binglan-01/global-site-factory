@@ -1,0 +1,47 @@
+{
+  "slug": "/cases",
+  "template": "standard",
+  "seo": {
+    "title": "案例展示（占位）",
+    "description": "以下为合成案例卡片，不含任何未经披露的客户背书。"
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "title": "参考节奏占位 · 不构成客户证言",
+      "description": "占位：仅在取得书面许可后再发布真实项目名称与背书语。",
+      "image": "/assets/placeholder-2.jpg",
+      "imageAlt": "占位首屏"
+    },
+    {
+      "type": "case-studies",
+      "title": "合成档案格",
+      "items": [
+        {
+          "title": "集装箱接口桌面演练",
+          "industry": "桌面推演占位",
+          "description": "不出现船东或系统集成商全称。",
+          "image": "/assets/placeholder-1.jpg"
+        },
+        {
+          "title": "户外防腐加速试验话术",
+          "industry": "材料试验占位",
+          "description": "未附实验室编号，禁止对外断言通过某标准。",
+          "image": "/assets/placeholder-2.jpg"
+        },
+        {
+          "title": "工商业厂区暂存模拟",
+          "industry": "工厂模拟占位",
+          "description": "吞吐数字为占位，不得引用为经营事实。",
+          "image": "/assets/placeholder-1.jpg"
+        }
+      ]
+    },
+    {
+      "type": "contact-block",
+      "title": "需要脱敏参考资料？",
+      "description": "占位：任何对外案例必须经法务与销售双重审批。",
+      "cta": { "label": "联系参考资料窗口占位", "href": "/contact" }
+    }
+  ]
+}

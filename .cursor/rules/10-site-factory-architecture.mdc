@@ -16,7 +16,10 @@ alwaysApply: true
 - `packages/theme-*` — reusable theme packages, one folder per theme. See `20-theme-naming-and-governance.mdc`.
 - `packages/seo` — pure functions for SEO, canonical URLs, sitemap, robots, schema.
 - `sites/<siteSlug>/` — per-company `site.config.ts`, `content/<locale>/pages/*.json`, and `assets/`.
-- `scripts/` — automation scripts. `scripts/create-site.ts` is the only script allowed to scaffold a new `sites/<siteSlug>/`. `scripts/validate-site.ts` and `scripts/build-site.ts` may access `sites/` ONLY through `packages/site-core`, never via direct filesystem access.
+- `templates/` — site template **sources** copied by `tools/create-site` only (config template, page JSON, assets); MUST NOT embed Node/CLI/runtime logic—only static authored files.
+- `tools/site-cli/` — **public CLI dispatcher only**: `pnpm site <create|validate|build|pipeline|build-all|clean> …` routes to internal `tsx` scripts. No business logic here. Per-site commands require `<siteSlug>`; `build-all` and `clean` are repo-wide.
+- `tools/create-site/` — scaffolds `sites/<siteSlug>/` by copying `templates/<name>/`, substituting `{{TOKEN}}` placeholders, and renaming `site.config.template.ts` → `site.config.ts` (fs + string replace only). Invoked only via **`pnpm site create <siteSlug>`**. **`pnpm site pipeline <siteSlug>`** runs create → validate → build in one shot (implementation in `scripts/site-pipeline.ts`, not invokable directly).
+- `scripts/` — automation scripts invoked only through `pnpm site` (validate, build, pipeline, build-all, clean). `scripts/validate-site.ts` and `scripts/build-site.ts` must access `sites/` ONLY through `packages/site-core`, never via direct filesystem access. Do not run `scripts/*.ts` or `tools/create-site/*.ts` with `pnpm exec tsx` as the supported workflow.
 - `functions/` — Cloudflare Pages Functions at the **repo root**, not inside `apps/site-builder/`.
 
 ## Build data flow
@@ -24,3 +27,9 @@ alwaysApply: true
 `sites/<siteSlug>/` → `packages/site-core` reads → `packages/validators` validates → emits JSON into `apps/site-builder/.generated/` → `apps/site-builder` (Astro) renders → `dist/sites/<siteSlug>/`.
 
 Astro must consume only `.generated/`. `sites/` is never imported from inside `apps/`.
+
+## Architecture Freeze (FACTORY v1)
+
+Structural split/refactors are **not** the default roadmap post-v1. Official scope, layering, escape hatch (`SITE_FACTORY_ALLOW_DIRECT_SCRIPTS`), and maintenance-mode criteria are authored in **`docs/factory-v1-final-spec.md`** (FACTORY v1 FINAL SPEC). Treat that document as the versioned freeze record for humans and agents.
+
+**Maintenance governance** (frozen policy: forbid new CLI/pipeline splits/Factory splits; allowed change layers; mandatory v2 triggers; drift risks) lives in **`docs/factory-v1-maintenance-governance.md`**.

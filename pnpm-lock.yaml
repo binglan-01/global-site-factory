@@ -42,6 +42,9 @@ importers:
       '@factory/seo':
         specifier: workspace:*
         version: link:../../packages/seo
+      '@factory/theme-energy-storage-showcase':
+        specifier: workspace:*
+        version: link:../../packages/theme-energy-storage-showcase
       '@factory/theme-enterprise':
         specifier: workspace:*
         version: link:../../packages/theme-enterprise
@@ -90,6 +93,28 @@ importers:
         specifier: workspace:*
         version: link:../validators
     devDependencies:
+      typescript:
+        specifier: ^6.0.3
+        version: 6.0.3
+
+  packages/theme-energy-storage-showcase:
+    dependencies:
+      '@factory/theme-enterprise':
+        specifier: workspace:*
+        version: link:../theme-enterprise
+      '@factory/ui':
+        specifier: workspace:*
+        version: link:../ui
+      '@factory/validators':
+        specifier: workspace:*
+        version: link:../validators
+      react:
+        specifier: ^19.2.5
+        version: 19.2.5
+    devDependencies:
+      '@types/react':
+        specifier: ^19.2.14
+        version: 19.2.14
       typescript:
         specifier: ^6.0.3
         version: 6.0.3

@@ -1,0 +1,35 @@
+{
+  "slug": "/terms",
+  "template": "legal",
+  "seo": {
+    "title": "Terms of use",
+    "description": "Website terms placeholder for {{DISPLAY_NAME_EN}} ({{SITE_SLUG}}). Replace before production."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "eyebrow": "Terms",
+      "title": "Terms of Use",
+      "description": "Structural placeholder. Replace with jurisdiction-appropriate counsel-reviewed terms."
+    },
+    {
+      "type": "image-text",
+      "title": "Scope",
+      "description": "A production document should cover acceptable use, intellectual property, disclaimers, liability limits, governing law, and updates."
+    },
+    {
+      "type": "faq",
+      "title": "Common questions",
+      "items": [
+        {
+          "question": "Who operates this site?",
+          "answer": "The legal entity is defined by company.legalName in site.config.ts."
+        },
+        {
+          "question": "Are marketing specifications binding?",
+          "answer": "Clarify in your production terms whether website content is illustrative or contractual."
+        }
+      ]
+    }
+  ]
+}

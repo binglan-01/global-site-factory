@@ -1,0 +1,35 @@
+{
+  "slug": "/privacy",
+  "template": "legal",
+  "seo": {
+    "title": "隐私说明",
+    "description": "{{DISPLAY_NAME_ZH}} 网站隐私占位说明，上线前请替换为经审阅的正式文本。"
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "eyebrow": "隐私",
+      "title": "隐私说明",
+      "description": "结构占位页，请替换为经法务审阅的正式版本。"
+    },
+    {
+      "type": "image-text",
+      "title": "本说明应涵盖的内容",
+      "description": "说明通过联系表单与 /api/lead 收集的数据、法律依据、保存期限、跨境传输与数据主体权利等，须与真实运营一致。"
+    },
+    {
+      "type": "faq",
+      "title": "常见问题",
+      "items": [
+        {
+          "question": "会收集哪些信息？",
+          "answer": "常见字段包括姓名、邮箱、可选电话与留言正文；路由信息可能包含站点 slug 与表单 ID。"
+        },
+        {
+          "question": "控制者信息在哪里？",
+          "answer": "注册地址与数据控制者名称见 site.config.ts 中的 company 与 legal 配置。"
+        }
+      ]
+    }
+  ]
+}

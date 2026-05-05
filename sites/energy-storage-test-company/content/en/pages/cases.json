@@ -1,0 +1,47 @@
+{
+  "slug": "/cases",
+  "template": "standard",
+  "seo": {
+    "title": "Cases · PLACEHOLDER dossier grid",
+    "description": "Illustrative case tiles only — Voltpack scaffold intentionally avoids factual customer disclosures."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "title": "Reference rhythm · not customer endorsements",
+      "description": "PLACEHOLDER framing — summarize how dossiers might be curated once approvals exist.",
+      "image": "/assets/placeholder-2.jpg",
+      "imageAlt": "PLACEHOLDER cases hero"
+    },
+    {
+      "type": "case-studies",
+      "title": "Synthetic dossiers",
+      "items": [
+        {
+          "title": "Container harmonization tabletop",
+          "industry": "PLACEHOLDER tabletop",
+          "description": "No named shipper or OEM — tabletop exercise wording only.",
+          "image": "/assets/placeholder-1.jpg"
+        },
+        {
+          "title": "Outdoor cabinet corrosion rehearsal",
+          "industry": "Materials lab rehearsal",
+          "description": "PLACEHOLDER accelerated spray cabinet story without lab IDs.",
+          "image": "/assets/placeholder-2.jpg"
+        },
+        {
+          "title": "C&I campus staging mock",
+          "industry": "Factory mock",
+          "description": "PLACEHOLDER staging yard narrative with synthetic throughput figures.",
+          "image": "/assets/placeholder-1.jpg"
+        }
+      ]
+    },
+    {
+      "type": "contact-block",
+      "title": "Need sanitized references?",
+      "description": "PLACEHOLDER ask — routed through offline approval workflow only.",
+      "cta": { "label": "Message reference desk · PLACEHOLDER", "href": "/contact" }
+    }
+  ]
+}

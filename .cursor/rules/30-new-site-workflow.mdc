@@ -10,10 +10,14 @@ alwaysApply: true
 Always start a new company site with:
 
 ```powershell
-pnpm create-site <siteSlug>
+pnpm site pipeline <siteSlug>
 ```
 
-This is the only sanctioned way to scaffold a new site. Do NOT copy-paste an existing `sites/<other-slug>/` folder.
+This runs the Site Pipeline: scaffold from `templates/` → Zod/load validation → Astro build. **Stdout** prints one JSON object: `{ "siteSlug", "status": "success" | "failed", "stepFailed"?, "errors"? }`; **stderr** has human progress logs.
+
+All site-scoped automation goes through **`pnpm site`** (`tools/site-cli/site.ts`): use **`pnpm site <command> <siteSlug>`** for `create` / `validate` / `build` / `pipeline`, and **`pnpm site build-all`** or **`pnpm site clean`** for repo-wide builds or cleanup. Do not document or rely on `pnpm exec tsx scripts/...` or `tools/create-site/...` as the supported public entry (maintenance escape hatch: `SITE_FACTORY_ALLOW_DIRECT_SCRIPTS=1`).
+
+Do NOT copy-paste an existing `sites/<other-slug>/` folder for a greenfield site.
 
 ## Slug rules
 
@@ -42,8 +46,8 @@ This is the only sanctioned way to scaffold a new site. Do NOT copy-paste an exi
 ## Required validation & build per change
 
 ```powershell
-pnpm validate-site <siteSlug>   # Zod validates site.config.ts and all page JSON
-pnpm build-site <siteSlug>      # produces dist/sites/<siteSlug>/
+pnpm site validate <siteSlug>   # Zod validates site.config.ts and all page JSON
+pnpm site build <siteSlug>      # produces dist/sites/<siteSlug>/
 ```
 
 Run validate before build. Run both after every meaningful edit to a site.

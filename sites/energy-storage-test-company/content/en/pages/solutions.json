@@ -1,0 +1,61 @@
+{
+  "slug": "/solutions",
+  "template": "standard",
+  "seo": {
+    "title": "Solutions · PLACEHOLDER workflow map",
+    "description": "Synthetic solution narrative tying factory integration, logistics-ready containers, and service hook planning — revise with legal-reviewed claims."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "variant": "product-hero",
+      "eyebrow": "Program outline",
+      "title": "From factory berth to energized yard",
+      "description": "PLACEHOLDER storyline — Voltpack scaffold frames factory-fit modules, hardened shipping envelopes, and handover tooling without naming third-party EPC logos.",
+      "image": "/assets/placeholder-1.jpg",
+      "imageAlt": "PLACEHOLDER solutions hero",
+      "primaryCta": {
+        "label": "Workshop invitation · PLACEHOLDER",
+        "href": "/contact"
+      },
+      "tabs": [
+        { "label": "Factory-fit integration", "href": "/solutions#factory-fit" },
+        { "label": "Field deployment envelopes", "href": "/solutions#field-deploy" },
+        { "label": "Lifecycle service hooks", "href": "/solutions#maintenance-hooks" }
+      ]
+    },
+    {
+      "type": "image-text",
+      "title": "Site logistics sketch",
+      "description": "PLACEHOLDER — explain cradle strategies, tarping allowances, and lift spreader assumptions as generic engineering notes.",
+      "image": "/assets/solution-sketch.jpg",
+      "imageAlt": "PLACEHOLDER diagram",
+      "reverse": false,
+      "cta": { "label": "Request sanitized deck · PLACEHOLDER", "href": "/contact" }
+    },
+    {
+      "type": "feature-list",
+      "title": "Deployment capabilities",
+      "items": [
+        {
+          "title": "Pre-commission checkpoints",
+          "description": "PLACEHOLDER — FAT mockups instead of audited customer reports."
+        },
+        {
+          "title": "Logistics cradle patterns",
+          "description": "PLACEHOLDER — illustrative copy for multimodal lashings."
+        },
+        {
+          "title": "Field accessory kits",
+          "description": "PLACEHOLDER — gasket kits, grounding bars, labeling packs."
+        }
+      ]
+    },
+    {
+      "type": "contact-block",
+      "title": "Program managers on standby · PLACEHOLDER",
+      "description": "Synthetic availability statement — substitute with staffed coverage once operations sign off.",
+      "cta": { "label": "Email programs desk", "href": "/contact" }
+    }
+  ]
+}

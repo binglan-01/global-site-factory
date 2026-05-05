@@ -1,0 +1,173 @@
+{
+  "slug": "/",
+  "template": "standard",
+  "seo": {
+    "title": "伏特储能装备 · 工业储能外壳演示站（占位）",
+    "description": "占位说明：本首页仅用于 ESS 主题复用性验证，全部数字与案例均为演示数据，正式上线前须经法务与市场审阅。"
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "variant": "fullscreen-carousel",
+      "eyebrow": "工业 B2B 演示",
+      "title": "面向储能集装箱外壳与液冷储能柜的一体化钣金壳体",
+      "description": "占位叙事：演示站突出集装箱式储能系统集成、液冷接口区、工商业户外柜壳体以及定制钣金子结构等方向，不涉及具体客户背书。",
+      "primaryCta": {
+        "label": "预约图纸级交流（占位）",
+        "href": "/contact"
+      },
+      "carousel": {
+        "images": [
+          {
+            "src": "/assets/hero-volt-1.jpg",
+            "alt": "占位视觉 — 储能集装箱示意"
+          },
+          {
+            "src": "/assets/hero-volt-2.jpg",
+            "alt": "占位视觉 — 室内液冷柜示意"
+          },
+          {
+            "src": "/assets/hero-volt-3.jpg",
+            "alt": "占位视觉 — 户外电池柜占位图"
+          }
+        ],
+        "autoplay": true,
+        "intervalMs": 7000
+      }
+    },
+    {
+      "type": "feature-list",
+      "title": "场景陈列（全部为占位文案）",
+      "description": "以下卡片演示滚动橱窗交互，请以最终审阅后的项目叙事替换。",
+      "items": [
+        {
+          "title": "集装箱尺寸兼容方案",
+          "description": "占位：说明角件、吊装点与梁柱路径，勿对外宣称已取得某标准认证。",
+          "image": "/assets/placeholder-1.jpg",
+          "imageAlt": "占位图像",
+          "icon": "C"
+        },
+        {
+          "title": "液冷储能柜钣金包络",
+          "description": "占位：管道支架、导流与维护门洞等工程化描述范例。",
+          "image": "/assets/placeholder-2.jpg",
+          "imageAlt": "占位图像",
+          "icon": "L"
+        },
+        {
+          "title": "工商业工厂级 skid",
+          "description": "占位：通道宽度、吊车接口与线缆桥架示例。",
+          "image": "/assets/placeholder-1.jpg",
+          "imageAlt": "占位图像",
+          "icon": "I"
+        },
+        {
+          "title": "户外电池舱防护",
+          "description": "占位：百叶窗、涂层等级与温控开口等泛泛描述。",
+          "image": "/assets/placeholder-2.jpg",
+          "imageAlt": "占位图像",
+          "icon": "O"
+        },
+        {
+          "title": "定制钣金子模块",
+          "description": "占位：与系统集成商共创加强筋、盖板与巡检门等结构件。",
+          "image": "/assets/placeholder-1.jpg",
+          "imageAlt": "占位图像",
+          "icon": "F"
+        }
+      ]
+    },
+    {
+      "type": "services-grid",
+      "title": "导航入口占位",
+      "items": [
+        {
+          "title": "集装箱储能壳体系列",
+          "description": "跳转到 #container 占位摘要。",
+          "href": "/products#container"
+        },
+        {
+          "title": "液冷柜外壳系列",
+          "description": "跳转到 #liquid-cooling 占位摘要。",
+          "href": "/products#liquid-cooling"
+        },
+        {
+          "title": "工商业柜体系列",
+          "description": "跳转到 #ci-commercial 占位摘要。",
+          "href": "/products#ci-commercial"
+        },
+        {
+          "title": "户外电池柜系列",
+          "description": "跳转到 #outdoor-shell 占位摘要。",
+          "href": "/products#outdoor-shell"
+        },
+        {
+          "title": "定制钣金结构件",
+          "description": "跳转到 #fabrication 占位摘要。",
+          "href": "/products#fabrication"
+        },
+        {
+          "title": "解决方案总览",
+          "description": "前往方案页占位介绍。",
+          "href": "/solutions"
+        }
+      ]
+    },
+    {
+      "type": "stats",
+      "intro": "以下为合成指标区，仅用于布局检查；对外引用前请取得财务与法务签署。",
+      "aboutCta": {
+        "label": "制造故事占位",
+        "href": "/about"
+      },
+      "items": [
+        {
+          "label": "工程工时（演示）",
+          "value": "9.5k/年 占位",
+          "description": "syntheticWorkload"
+        },
+        {
+          "label": "项目波次（演示）",
+          "value": "42 波次",
+          "description": "syntheticThroughput"
+        },
+        {
+          "label": "覆盖区域（演示）",
+          "value": "11 区域占位",
+          "description": "syntheticMarkets"
+        },
+        {
+          "label": "概念周期（演示）",
+          "value": "若干周 占位",
+          "description": "syntheticCycle"
+        }
+      ]
+    },
+    {
+      "type": "case-studies",
+      "title": "案例看板（演示）",
+      "primaryCta": {
+        "label": "查看案例页",
+        "href": "/cases"
+      },
+      "secondaryCta": {
+        "label": "更多动态占位",
+        "href": "/cases"
+      },
+      "items": [
+        {
+          "title": "集装箱接口协调演练",
+          "industry": "占位项目",
+          "description": "合成描述，不代表任何签约客户。",
+          "image": "/assets/placeholder-1.jpg"
+        },
+        {
+          "title": "液冷接口台架试验",
+          "industry": "热管理实验室占位",
+          "description": "实验台与模拟回路的占位措辞。",
+          "image": "/assets/placeholder-2.jpg"
+        }
+      ]
+    }
+  ]
+}

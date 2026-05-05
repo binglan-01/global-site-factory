@@ -19,6 +19,7 @@ import type {
 } from "@factory/theme-enterprise";
 import type { SiteConfig } from "@factory/validators";
 import * as enterprise from "@factory/theme-enterprise";
+import * as energyStorageShowcase from "@factory/theme-energy-storage-showcase";
 import * as technicalProductShowcase from "@factory/theme-technical-product-showcase";
 
 /**
@@ -88,6 +89,22 @@ const themeBundles: Record<ThemeId, ThemeBundle> = {
     FAQ: technicalProductShowcase.FAQ,
     Certificates: technicalProductShowcase.Certificates,
     ContactBlock: technicalProductShowcase.ContactBlock,
+  },
+  "energy-storage-showcase": {
+    Header: energyStorageShowcase.Header,
+    Footer: energyStorageShowcase.Footer,
+    Hero: energyStorageShowcase.Hero,
+    ServicesGrid: energyStorageShowcase.ServicesGrid,
+    Gallery: energyStorageShowcase.Gallery,
+    ContactForm: energyStorageShowcase.ContactForm,
+    FeatureList: energyStorageShowcase.FeatureList,
+    ImageText: energyStorageShowcase.ImageText,
+    CaseStudies: energyStorageShowcase.CaseStudies,
+    ProcessSteps: energyStorageShowcase.ProcessSteps,
+    Stats: energyStorageShowcase.Stats,
+    FAQ: energyStorageShowcase.FAQ,
+    Certificates: energyStorageShowcase.Certificates,
+    ContactBlock: energyStorageShowcase.ContactBlock,
   },
 };
 

@@ -29,7 +29,12 @@ export {
   type FeatureListProps,
   type FeatureListSection,
 } from "./components/FeatureList";
-export { Footer, type FooterLink, type FooterProps } from "./components/Footer";
+export {
+  Footer,
+  type FooterColumnResolved,
+  type FooterLink,
+  type FooterProps,
+} from "./components/Footer";
 export { Gallery, type GalleryProps, type GallerySection } from "./components/Gallery";
 export { Header, type HeaderLanguageLink, type HeaderNavItem, type HeaderProps } from "./components/Header";
 export { Hero, type HeroProps, type HeroSection } from "./components/Hero";

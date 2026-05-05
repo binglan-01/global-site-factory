@@ -1,3 +1,4 @@
+import type { SiteConfig } from "@factory/validators";
 import { Container, Text } from "@factory/ui";
 
 export type FooterLink = {
@@ -5,11 +6,20 @@ export type FooterLink = {
   href: string;
 };
 
+export type FooterColumnResolved = {
+  title: string;
+  links: FooterLink[];
+};
+
 export type FooterProps = {
   companyName: string;
   links: FooterLink[];
   className?: string;
   copyrightText?: string;
+  /** Optional multi-column groups (e.g. Products / Solutions …) */
+  footerColumns?: FooterColumnResolved[];
+  /** Optional floating action bar from site config */
+  floatingActions?: SiteConfig["floatingActions"];
 };
 
 export function Footer({ className, companyName, copyrightText, links }: FooterProps) {

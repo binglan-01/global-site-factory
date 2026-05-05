@@ -1,0 +1,23 @@
+{
+  "slug": "/contact",
+  "template": "standard",
+  "seo": {
+    "title": "联系 {{DISPLAY_NAME_ZH}}",
+    "description": "向 {{DISPLAY_NAME_ZH}} 发送留言。"
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "eyebrow": "联系",
+      "title": "开始沟通",
+      "description": "通过表单提交商务咨询；页脚与站点配置中的联系方式来自 site.config.ts。",
+      "image": "/assets/placeholder.jpg",
+      "imageAlt": "联系我们占位图"
+    },
+    {
+      "type": "contact-form",
+      "title": "发送留言",
+      "formId": "{{SITE_SLUG}}-contact-zh-lead"
+    }
+  ]
+}

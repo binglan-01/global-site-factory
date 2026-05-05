@@ -1,0 +1,79 @@
+{
+  "slug": "/products",
+  "template": "standard",
+  "seo": {
+    "title": "产品中心",
+    "description": "储能壳体与机柜产品线的占位展示，请替换型号、图纸与认证说明。"
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "variant": "product-hero",
+      "eyebrow": "产品族",
+      "title": "储能壳体平台化方案",
+      "description": "面向电池集成商与总包伙伴的可配置机柜项目占位说明。",
+      "image": "/assets/product-hero.jpg",
+      "imageAlt": "产品首屏占位图",
+      "tabs": [
+        {
+          "label": "源网侧",
+          "href": "/products#utility"
+        },
+        {
+          "label": "工商业",
+          "href": "/products#ci"
+        },
+        {
+          "label": "户用",
+          "href": "/products#residential"
+        },
+        {
+          "label": "通信",
+          "href": "/products#telecom"
+        }
+      ],
+      "primaryCta": {
+        "label": "预约技术交流",
+        "href": "/contact"
+      }
+    },
+    {
+      "type": "gallery",
+      "title": "代表性柜体方案（占位图）",
+      "columns": 3,
+      "images": [
+        "/assets/placeholder-1.jpg",
+        "/assets/placeholder-2.jpg",
+        "/assets/placeholder-1.jpg",
+        "/assets/placeholder-2.jpg"
+      ]
+    },
+    {
+      "type": "feature-list",
+      "title": "工程化优势",
+      "items": [
+        {
+          "title": "热分区",
+          "description": "用于风道与传感器布置的示例描述占位。"
+        },
+        {
+          "title": "防腐等级",
+          "description": "C3–C5 涂层体系与验证范围占位。"
+        },
+        {
+          "title": "可维护性",
+          "description": "吊装点、门铰与维护通道的示例说明占位。"
+        }
+      ]
+    },
+    {
+      "type": "contact-block",
+      "title": "联系产品与销售",
+      "description": "请提供目标容量、适用标准与交付区域等关键参数——本演示站不含自动报价。",
+      "cta": {
+        "label": "联系销售",
+        "href": "/contact"
+      }
+    }
+  ]
+}

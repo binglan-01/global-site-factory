@@ -26,9 +26,18 @@ export function SectionRenderer({ pageUrl, section, siteConfig, siteSlug }: Sect
 
   switch (section.type) {
     case "hero":
+      /* THIS IS TEMPLATE COUPLING POINT — split-carousel hero hydration is handled only in SectionBlock.astro */
       if (
         siteConfig.theme === "technical-product-showcase" &&
         section.variant === "split-carousel" &&
+        section.carousel?.images &&
+        section.carousel.images.length > 0
+      ) {
+        return null;
+      }
+      if (
+        siteConfig.theme === "energy-storage-showcase" &&
+        section.variant === "fullscreen-carousel" &&
         section.carousel?.images &&
         section.carousel.images.length > 0
       ) {

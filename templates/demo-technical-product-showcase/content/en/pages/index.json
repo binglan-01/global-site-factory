@@ -1,0 +1,41 @@
+{
+  "slug": "/",
+  "template": "standard",
+  "seo": {
+    "title": "{{DISPLAY_NAME_EN}} — Home",
+    "description": "{{DEFAULT_DESCRIPTION_EN}}"
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "eyebrow": "B2B product site",
+      "title": "Welcome to {{DISPLAY_NAME_EN}}",
+      "description": "This page was generated from the Site Factory template. Replace copy and assets before launch.",
+      "image": "/assets/placeholder.jpg",
+      "imageAlt": "Placeholder image — replace with product or facility photography"
+    },
+    {
+      "type": "services-grid",
+      "title": "Core capabilities",
+      "items": [
+        {
+          "title": "Engineering",
+          "description": "Describe how you design, specify, and validate products for your customers."
+        },
+        {
+          "title": "Manufacturing",
+          "description": "Summarize production capacity, quality systems, and lead times."
+        },
+        {
+          "title": "Support",
+          "description": "Outline commissioning, spare parts, and technical support."
+        }
+      ]
+    },
+    {
+      "type": "contact-form",
+      "title": "Request information",
+      "formId": "{{SITE_SLUG}}-home-lead"
+    }
+  ]
+}

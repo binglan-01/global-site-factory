@@ -169,7 +169,7 @@
 | `services-grid` | 深色底，3 列卡片 `.tps-services__item`，卡片底色 `--tps-color-surface`，1px `--tps-color-border-strong` 边线，内 padding `1.75rem`。卡片左上一条 2px 高 / 24px 宽 accent 短线作为类目标记，下面是 h3 标题与正文。**`items[]` 可选 `href`（必须以 `/` 开头的站内路径）**：若存在，整张卡片渲染为可点击链接，hover / focus 有明显反馈，适用于产品类型卡片、方案入口跳转。 |
 | `feature-list` | 与 services-grid 同样的卡片基底，但每张卡片可显示 `icon`（字符串：emoji / 几何字符 / 数字编号；主题不引入图标库）。icon 用 `--tps-color-accent-strong`、字号 1.5rem，置于标题上方。强调"特性密度"，建议 6–9 条。 |
 | `image-text` | 两栏栅格，960px 以下塌成单栏。图片 `aspect-ratio: 5/4; object-fit: cover; border-radius: var(--tps-radius-md)`。`reverse: true` 时把图放左、文放右；class 加 `tps-image-text--left`。CTA 使用 outline 风格按钮。 |
-**Gallery `assetDir`（构建期展开）**：`gallery` 可选 `assetDir`（形如 `/assets/<kebab 路径>`），由 **`packages/site-core` 在 `loadSite` / `validate-site` / `build-site` 阶段**读取 `sites/<siteSlug>/assets/` 下对应一级目录内的图片文件（`.jpg` / `.jpeg` / `.png` / `.webp` / `.avif` / `.svg`），按**自然序**生成完整 `"/assets/.../文件名"` 列表，写入 `apps/site-builder/.generated/pages.json` 中的 **`images` 数组**；`apps/site-builder` **不会**直接扫描 `sites/`。若目录不存在或暂无图片，则 **fallback** 到 JSON 中的 `images`；若仍为空，主题展示空状态。可同时配置 `assetDir` 与 `images`：**优先采用目录扫描结果**；仅当扫描结果为空时使用 `images`。新增或删除图片后需重新执行 `pnpm build-site <siteSlug>`。
+**Gallery `assetDir`（构建期展开）**：`gallery` 可选 `assetDir`（形如 `/assets/<kebab 路径>`），由 **`packages/site-core` 在 `loadSite` / `pnpm site validate` / `pnpm site build`（及 pipeline）对应的数据链路**读取 `sites/<siteSlug>/assets/` 下对应一级目录内的图片文件（`.jpg` / `.jpeg` / `.png` / `.webp` / `.avif` / `.svg`），按**自然序**生成完整 `"/assets/.../文件名"` 列表，写入 `apps/site-builder/.generated/pages.json` 中的 **`images` 数组**；`apps/site-builder` **不会**直接扫描 `sites/`。若目录不存在或暂无图片，则 **fallback** 到 JSON 中的 `images`；若仍为空，主题展示空状态。可同时配置 `assetDir` 与 `images`：**优先采用目录扫描结果**；仅当扫描结果为空时使用 `images`。新增或删除图片后需重新执行 `pnpm site build <siteSlug>`。
 
 | `gallery` | 深色抬升底色（`--tps-color-bg-elev`），默认 **3 列** `.tps-gallery__image`，每张 `aspect-ratio: 4/3; object-fit: cover; border-radius: var(--tps-radius-md)`。≤720px 时标准 gallery 转单列大图。**可选** `layout: "product-grid"`：大图卡片容器 `.tps-gallery__cell`（B2B 产品格可用 hover 提升层次），适合**产品分类页 / 产品示意图墙**；**可选** `columns: 2 \| 3 \| 4`（缺省 `3`，与历史 JSON 行为一致）。`columns: 4` 表示桌面栅格**每行最多 4 列**，**自动换行**，并非限制总张数为 4；`product-grid` 在约 961px 以上保持四列，721–960px 两列，更窄单列。**可选** `imageAspect: "square" \| "landscape" \| "portrait"` 统一裁切比例。**可选** `assetDir`：见上段构建期展开说明；仍可直接写 `images: string[]` 保持兼容。**可选** `lightbox` / `zoom`：见下文 **Gallery lightbox and zoom**。图片加载失败时以占位块呈现，不拖垮整页；无图时展示简短空状态。强调产品/产线实拍，网格本身不做自动轮播。 |
 
@@ -181,7 +181,7 @@
 4. Lightbox 内支持 **左右箭头** 与键盘 **`←` / `→`** 循环切换；序号 **当前张 / 总张数** 会显示（例如 `3 / 9`）。
 5. **`assetDir` 在 build 阶段展开**写入 `images` 后，与手写 `images` 行为一致，**同样支持 lightbox**（仍以构建后的 `images.length > 0` 为准）。
 6. `columns: 4` **仅表示**桌面栅格每行最多 4 列并自动换行，**不限制**图片总张数。
-7. 使用 `assetDir` 或其它方式**新增或删除图片**后，须重新执行 **`pnpm build-site <siteSlug>`**，`.generated` 与静态输出才会更新。
+7. 使用 `assetDir` 或其它方式**新增或删除图片**后，须重新执行 **`pnpm site build <siteSlug>`**，`.generated` 与静态输出才会更新。
 8. 该能力适合 **产品分类页、产品示意图墙、多图技术展示** 等 B2B 场景。
 | `case-studies` | 卡片**全宽图 + 下方文字块**两段式。图 `aspect-ratio: 16/10; object-fit: cover`；下方 padding `1.25rem 1.5rem 1.5rem`。`industry / location` 合成一行 meta，全大写字距 0.08em，色 `--tps-color-text-subtle`，置于标题上方。3 张卡片成行；2 张时居中。 |
 | `process-steps` | 4 列步骤卡片（小屏 2 列、再小 1 列）。每张卡片左上一个**两位数字**（`01 02 03 04`），display 字族 + 字重 800 + 字号 2.25rem + 色 `--tps-color-accent`，作为视觉序号。下方是 h3 步骤名 + 简短说明。 |

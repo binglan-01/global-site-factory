@@ -6,12 +6,7 @@
   "type": "module",
   "packageManager": "pnpm@10.24.0",
   "scripts": {
-    "create-site": "tsx scripts/create-site.ts",
-    "validate-site": "tsx scripts/validate-site.ts",
-    "build-site": "tsx scripts/build-site.ts",
-    "build-all-sites": "tsx scripts/build-all-sites.ts",
-    "build": "tsx scripts/build-all-sites.ts",
-    "clean": "tsx scripts/clean.ts",
+    "site": "tsx tools/site-cli/site.ts",
     "typecheck": "tsc -p . --noEmit && turbo run typecheck",
     "lint": "turbo run lint"
   },

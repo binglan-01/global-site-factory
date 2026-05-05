@@ -23,4 +23,4 @@ A generic framework change MUST update all of:
 - Do NOT introduce per-site components inside `apps/site-builder` or any theme package.
 - Do NOT create one-off section types for a single company unless the user explicitly asks.
 - Do NOT branch on `siteConfig.slug` inside theme components or `SectionRenderer`. If different rendering is needed, model it as a new `section.type` variant or a typed config option in `site.config.ts`, not as a slug match.
-- After a framework change, run `pnpm build-all-sites` to confirm every existing site still builds.
+- After a framework change, run `pnpm site build-all` to confirm every existing site still builds.

@@ -9,6 +9,9 @@
       "@factory/theme-technical-product-showcase": [
         "packages/theme-technical-product-showcase/src/index.ts"
       ],
+      "@factory/theme-energy-storage-showcase": [
+        "packages/theme-energy-storage-showcase/src/index.ts"
+      ],
       "@factory/ui": ["packages/ui/src/index.ts"]
     },
     "types": ["astro/client"]

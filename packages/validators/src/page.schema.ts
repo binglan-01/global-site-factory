@@ -28,6 +28,13 @@ const HeroCarouselConfigSchema = z.object({
   lightbox: z.optional(z.boolean()),
 });
 
+const SiteRelativeHrefSchema = z
+  .string()
+  .min(1, "href cannot be empty.")
+  .refine((value) => value.startsWith("/"), {
+    message: "href must be a site-relative path starting with /.",
+  });
+
 const HeroSectionSchema = z.object({
   type: z.literal("hero"),
   eyebrow: z.optional(z.string().min(1, "Hero eyebrow cannot be empty.")),
@@ -36,16 +43,21 @@ const HeroSectionSchema = z.object({
   primaryCta: z.optional(CtaSchema),
   image: z.optional(z.string().min(1, "Hero image cannot be empty.")),
   imageAlt: z.optional(z.string().min(1, "Hero imageAlt cannot be empty.")),
-  variant: z.optional(z.enum(["standard", "split-carousel"])),
+  variant: z.optional(
+    z.enum(["standard", "split-carousel", "fullscreen-carousel", "product-hero"]),
+  ),
   carousel: z.optional(HeroCarouselConfigSchema),
+  tabs: z.optional(
+    z
+      .array(
+        z.object({
+          label: z.string().min(1, "Hero tab label is required."),
+          href: SiteRelativeHrefSchema,
+        }),
+      )
+      .min(1, "Hero tabs must contain at least one item when provided."),
+  ),
 });
-
-const SiteRelativeHrefSchema = z
-  .string()
-  .min(1, "href cannot be empty.")
-  .refine((value) => value.startsWith("/"), {
-    message: "href must be a site-relative path starting with /.",
-  });
 
 const ServicesGridSectionSchema = z.object({
   type: z.literal("services-grid"),
@@ -97,10 +109,22 @@ const GallerySectionSchema = z
     }
   });
 
+const ContactFormFieldLabelsSchema = z
+  .object({
+    name: z.optional(z.string().min(1, "Contact form name label cannot be empty.")),
+    email: z.optional(z.string().min(1, "Contact form email label cannot be empty.")),
+    phone: z.optional(z.string().min(1, "Contact form phone label cannot be empty.")),
+    company: z.optional(z.string().min(1, "Contact form company label cannot be empty.")),
+    message: z.optional(z.string().min(1, "Contact form message label cannot be empty.")),
+    submit: z.optional(z.string().min(1, "Contact form submit label cannot be empty.")),
+  })
+  .strict();
+
 const ContactFormSectionSchema = z.object({
   type: z.literal("contact-form"),
   title: z.string().min(1, "Contact form title is required."),
   formId: z.string().min(1, "Contact form formId is required."),
+  fieldLabels: z.optional(ContactFormFieldLabelsSchema),
 });
 
 const FeatureListSectionSchema = z.object({
@@ -111,6 +135,8 @@ const FeatureListSectionSchema = z.object({
     .array(
       TitleDescriptionItemSchema.extend({
         icon: z.optional(z.string().min(1, "Feature icon cannot be empty.")),
+        image: z.optional(z.string().min(1, "Feature image cannot be empty.")),
+        imageAlt: z.optional(z.string().min(1, "Feature imageAlt cannot be empty.")),
       }),
     )
     .min(1, "Feature list requires at least one item."),
@@ -129,6 +155,8 @@ const ImageTextSectionSchema = z.object({
 const CaseStudiesSectionSchema = z.object({
   type: z.literal("case-studies"),
   title: z.string().min(1, "Case studies title is required."),
+  primaryCta: z.optional(CtaSchema),
+  secondaryCta: z.optional(CtaSchema),
   items: z
     .array(
       z.object({
@@ -150,6 +178,8 @@ const ProcessStepsSectionSchema = z.object({
 
 const StatsSectionSchema = z.object({
   type: z.literal("stats"),
+  intro: z.optional(z.string().min(1, "Stats intro cannot be empty.")),
+  aboutCta: z.optional(CtaSchema),
   items: z
     .array(
       z.object({

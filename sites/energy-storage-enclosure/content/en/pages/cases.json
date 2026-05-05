@@ -1,0 +1,50 @@
+{
+  "slug": "/cases",
+  "template": "standard",
+  "seo": {
+    "title": "Cases",
+    "description": "Placeholder grid of representative programs — replace with customer-approved stories."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "title": "Field-proven reference patterns",
+      "description": "Generic program blurbs until your marketing team publishes approved cases.",
+      "image": "/assets/placeholder-2.jpg",
+      "imageAlt": "Cases hero placeholder"
+    },
+    {
+      "type": "case-studies",
+      "title": "Industry snapshots",
+      "items": [
+        {
+          "title": "Utility buffer yard",
+          "industry": "Grid",
+          "description": "Placeholder description for a utility-scale buffer installation.",
+          "image": "/assets/placeholder-1.jpg"
+        },
+        {
+          "title": "Logistics hub peak shaving",
+          "industry": "C&I",
+          "description": "Illustrative copy for a warehouse peak management roll-out.",
+          "image": "/assets/placeholder-2.jpg"
+        },
+        {
+          "title": "Edge compute standby",
+          "industry": "Edge",
+          "description": "Sample story for a distributed IT + storage hybrid site.",
+          "image": "/assets/placeholder-1.jpg"
+        }
+      ]
+    },
+    {
+      "type": "contact-block",
+      "title": "Need a reference visit?",
+      "description": "All stories here are synthetic — replace before sharing externally.",
+      "cta": {
+        "label": "Contact us",
+        "href": "/contact"
+      }
+    }
+  ]
+}

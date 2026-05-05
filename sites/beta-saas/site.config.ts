@@ -33,6 +33,10 @@ export default defineSiteConfig({
       href: "/contact",
     },
   ],
+  footerLinkLabels: {
+    privacy: "Privacy Policy",
+    terms: "Terms of Use",
+  },
   seo: {
     defaultTitle: "Beta SaaS",
     titleTemplate: "%s | Beta SaaS",

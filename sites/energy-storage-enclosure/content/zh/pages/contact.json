@@ -1,0 +1,49 @@
+{
+  "slug": "/contact",
+  "template": "standard",
+  "seo": {
+    "title": "联系我们",
+    "description": "通过标准 /api/lead 接口收集线索，主题内不配置 webhook。"
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "title": "联系储能壳体团队",
+      "description": "请说明项目阶段、目标标准与交付区域——回复由线下流程处理。",
+      "image": "/assets/placeholder-2.jpg",
+      "imageAlt": "联系首屏占位"
+    },
+    {
+      "type": "contact-form",
+      "title": "项目需求表单",
+      "formId": "energy-storage-contact",
+      "fieldLabels": {
+        "name": "姓名",
+        "email": "邮箱",
+        "phone": "电话",
+        "company": "公司",
+        "message": "留言",
+        "submit": "提交需求"
+      }
+    },
+    {
+      "type": "contact-block",
+      "title": "商务对接（占位）",
+      "description": "电话号码与公司邮箱应维护在 site.config.ts；此处仅放结构化说明。",
+      "channels": [
+        {
+          "label": "工作时间",
+          "value": "工作日 09:00–18:00（占位时区）"
+        },
+        {
+          "label": "流转示例",
+          "value": "销售 → 方案 → 项目经理（示例，不含承诺）"
+        }
+      ],
+      "cta": {
+        "label": "邮件联系隐私负责人",
+        "href": "mailto:privacy@energy-storage-enclosure.example.com"
+      }
+    }
+  ]
+}

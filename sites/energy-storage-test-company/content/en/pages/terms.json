@@ -1,0 +1,25 @@
+{
+  "slug": "/terms",
+  "template": "legal",
+  "seo": {
+    "title": "Terms of use · PLACEHOLDER",
+    "description": "Synthetic Voltpack scaffold — no contractual weight until counsel replaces wording."
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "eyebrow": "Terms",
+      "title": "Placeholder terms of site use",
+      "description": "Clauses must cover disclaimers about placeholder metrics, IP ownership of demo copy, indemnities, dispute venue, modifications, outage liability caps, linkage to procurement contracts, confidentiality, counterpart electronic acceptance — all pending legal authoring."
+    },
+    {
+      "type": "contact-block",
+      "title": "Contractual routing · PLACEHOLDER",
+      "description": "Outbound commerce still requires executed MSAs offline — cite procurement counsel before referencing this scaffold.",
+      "cta": {
+        "label": "Email legal liaison · PLACEHOLDER",
+        "href": "/contact"
+      }
+    }
+  ]
+}

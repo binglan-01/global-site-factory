@@ -1,0 +1,61 @@
+{
+  "slug": "/solutions",
+  "template": "standard",
+  "seo": {
+    "title": "解决方案（占位）",
+    "description": "占位：描述厂内整装、吊装与生命周期维护挂钩，不涉及真实总承包商品牌。"
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "variant": "product-hero",
+      "eyebrow": "项目链路占位",
+      "title": "从厂内整装到场站交付的壳体链路",
+      "description": "占位叙事：串联厂内模块化接口、吊装运输包络与服务窗口规划，不出现具体第三方总承包商标识。",
+      "image": "/assets/placeholder-1.jpg",
+      "imageAlt": "占位首屏",
+      "primaryCta": {
+        "label": "预约方案工作坊占位",
+        "href": "/contact"
+      },
+      "tabs": [
+        { "label": "厂内模块化集成", "href": "/solutions#factory-fit" },
+        { "label": "现场交付包络", "href": "/solutions#field-deploy" },
+        { "label": "运维挂钩规划", "href": "/solutions#maintenance-hooks" }
+      ]
+    },
+    {
+      "type": "image-text",
+      "title": "物流示意图占位",
+      "description": "占位：泛泛讨论托架、防雨工装与吊装耳板假设条件。",
+      "image": "/assets/solution-sketch.jpg",
+      "imageAlt": "占位示意",
+      "reverse": false,
+      "cta": { "label": "索取简报占位", "href": "/contact" }
+    },
+    {
+      "type": "feature-list",
+      "title": "交付能力占位",
+      "items": [
+        {
+          "title": "预调试检查清单",
+          "description": "占位版 FAT 话术，不包含客户签收记录。"
+        },
+        {
+          "title": "多式联运紧固策略",
+          "description": "占位：描述型钢支撑与紧固件选型示例。"
+        },
+        {
+          "title": "现场附件包",
+          "description": "占位：密封套件、接地排与标识包等示例。"
+        }
+      ]
+    },
+    {
+      "type": "contact-block",
+      "title": "项目经理窗口（占位可用性陈述）",
+      "description": "可用性措辞为占位，请以真实排班替换。",
+      "cta": { "label": "联系项目收件", "href": "/contact" }
+    }
+  ]
+}

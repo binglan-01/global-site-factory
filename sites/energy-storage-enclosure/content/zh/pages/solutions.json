@@ -1,0 +1,102 @@
+{
+  "slug": "/solutions",
+  "template": "standard",
+  "seo": {
+    "title": "解决方案",
+    "description": "源网侧、工商业及边缘场景的解决方案链路占位——上线前替换为审核表述。"
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "variant": "product-hero",
+      "eyebrow": "解决方案",
+      "title": "系统化方案架构",
+      "description": "用于说明壳体、电气接口及服务如何协同服务于集成商的示例叙事占位。",
+      "image": "/assets/placeholder-1.jpg",
+      "imageAlt": "解决方案首屏占位",
+      "primaryCta": {
+        "label": "预约方案工作坊",
+        "href": "/contact"
+      },
+      "tabs": [
+        {
+          "label": "源网侧与电网接入",
+          "href": "/solutions#grid"
+        },
+        {
+          "label": "工商业园区",
+          "href": "/solutions#commercial"
+        },
+        {
+          "label": "边缘备份与关键设施",
+          "href": "/solutions#edge"
+        },
+        {
+          "label": "通信与远程站点",
+          "href": "/solutions#telecom"
+        },
+        {
+          "label": "充电站配套",
+          "href": "/solutions#ev"
+        }
+      ]
+    },
+    {
+      "type": "image-text",
+      "title": "应用场景与系统示意图",
+      "description": "占位说明：可在此阐释功率变换、消防接口与维护通道的工程故事，不涉及具体客户机密。",
+      "image": "/assets/solution-diagram.jpg",
+      "imageAlt": "系统示意图占位",
+      "reverse": false,
+      "cta": {
+        "label": "资料索取（经由联系表单）",
+        "href": "/contact"
+      }
+    },
+    {
+      "type": "feature-list",
+      "title": "技术优势",
+      "items": [
+        {
+          "title": "标准化框架",
+          "description": "IEC / UL 路径仅为占位措辞，请以实际取证为准。"
+        },
+        {
+          "title": "工厂装配与测试",
+          "description": "示例说明：可作为 FAT 清单与报告的占位。"
+        },
+        {
+          "title": "物流友好包装",
+          "description": "海陆联运托架与防护策略示例占位。"
+        }
+      ]
+    },
+    {
+      "type": "feature-list",
+      "title": "重点部署场景",
+      "items": [
+        {
+          "title": "电网侧辅助服务",
+          "description": "用于调节与支撑服务的叙事占位。"
+        },
+        {
+          "title": "园区与关键设施",
+          "description": "工商业韧性项目的示例描述。"
+        },
+        {
+          "title": "边缘与通信站点",
+          "description": "空间受限机柜与远程维护占位。"
+        }
+      ]
+    },
+    {
+      "type": "contact-block",
+      "title": "与方案工程师协作",
+      "description": "请准备电压等级、冷却方案与目标认证清单——均为演示占位。",
+      "cta": {
+        "label": "发送需求",
+        "href": "/contact"
+      }
+    }
+  ]
+}

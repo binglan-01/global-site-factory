@@ -1,0 +1,49 @@
+{
+  "slug": "/contact",
+  "template": "standard",
+  "seo": {
+    "title": "联系伏特演示收件台（占位）",
+    "description": "占位收件页 — 表单仍提交至 /api/lead；上线前补齐真实 SLA 与客户流程。"
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "title": "项目收件窗口（占位）",
+      "description": "对外响应时间占位，请以真实业务排班替换。",
+      "image": "/assets/placeholder-2.jpg",
+      "imageAlt": "占位会议图"
+    },
+    {
+      "type": "contact-form",
+      "title": "结构化需求占位",
+      "formId": "voltpack-demo-intake-zh",
+      "fieldLabels": {
+        "name": "姓名（占位标签）",
+        "email": "工作邮箱（占位）",
+        "phone": "电话（可选占位）",
+        "company": "公司 / 项目部（占位）",
+        "message": "需求描述（占位）",
+        "submit": "发送（占位）"
+      }
+    },
+    {
+      "type": "contact-block",
+      "title": "路由说明占位",
+      "description": "本演示站不包含真实客服电话转接链路，请以 site.config 中的正式收件信息为准后再发布。",
+      "channels": [
+        {
+          "label": "邮箱（演示）",
+          "value": "hello@energy-storage-test-company.example.com"
+        },
+        {
+          "label": "响应节奏",
+          "value": "占位 SLA · 待用正式制度替换"
+        }
+      ],
+      "cta": {
+        "label": "隐私升级入口占位",
+        "href": "/privacy"
+      }
+    }
+  ]
+}
