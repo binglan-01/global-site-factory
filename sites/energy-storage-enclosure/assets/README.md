@@ -1,5 +1,10 @@
 # energy-storage-enclosure assets
 
-Homepage fullscreen hero declares `/assets/hero-energy-video.mp4` in locale page JSON (`content/*/pages/index.json`).
+Homepage fullscreen hero references (in `content/*/pages/index.json`):
 
-This repository currently includes **`hero-energy-poster.jpg`** as the static poster fallback. **`hero-energy-video.mp4` is not committed** intentionally (binary source video is owned by the client). Export a short, muted, loop‑friendly landscape MP4 under `sites/energy-storage-enclosure/assets/` with that filename before validating end‑to‑end playback locally or in staging.
+- `/assets/hero-energy-poster.jpg` — **committed** here (minimal valid placeholder; replace with a real still before launch if desired).
+- `/assets/hero-energy-video.mp4` — **not committed** on purpose (no fake binaries). Add a short, muted, loop‑friendly landscape MP4 under this folder with that exact name when you want true video playback.
+
+**If the MP4 is missing** (404 on Cloudflare Pages): the theme still renders the hero with **`hero-energy-poster.jpg`** as the full‑bleed background (native `<video poster>` first, then static fill after load error). Deploy is not a blank hero as long as this JPG is present.
+
+**Do not** commit an invalid placeholder MP4 — use a real encoded file for staging/production video.

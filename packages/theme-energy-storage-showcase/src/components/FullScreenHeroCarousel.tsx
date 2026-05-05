@@ -172,9 +172,11 @@ export function FullScreenHeroCarousel({
     );
   }
 
+  const multiSlide = slides.length > 1;
+
   return (
     <section
-      aria-roledescription="carousel"
+      aria-roledescription={multiSlide ? "carousel" : undefined}
       aria-label={title}
       className="energy-storage-full-hero"
     >
