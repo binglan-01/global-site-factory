@@ -7,7 +7,10 @@ import { resolveLocalizedString, type LocalizedString, type PageContent, type Si
 import type { FooterColumnResolved } from "@factory/theme-enterprise";
 import { Header as EnterpriseHeader } from "@factory/theme-enterprise";
 import { Header as TechnicalProductShowcaseHeader } from "@factory/theme-technical-product-showcase";
-import { Header as EnergyStorageShowcaseHeader } from "@factory/theme-energy-storage-showcase";
+import {
+  FloatingActionButtons,
+  Header as EnergyStorageShowcaseHeader,
+} from "@factory/theme-energy-storage-showcase";
 import {
   getThemeBundle,
   type FooterLink,
@@ -187,12 +190,17 @@ const floatingActionsLocalized = fabSrc
     <main>
       <slot />
     </main>
+    {
+      siteConfig.theme === "energy-storage-showcase" ? (
+        <FloatingActionButtons actions={floatingActionsLocalized} />
+      ) : null
+    }
     <Footer
       companyName={siteConfig.company.legalName}
       copyrightText={copyrightText}
       links={footerLinks}
       footerColumns={footerColumnsProp}
-      floatingActions={floatingActionsLocalized}
+      floatingActions={siteConfig.theme === "energy-storage-showcase" ? undefined : floatingActionsLocalized}
     />
   </body>
 </html>

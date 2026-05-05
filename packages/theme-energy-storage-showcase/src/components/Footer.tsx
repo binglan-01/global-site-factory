@@ -1,9 +1,7 @@
 import type { FooterLink, FooterProps as EnterpriseFooterProps } from "@factory/theme-enterprise";
 
-import { FloatingActionButtons, type ResolvedFloatingActions } from "./FloatingActionButtons";
-
 export function Footer(props: EnterpriseFooterProps) {
-  const { className, companyName, copyrightText, floatingActions, footerColumns, links } = props;
+  const { className, companyName, copyrightText, footerColumns, links } = props;
   const rootClassName = ["energy-storage-footer", className].filter(Boolean).join(" ");
 
   return (
@@ -45,7 +43,6 @@ export function Footer(props: EnterpriseFooterProps) {
         </nav>
         {copyrightText ? <p className="energy-storage-footer__copyright">{copyrightText}</p> : null}
       </div>
-      <FloatingActionButtons actions={floatingActions as ResolvedFloatingActions | undefined} />
     </footer>
   );
 }
